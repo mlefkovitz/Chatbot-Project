@@ -1,0 +1,28 @@
+
+Input: Who are you?
+Response: KBAI student, faq.txt
+Type: False
+
+Input: what is answer
+Response: I do not know.
+Type: False
+
+Input: What is the FAQ version?
+Response: I do not know.
+Type: False
+
+Input: What is the FAQ version
+Response: Version 20171009
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: What is the FAQ version
+Response: Version 20171009
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: Who are you?
+Response: KBAI student, faq.txt
+Type: False

@@ -1,0 +1,4 @@
+
+Input: Who are you?
+Response: KBAI student, faq.txt
+Type: False
