@@ -20,8 +20,6 @@ class Chatbot:
             self.FAQasList = f.readlines()                     # Example code
         # TODO: Open FAQ and parse question,answers
         #       into knowledge base.
-        self.FAQParsed = parseFAQsIntoInputs(self.FAQPathFilename)
-
         return
 
     def UserFeedback(self,yesorno):
@@ -47,8 +45,8 @@ class Chatbot:
         #     if question == msg:
         #         response = answer
         #         break
-        response = basicChatBot(msg, self.FAQasList)
-        response = CBRChatBot(msg, self.FAQasList)
+
+        response = CBRChatBot(msg, self.FAQPathFilename)
 
         # You should not need to change any of the code below
         # this line.

@@ -2,3 +2,99 @@
 Input: Who are you?
 Response: KBAI student, faq.txt
 Type: False
+
+Input: Who are you
+Response: KBAI student, faq.txt
+Type: False
+
+Input: What is the FAQ version
+Response: The professor for this class
+Is the response correct (yes/no)?
+Type: True
+
+Input: what is the FAQ version
+Response: The professor for this class
+Is the response correct (yes/no)?
+Type: True
+
+Input: FAQ Version
+Response: Version 20171009
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: what version is the faq
+Response: Version 20171009
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: additional readings
+Response: Most lessons have an accompanying set of readings. While video lessons introduce the basic concepts and methods, the readings provide the detailed algorithms. The projects are accompanied with a reading list. 
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: Goel
+Response: The professor for this class
+Is the response correct (yes/no)?
+Type: True
+
+Input: Goel
+Response: The professor for this class
+Is the response correct (yes/no)?
+Type: True
+
+Input: FAQ Version
+Response: Version 20171009
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: FAQ version
+Response: Version 20171009
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: FAQ version
+Response: Version 20171009
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: What is FAQ version
+Response: Version 20171009
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: What FAQ version
+Response: Version 20171009
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: FAQ version
+Response: Version 20171009
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: What is FAQ version
+Response: Version 20171009
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: additional readings
+Response: Yes
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: log into Piazza
+Response: It is important that you log into Piazza regularly and frequently (at least two or three times a week, daily if possible).
+
+Is the response correct (yes/no)?
+Type: True
