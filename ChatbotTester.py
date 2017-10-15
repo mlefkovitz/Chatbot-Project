@@ -82,4 +82,5 @@ def main(argv):
     return ChatbotTester(FAQFilename,LogFilename)
 
 if __name__ == '__main__':
+    print(sys.executable)
     sys.exit(main(sys.argv[1:]))

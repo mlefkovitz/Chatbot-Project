@@ -98,3 +98,125 @@ Response: It is important that you log into Piazza regularly and frequently (at 
 
 Is the response correct (yes/no)?
 Type: True
+
+Input: faq VeRsion
+Response: Version 20171009
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: faq version
+Response: Version 20171009
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: goel
+Response: The professor for this class
+Is the response correct (yes/no)?
+Type: True
+
+Input: professor
+Response: The professor for this class
+Is the response correct (yes/no)?
+Type: True
+
+Input: what faq version
+Response: Version 20171009
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: what faq version
+Response: Version 20171009
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: what version
+Response: Version 20171009
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: what is version
+Response: Version 20171009
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: what is version
+Response: Version 20171009
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: what is version
+Response: Version 20171009
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: professor
+Response: I do not know.
+Type: False
+
+Input: professor
+Response: I do not know.
+Type: False
+
+Input: professor
+Response: I do not know.
+Type: False
+
+Input: professor
+Response: The professor for this class
+Is the response correct (yes/no)?
+Type: True
+
+Input: goel
+Response: I do not know.
+Type: False
+
+Input: goel
+Response: The professor for this class
+Is the response correct (yes/no)?
+Type: True
+
+Input: goel
+Response: The professor for this class
+Is the response correct (yes/no)?
+Type: True
+
+Input: professor
+Response: The professor for this class
+Is the response correct (yes/no)?
+Type: True
+
+Input: goel
+Response: I do not know.
+Type: False
+
+Input: goel
+Response: I do not know.
+Type: False
+
+Input: goel
+Response: I do not know.
+Type: False
+
+Input: goel
+Response: The professor for this class
+Is the response correct (yes/no)?
+Type: True
+
+Input: goel
+Response: The professor for this class
+Is the response correct (yes/no)?
+Type: True
+
+Input: what faq version be
+Response: Version 20171009
+
+Is the response correct (yes/no)?
+Type: True

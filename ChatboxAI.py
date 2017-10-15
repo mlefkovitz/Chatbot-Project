@@ -87,9 +87,12 @@ def CBRChatBot(msg, FAQPathFilename):
     for words in newMsg.words:
         print(words)
         for tuples in wordTupList:
-            if tuples[0] == words:
+            if tuples[0].lower() == words.lower():
+                for uniqueWordTuples in uniqueWordSums:
+                    if uniqueWordTuples[0].lower() == words.lower():
+                        wordLikelihood = uniqueWordTuples[1]
                 print(str(tuples))
-                answerTups.append((tuples[1], tuples[2]))
+                answerTups.append((tuples[1], tuples[2], wordLikelihood))
 
     print(str(answerTups))
 
@@ -106,11 +109,28 @@ def CBRChatBot(msg, FAQPathFilename):
         answerSum = 0
         for tuples in answerTups:
             if tuples[0] == answers:
-                answerSum += float(tuples[1])
+                currentAnswerSum = float(tuples[1]) / float(tuples[2])
+                # print(answers + " => " + str(tuples[1]) + " / " + str(tuples[2]) + " = " + str(currentAnswerSum))
+                answerSum += currentAnswerSum
         uniqueAnswerSums.append((answers, answerSum))
 
     print(uniqueAnswerSums)
 
-    response = max(uniqueAnswerSums,key=itemgetter(1))[0]
+    bestAnswer, bestAnswerScore = max(uniqueAnswerSums,key=itemgetter(1))
+    print(bestAnswerScore)
+
+    topUniqueAnswerSums = tuple(sorted(uniqueAnswerSums, key=itemgetter(1), reverse=True)[:2])
+    print(topUniqueAnswerSums)
+
+    topTwoScoreDifference = 0
+    topTwoScoreThreshold = -1
+    if len(topUniqueAnswerSums) > 1:
+        print(bestAnswerScore - topUniqueAnswerSums[1][1])
+        topTwoScoreDifference = bestAnswerScore - topUniqueAnswerSums[1][1]
+        topTwoScoreThreshold = 0
+
+    scoreThreshold = .5
+    if bestAnswerScore >= scoreThreshold and topTwoScoreDifference > topTwoScoreThreshold:
+        response = bestAnswer
 
     return response;
