@@ -220,3 +220,61 @@ Response: Version 20171009
 
 Is the response correct (yes/no)?
 Type: True
+
+Input: goel
+Response: The professor for this class
+Is the response correct (yes/no)?
+Type: True
+
+Input: goel
+Response: The professor for this class
+Is the response correct (yes/no)?
+Type: True
+
+Input: How long are the videos
+Response: This course has 26 videos with about 18 hours of instruction.
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: How long are the videos
+Response: This course has 26 videos with about 18 hours of instruction.
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: How long are the videos
+Response: This course has 26 videos with about 18 hours of instruction.
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: How many exercises are in the videos
+Response: This course has 26 videos with about 18 hours of instruction.
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: How many writing components are there
+Response: The course includes 8 writing components: 3 assignments, 2 take home examinations, and 3 projects.
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: How many exams are there
+Response: I do not know.
+Type: False
+
+Input: How many exams are there
+Response: I do not know.
+Type: False
+
+Input: How many exams are there
+Response: I do not know.
+Type: False
+
+Input: How many exams are there
+Response: The course includes 2 take home examinations. A Mid-Term Exam and a Final Exam.
+
+Is the response correct (yes/no)?
+Type: True

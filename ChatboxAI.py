@@ -23,7 +23,7 @@ def CBRChatBot(msg, FAQPathFilename):
         question = qa.split('?')[0]
         answer = qa.split('?')[1]
         questionList.append(TextBlob(question))
-        answerList.append(TextBlob(answer))
+        answerList.append(answer)
 
     i=0
     wordTupList = []
@@ -43,7 +43,8 @@ def CBRChatBot(msg, FAQPathFilename):
 
 
         for words in newQue.words:
-            wordTup = (words, str(answerList[i]), 1/len(newQue.words))
+            # wordTup = (words, answerList[i], 1/len(newQue.words)) # answers are hardcoded
+            wordTup = (words, i, 1/len(newQue.words)) # answer keys are hardcoded
             wordTupList.append(wordTup)
             # print(wordTup)
 
@@ -51,37 +52,37 @@ def CBRChatBot(msg, FAQPathFilename):
 
     uniqueWordsList = []
     for tuples in wordTupList:
-        words = tuples[0]
+        words = tuples[0].lower()
         if words not in uniqueWordsList:
             uniqueWordsList.append(words)
 
-    print(uniqueWordsList)
+    # print(uniqueWordsList)
 
     uniqueWordSums = []
     for words in uniqueWordsList:
         wordSum = 0
         for tuples in wordTupList:
-            if tuples[0] == words:
+            if tuples[0].lower() == words:
                    wordSum += tuples[2]
         uniqueWordSums.append((words, wordSum))
 
     print(uniqueWordSums)
 
-    LogFilename = 'storequestionsparsed.txt'
-    if LogFilename:
-        logFile = open(LogFilename, "a")
-        logFile.write(str(wordTupList))
-        logFile.close()
+    # LogFilename = 'storequestionsparsed.txt'
+    # if LogFilename:
+    #     logFile = open(LogFilename, "a")
+    #     logFile.write(str(wordTupList))
+    #     logFile.close()
 
     message = TextBlob(msg)
-    print(message)
+    # print(message)
     extraWords = [word for word, tag in message.tags if tag in ('DT')]
     newMsg = ' '
     sub_stopwords = set(message.words) - set(extraWords)
     for word in sub_stopwords:
         newMsg = word + ' ' + newMsg
     newMsg = TextBlob(newMsg)
-    print(newMsg)
+    # print(newMsg)
 
     answerTups = []
     for words in newMsg.words:
@@ -92,7 +93,7 @@ def CBRChatBot(msg, FAQPathFilename):
                     if uniqueWordTuples[0].lower() == words.lower():
                         wordLikelihood = uniqueWordTuples[1]
                 print(str(tuples))
-                answerTups.append((tuples[1], tuples[2], wordLikelihood))
+                answerTups.append((tuples[1], str(tuples[2]), wordLikelihood))
 
     print(str(answerTups))
 
@@ -110,7 +111,7 @@ def CBRChatBot(msg, FAQPathFilename):
         for tuples in answerTups:
             if tuples[0] == answers:
                 currentAnswerSum = float(tuples[1]) / float(tuples[2])
-                # print(answers + " => " + str(tuples[1]) + " / " + str(tuples[2]) + " = " + str(currentAnswerSum))
+                print(str(answers) + " => " + str(tuples[1]) + " / " + str(tuples[2]) + " = " + str(currentAnswerSum))
                 answerSum += currentAnswerSum
         uniqueAnswerSums.append((answers, answerSum))
 
@@ -131,6 +132,6 @@ def CBRChatBot(msg, FAQPathFilename):
 
     scoreThreshold = .5
     if bestAnswerScore >= scoreThreshold and topTwoScoreDifference > topTwoScoreThreshold:
-        response = bestAnswer
+        response = answerList[bestAnswer]
 
     return response;
