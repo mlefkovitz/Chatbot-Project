@@ -3,13 +3,15 @@ from textblob import TextBlob
 from operator import itemgetter
 
 def CBRChatBot(msg, answerList, wordTupList, uniqueWordSums ):
-    printToWindow = False
+    printToWindow = True
     response = ''
 
-    newMsg = ExtractUnnecessaryWords(TextBlob(msg)) # remove unnecessary words from the message
+    newMsg = TextBlob(msg) #convert the input string to TextBlob
+    newMsg = ExtractUnnecessaryWords(newMsg) # remove unnecessary words from the message
 
     answerTups = RelevantAnswerTuples(newMsg, uniqueWordSums, wordTupList, printToWindow) # find all questions with
                             #... words that match a word in the message. Return tuples <AnswerID, score, sum(scores)>
+
     uniqueAnswerList = ListUniqueAnswers(answerTups, printToWindow) # List unique answers relevant to the message
     uniqueAnswerScores = ScoreEachAnswer(answerTups, uniqueAnswerList, printToWindow) # Find the score for each answer
 
@@ -19,9 +21,96 @@ def CBRChatBot(msg, answerList, wordTupList, uniqueWordSums ):
     return response;
 
 
+def SentenceSimilarityChatBot(msg, answerList, questionList, wordTupList, uniqueWordSums ):
+    printToWindow = False
+    response = ''
+
+    newMsg = TextBlob(msg) #convert the input string to TextBlob
+    newMsg = ExtractUnnecessaryWords(newMsg) # remove unnecessary words from the message
+
+    similarSentences = SimilarQuestions(newMsg, questionList, printToWindow) # identify similarity between input message and each sentence
+
+    scoreThreshold = .45
+    response = ReturnBestResponse(answerList, response, scoreThreshold, similarSentences, printToWindow) #return best response
+
+    return response;
+
+
+def SimilarQuestions(inputMsg, questionList, printToWindow):
+    # This method identifies the similarity between each question and the input message.
+    # Return tuples <QuestionID, SimilarityScore>
+    questionSimilarityTups = []
+    i = 0
+
+    for question in questionList:
+        newQuestion = ExtractUnnecessaryWords(question)
+        questionSimilarityTuple = (i, sentenceSimilarity(newQuestion, inputMsg, printToWindow))
+        questionSimilarityTups.append(questionSimilarityTuple)
+        i = i + 1
+        if printToWindow:
+            print("questionID and similarityScore: " + str(questionSimilarityTuple))
+
+    return questionSimilarityTups
+
+
+def sentenceSimilarity(sentence1, sentence2, printToWindow):
+    # This method calculates the similarity between two setences.
+    # Calculation found here: http://www.aclweb.org/anthology/S15-2#page=190
+    # sts(S1,S2) = (na(S1) + na(S2)) / (n(S1) + n(S2))
+    # sts(x, y) = similarity between two input sentences x and y;
+    # na(S) = number of aligned content words in sentence S;
+    # n(S) = number of content words in sentence S
+    # Return similarity score
+
+    numberOfAlignedWords1 = numberOfAlignedWords(sentence1, sentence2, False)
+
+    numberOfAlignedWords2 = numberOfAlignedWords1
+    numberOfContentWords1 = len(sentence1.words)
+    numberOfContentWords2 = len(sentence2.words)
+    if printToWindow:
+        print("Number of aligned words: " + str(numberOfAlignedWords1) + " " + str(numberOfAlignedWords2) +
+              " content words: " + str(numberOfContentWords1) + " " + str(numberOfContentWords2))
+
+    sentenceSimilarityScore = (numberOfAlignedWords1 + numberOfAlignedWords2)/(numberOfContentWords1 + numberOfContentWords2)
+
+    return sentenceSimilarityScore
+
+
+def numberOfAlignedWords(sentence1, sentence2, printToWindow):
+    # This method calculates the number of aligned words between two sentences.
+    # Return the number of aligned words between sentence 1 and 2
+
+    alignedWords = 0
+
+    for sentence1word in sentence1.words:
+        wordAligned = False
+        for sentence2word in sentence2.words:
+            if similarWords(sentence1word, sentence2word, printToWindow):
+                wordAligned = True
+        if wordAligned:
+            alignedWords = alignedWords + 1
+        if printToWindow:
+            print("Sentence1 word: " + str(sentence1word) + " is aligned? " + str(alignedWords))
+
+    return alignedWords
+
+def similarWords(word1, word2, printToWindow):
+    # This method identifies whether two words are similar
+    # Return True or False
+
+    wordsAreSimilar = False
+    if word1.lower() == word2.lower():
+        wordsAreSimilar = True
+
+    return wordsAreSimilar
+
+
 def ReturnBestResponse(answerList, response, scoreThreshold, uniqueAnswerScores, printToWindow):
     # This method identifies the highest scoring response and returns it
     # Return the best scoring response
+    if len(uniqueAnswerScores) == 0:
+        return response
+
     bestAnswerID, bestAnswerScore = max(uniqueAnswerScores, key=itemgetter(1))
     if printToWindow:
         print("bestAnswerScore = " + str(bestAnswerScore))
@@ -36,7 +125,7 @@ def ReturnBestResponse(answerList, response, scoreThreshold, uniqueAnswerScores,
     # Calculate the difference between the 1st and 2nd highest scores
     if len(topUniqueAnswerSums) > 1:
         if printToWindow:
-            print("bestAnswerScore - topUniqueAnswerSums[1][1] = " + bestAnswerScore - topUniqueAnswerSums[1][1])
+            print("bestAnswerScore - topUniqueAnswerSums[1][1] = " + str(bestAnswerScore - topUniqueAnswerSums[1][1]))
         topTwoScoreDifference = bestAnswerScore - topUniqueAnswerSums[1][1]
         topTwoScoreThreshold = 0
 
@@ -96,9 +185,12 @@ def RelevantAnswerTuples(newMsg, uniqueWordSums, wordTupList, printToWindow):
     return answerTups
 
 
-def ExtractUnnecessaryWords(setOfWords):
+def ExtractUnnecessaryWords(setOfWords, printToWindow = False):
     # This method extracts unnecessary words from an input set and returns the remaining words as a TextBlob object
-    extraWords = [word for word, tag in setOfWords.tags if tag in ('DT')]
+    if printToWindow:
+        print("Parts of speach for each word: " + str(setOfWords.tags))
+
+    extraWords = [word for word, tag in setOfWords.tags if tag in ('DT', 'POS')]
     newSetOfWords = ' '
     sub_stopwords = set(setOfWords.words) - set(extraWords)
     for word in sub_stopwords:
@@ -134,20 +226,20 @@ def RelevantWordTuples(questionList, printToWindow):
     i = 0
     wordTupList = []
     for que in questionList:
-        newQue = ExtractUnnecessaryWords(que)
+        newQue = ExtractUnnecessaryWords(que, printToWindow)
 
         if printToWindow:
-            print(que)
-            print(len(que.words))
-            print(newQue.words)
-            print(len(newQue.words))
+            print("Original question: " + str(que))
+            print("Number of words in original question: " + str(len(que.words)))
+            print("Remaining words after removal of unnecessary words: " + str(newQue.words))
+            print("Number of words remaining: " + str(len(newQue.words)))
 
         for words in newQue.words:
             # wordTup = (words, answerList[i], 1/len(newQue.words)) # answers are hardcoded
             wordTup = (words, i, 1 / len(newQue.words))  # answer keys are hardcoded
             wordTupList.append(wordTup)
             if printToWindow:
-                print(wordTup)
+                print("word, questionID, fraction of question: " +  str(wordTup))
         i += 1
     return wordTupList
 
@@ -160,7 +252,7 @@ def FindUniqueWords(wordTupList, printToWindow):
         if words not in uniqueWordsList:
             uniqueWordsList.append(words)
     if printToWindow:
-        print("Unique Words: " + uniqueWordsList)
+        print("Unique Words: " + str(uniqueWordsList))
     return uniqueWordsList
 
 

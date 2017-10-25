@@ -336,3 +336,183 @@ Response: Version 20171021
 
 Is the response correct (yes/no)?
 Type: True
+
+Input: goel
+Response: The professor for this class
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: version
+Response: Version 20171021
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: faq
+Response: Version 20171021
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: professor
+Response: The professor for this class
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: assignment
+Response: I do not know.
+Type: False
+
+Input: calendar
+Response: https://docs.google.com/document/d/1YUnl-NbNycN3GfzK8BXO0qxW6wdKT1sKhO-p028Fl18/edit
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: version class
+Response: Version 20171021
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: class software python version
+Response: Version 20171021
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: version
+Response: Version 20171021
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: class python version
+Response: Version 20171021
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: verzion
+Response: Version 20171021
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: frog
+Response: I do not know.
+Type: False
+
+Input: verzion
+Response: Version 20171021
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: who's the professor
+Response: The professor for this class
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: what's the professor's name
+Response: You may find information on contacting the Dean of Students with regard to personal emergencies here: https://studentlife.gatech.edu/content/class-attendance
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: what the professor's name
+Response: You may find information on contacting the Dean of Students with regard to personal emergencies here: https://studentlife.gatech.edu/content/class-attendance
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: what's the version
+Response: Version 20171021
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: version version
+Response: Version 20171021
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: goel
+Response: I do not know.
+Type: False
+
+Input: faq
+Response: I do not know.
+Type: False
+
+Input: prof
+Response: I do not know.
+Type: False
+
+Input: what is the faq version
+Response: Version 20171021
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: Goel is who professor
+Response: The professor for this class
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: what is the faq version
+Response: Version 20171021
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: what is faq version
+Response: Version 20171021
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: what is faq version
+Response: Version 20171021
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: what is the faq version
+Response: Version 20171021
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: what is the faq version
+Response: Version 20171021
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: what is the faq version
+Response: Version 20171021
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: what is the faq version
+Response: Version 20171021
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: version
+Response: I do not know.
+Type: False
+
+Input: faq version
+Response: Version 20171021
+
+Is the response correct (yes/no)?
+Type: True
