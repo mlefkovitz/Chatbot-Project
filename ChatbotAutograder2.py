@@ -35,11 +35,13 @@ def ChatbotAutograder(ScriptFilename,FAQFilename,LogFilename):
     total_questions = 0
     total_correct = 0
     total_skipped = 0
+    total_meant_to_skip = 0
+    total_correctly_skipped = 0
     total_wrong = 0
     wrong_answers = []
     for qa in scriptFileasList:
         question = qa.split('?')[0]
-        answer =qa.split('?')[1].strip()
+        answer =qa.split('?')[1]#.strip()
         # We open and close the file to avoid loosing data if we crash
         if LogFilename:
             logFile = open(LogFilename,"a")
@@ -48,7 +50,15 @@ def ChatbotAutograder(ScriptFilename,FAQFilename,LogFilename):
         action = "0.0"
         total_questions += 1
         if Type == True:
-            if response.split('\n')[0] == answer.split('\n')[0]:
+            if answer.split('\n')[0] == "I do not know.":
+                total_meant_to_skip += 1
+                score -= 0.1
+                action = "-0.1"
+                total_wrong += 1
+                wrong_answers.append({'1_question': question, '2_expected_answer': answer.split('\n')[0],
+                                      '3_actual_answer': response.split('\n')[0]})
+                chatbot.UserFeedback("no")
+            elif response.split('\n')[0] == answer.split('\n')[0]:
                 score += 1.0
                 action = "1.0"
                 total_correct += 1
@@ -61,7 +71,15 @@ def ChatbotAutograder(ScriptFilename,FAQFilename,LogFilename):
                 chatbot.UserFeedback("no")
         else:
             if not question.startswith("Who are you"):
+                if answer.split('\n')[0] == "I do not know.":
+                    total_meant_to_skip += 1
+                    if response.split('\n')[0] == answer.split('\n')[0]:
+                        total_correctly_skipped += 1
+                else:
+                    wrong_answers.append({'1_question': question, '2_expected_answer': answer.split('\n')[0],
+                                          '3_actual_answer': response.split('\n')[0]})
                 total_skipped += 1
+
 
         if LogFilename:
             logFile.write("\nInput: "+question)
@@ -82,6 +100,8 @@ def ChatbotAutograder(ScriptFilename,FAQFilename,LogFilename):
         logFile.write("\nTotal Questions: " + str(total_questions))
         logFile.write("\nTotal Correct: " + str(total_correct))
         logFile.write("\nTotal Skipped: " + str(total_skipped))
+        logFile.write("\nTotal Meant to Skip: " + str(total_meant_to_skip))
+        logFile.write("\nTotal Correctly Skipped: " + str(total_correctly_skipped))
         logFile.write("\nTotal Wrong: " + str(total_wrong))
         if total_wrong > 0:
             logFile.write("\nWrong Answer Breakdown:\n")
@@ -92,6 +112,8 @@ def ChatbotAutograder(ScriptFilename,FAQFilename,LogFilename):
     print("Total Questions: " + str(total_questions))
     print("Total Correct: " + str(total_correct))
     print("Total Skipped: " + str(total_skipped))
+    print("Total Meant to Skip: " + str(total_meant_to_skip))
+    print("Total Correctly Skipped: " + str(total_correctly_skipped))
     print("Total Wrong: " + str(total_wrong))
     if total_wrong > 0:
         print("(Wrong Answer Breakdown in logfile)")

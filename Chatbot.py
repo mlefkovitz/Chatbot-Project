@@ -13,13 +13,19 @@ from ChatboxAI import *
 class Chatbot:
 
     def __init__(self,FAQPathFilename):
-        # FAQPathFilename is string containing
-        # path and filename to text corpus in FAQ format.
-        self.FAQPathFilename = FAQPathFilename
-        with open(FAQPathFilename,"r", encoding="utf-8") as f: # Example code
-            self.FAQasList = f.readlines()                     # Example code
-        # TODO: Open FAQ and parse question,answers
-        #       into knowledge base.
+        printToWindow = False
+
+        answerList, questionList = ReadFAQFile(FAQPathFilename)  # read the FAQ
+        wordTupList = RelevantWordTuples(questionList, printToWindow)  # extract to tuples <word, answerID, score>
+        uniqueWordsList = FindUniqueWords(wordTupList, printToWindow)  # find unique words
+        uniqueWordSums = ScoreUniqueWords(wordTupList, uniqueWordsList, printToWindow)  # <word, SUM(score)>
+
+        self.answerList = answerList
+        self.questionList = questionList
+        self.wordTupList = wordTupList
+        self.uniqueWordsList = uniqueWordsList
+        self.uniqueWordSums = uniqueWordSums
+
         return
 
     def UserFeedback(self,yesorno):
@@ -33,20 +39,9 @@ class Chatbot:
         # return False, "I do not know"
 
         if msg == "Who are you?" or msg == "Who are you":
-            return False, "KBAI student, " + self.FAQPathFilename
+            return False, "Myles Lefkovitz, gth836x, 901929700, " + self.FAQPathFilename
 
-        # TODO: Insert calls to your chatbot here
-        #       Your chatbot should return '' if 
-        #       it does not have an answer.
-        response = ''
-        # for qa in self.FAQasList:           # Example code
-        #     question = qa.split('?')[0]     # Example code
-        #     answer =qa.split('?')[1]        # Example code
-        #     if question == msg:
-        #         response = answer
-        #         break
-
-        response = CBRChatBot(msg, self.FAQPathFilename)
+        response = CBRChatBot(msg, self.answerList, self.wordTupList, self.uniqueWordSums)
 
         # You should not need to change any of the code below
         # this line.

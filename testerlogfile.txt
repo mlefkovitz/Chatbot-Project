@@ -320,3 +320,19 @@ Response: Version 20171009
 
 Is the response correct (yes/no)?
 Type: True
+
+Input: Who are you?
+Response: Myles Lefkovitz, gth836x, 901929700, faq.txt
+Type: False
+
+Input: who is professor goel
+Response: The professor for this class
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: what is the faq version
+Response: Version 20171021
+
+Is the response correct (yes/no)?
+Type: True

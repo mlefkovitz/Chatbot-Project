@@ -2,23 +2,9 @@
 from textblob import TextBlob
 from operator import itemgetter
 
-# def basicChatBot(msg, FAQList):
-#     response = ''
-#     for qa in FAQList:  # Example code
-#         question = qa.split('?')[0]  # Example code
-#         answer = qa.split('?')[1]  # Example code
-#         if question == msg:
-#             response = answer
-#     return response;
-
-def CBRChatBot(msg, FAQPathFilename):
+def CBRChatBot(msg, answerList, wordTupList, uniqueWordSums ):
     printToWindow = False
     response = ''
-
-    answerList, questionList = ReadFAQFile(FAQPathFilename) # read the FAQ
-    wordTupList = RelevantWordTuples(questionList, printToWindow) # extract to tuples <word, answerID, score>
-    uniqueWordsList = FindUniqueWords(wordTupList, printToWindow) # find unique words
-    uniqueWordSums = ScoreUniqueWords(wordTupList, uniqueWordsList, printToWindow) # <word, SUM(score)>
 
     newMsg = ExtractUnnecessaryWords(TextBlob(msg)) # remove unnecessary words from the message
 

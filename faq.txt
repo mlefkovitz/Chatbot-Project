@@ -1,4 +1,4 @@
-What is the FAQ version?Version 20171009
+What is the FAQ version?Version 20171021
 What are the course components?The course has five components. Video Lessons, Exercises and Readings; Design, Programming and Reflection projects; Assignments and Examinations; Peer Feedback; and Announcements, Question Answering and Discussions.
 How long are the videos?This course has 26 videos with about 18 hours of instruction.
 How many hours of instruction for this class?This course has 26 videos with about 18 hours of instruction.
