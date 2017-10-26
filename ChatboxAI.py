@@ -3,7 +3,7 @@ from textblob import TextBlob
 from operator import itemgetter
 
 def CBRChatBot(msg, answerList, wordTupList, uniqueWordSums ):
-    printToWindow = True
+    printToWindow = False
     response = ''
 
     newMsg = TextBlob(msg) #convert the input string to TextBlob
@@ -85,12 +85,13 @@ def numberOfAlignedWords(sentence1, sentence2, printToWindow):
     for sentence1word in sentence1.words:
         wordAligned = False
         for sentence2word in sentence2.words:
-            if similarWords(sentence1word, sentence2word, printToWindow):
-                wordAligned = True
+            if wordAligned == False:
+                if similarWords(sentence1word, sentence2word, printToWindow):
+                    wordAligned = True
         if wordAligned:
             alignedWords = alignedWords + 1
         if printToWindow:
-            print("Sentence1 word: " + str(sentence1word) + " is aligned? " + str(alignedWords))
+            print("Sentence1 word: " + str(sentence1word) + " is aligned? " + str(wordAligned))
 
     return alignedWords
 
@@ -98,9 +99,62 @@ def similarWords(word1, word2, printToWindow):
     # This method identifies whether two words are similar
     # Return True or False
 
+    tbword1 = TextBlob(word1)
+    tbword2 = TextBlob(word2)
+    lowerWord1 = tbword1.lower()
+    lowerWord2 = tbword2.lower()
+    correctedWord1 = lowerWord1.correct()
+    correctedWord2 = lowerWord2.correct()
+    correctedWord1Synset = correctedWord1.words[0].synsets
+
+    # print("Words and Synset Lengths: " + str(lowerWord1) + "(" + str(len(lowerWord1.words[0].synsets)) + ") & " + str(
+    #     lowerWord2) + "(" + str(len(lowerWord2.words[0].synsets)) + ") ")
+
     wordsAreSimilar = False
-    if word1.lower() == word2.lower():
+    if lowerWord1 == lowerWord2:
         wordsAreSimilar = True
+    # elif lowerWord1.words.singularize() == lowerWord2.words.singularize():
+    #     wordsAreSimilar = True
+    # elif lowerWord1.words.lemmatize() == lowerWord2.words.lemmatize():
+    #     wordsAreSimilar = True
+    elif correctedWord1 == correctedWord2:
+        wordsAreSimilar = True
+    elif correctedWord1.words.singularize() == correctedWord2.words.singularize():
+        wordsAreSimilar = True
+    elif correctedWord1.words.lemmatize() == correctedWord2.words.lemmatize:
+        wordsAreSimilar = True
+    # elif len(lowerWord1.words[0].synsets) > 0:
+    #     lowerWord2Synsets = lowerWord2.words[0].synsets
+    #     if len(lowerWord2Synsets) > 0:
+    #         # print("Compare Synsets: " + str(lowerWord1.words[0].synsets[0].path_similarity(lowerWord2.words[0].synsets[0])))
+    #         lowerWordPathSimilarity = lowerWord1.words[0].synsets[0].path_similarity(lowerWord2Synsets[0])
+    #         if lowerWordPathSimilarity is not None:
+    #             if lowerWordPathSimilarity >= 0.25:
+    #                 wordsAreSimilar = True
+    elif len(correctedWord1Synset) > 0:
+        correctWord2Synsets = correctedWord2.words[0].synsets
+        if len(correctWord2Synsets) > 0:
+            # print("Compare Synsets: " + str(correctedWord1.words[0].synsets[0].path_similarity(correctedWord2.words[0].synsets[0])))
+            correctedWordPathSimilarity = correctedWord1Synset[0].path_similarity(correctWord2Synsets[0])
+            if correctedWordPathSimilarity is not None:
+                if correctedWordPathSimilarity >= 0.25:
+                    wordsAreSimilar = True
+
+    # printToWindow = True
+    if printToWindow & wordsAreSimilar:
+        print("Words: " + str(lowerWord1) + " & " + str(lowerWord2))
+        print("Corrected words: " + str(correctedWord1) + " & " + str(correctedWord2))
+        print("Word synsets: " + str(lowerWord1.words[0].synsets) + " & " + str(lowerWord2.words[0].synsets))
+        # print("Synset lengths: " + str(len(lowerWord1.words[0].synsets)) + " & " + str(len(lowerWord2.words[0].synsets)))
+        # if (len(lowerWord1.words[0].synsets) > 0) & (len(lowerWord2.words[0].synsets) > 0):
+        #     if lowerWord1.words[0].synsets[0].path_similarity(lowerWord2.words[0].synsets[0]) is not None:
+        #         print("Path similarity: " + str(lowerWord1.words[0].synsets[0].path_similarity(lowerWord2.words[0].synsets[0])))
+        # print("Corrected word synsets: " + str(correctedWord1.words[0].synsets) + " & " + str(
+        #     correctedWord2.words[0].synsets))
+        # if (len(correctedWord1.words[0].synsets) > 0) & (len(correctedWord2.words[0].synsets) > 0):
+        #     if correctedWord1.words[0].synsets[0].path_similarity(correctedWord2.words[0].synsets[0]) is not None:
+        #         print("Path similarity: " + str(
+        #             correctedWord1.words[0].synsets[0].path_similarity(correctedWord2.words[0].synsets[0])))
 
     return wordsAreSimilar
 
@@ -173,7 +227,8 @@ def RelevantAnswerTuples(newMsg, uniqueWordSums, wordTupList, printToWindow):
         if printToWindow:
             print("Input word: " + words)
         for tuples in wordTupList:
-            if tuples[0].lower() == words.lower():
+            # if tuples[0].lower() == words.lower():
+            if similarWords(tuples[0],words,printToWindow):
                 for uniqueWordTuples in uniqueWordSums:
                     if uniqueWordTuples[0].lower() == words.lower():
                         wordLikelihood = uniqueWordTuples[1]

@@ -13,7 +13,7 @@ from ChatboxAI import *
 class Chatbot:
 
     def __init__(self,FAQPathFilename):
-        printToWindow = True
+        printToWindow = False
 
         answerList, questionList = ReadFAQFile(FAQPathFilename)  # read the FAQ
         wordTupList = RelevantWordTuples(questionList, printToWindow)  # extract to tuples <word, answerID, score>
@@ -41,8 +41,8 @@ class Chatbot:
         if msg == "Who are you?" or msg == "Who are you":
             return False, "Myles Lefkovitz, gth836x, 901929700, " + self.FAQPathFilename
 
-        response = CBRChatBot(msg, self.answerList, self.wordTupList, self.uniqueWordSums)
-        # response = SentenceSimilarityChatBot(msg, self.answerList, self.questionList, self.wordTupList, self.uniqueWordSums)
+        # response = CBRChatBot(msg, self.answerList, self.wordTupList, self.uniqueWordSums)
+        response = SentenceSimilarityChatBot(msg, self.answerList, self.questionList, self.wordTupList, self.uniqueWordSums)
 
         # You should not need to change any of the code below
         # this line.
