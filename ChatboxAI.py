@@ -53,7 +53,7 @@ def SimilarQuestions(inputMsg, questionList, printToWindow):
     return questionSimilarityTups
 
 
-def sentenceSimilarity(sentence1, sentence2, printToWindow):
+def sentenceSimilarity(faqSentence, inputSentence, printToWindow):
     # This method calculates the similarity between two setences.
     # Calculation found here: http://www.aclweb.org/anthology/S15-2#page=190
     # sts(S1,S2) = (na(S1) + na(S2)) / (n(S1) + n(S2))
@@ -62,11 +62,11 @@ def sentenceSimilarity(sentence1, sentence2, printToWindow):
     # n(S) = number of content words in sentence S
     # Return similarity score
 
-    numberOfAlignedWords1 = numberOfAlignedWords(sentence1, sentence2, False)
+    numberOfAlignedWords1 = numberOfAlignedWords(faqSentence, inputSentence, False)
 
     numberOfAlignedWords2 = numberOfAlignedWords1
-    numberOfContentWords1 = len(sentence1.words)
-    numberOfContentWords2 = len(sentence2.words)
+    numberOfContentWords1 = len(faqSentence.words)
+    numberOfContentWords2 = len(inputSentence.words)
     if printToWindow:
         print("Number of aligned words: " + str(numberOfAlignedWords1) + " " + str(numberOfAlignedWords2) +
               " content words: " + str(numberOfContentWords1) + " " + str(numberOfContentWords2))
@@ -76,85 +76,86 @@ def sentenceSimilarity(sentence1, sentence2, printToWindow):
     return sentenceSimilarityScore
 
 
-def numberOfAlignedWords(sentence1, sentence2, printToWindow):
+def numberOfAlignedWords(faqSentence, inputSentence, printToWindow):
     # This method calculates the number of aligned words between two sentences.
     # Return the number of aligned words between sentence 1 and 2
 
     alignedWords = 0
 
-    for sentence1word in sentence1.words:
+    inputMessageWords = createInputWordTuple(inputSentence) # <Word, lowerWord, correctedWord, wordSynset>
+
+    for faqWord in faqSentence.words:
         wordAligned = False
-        for sentence2word in sentence2.words:
+        for inputWords in inputMessageWords:
             if wordAligned == False:
-                if similarWords(sentence1word, sentence2word, printToWindow):
+                if similarWords(faqWord, inputWords, printToWindow):
                     wordAligned = True
         if wordAligned:
             alignedWords = alignedWords + 1
         if printToWindow:
-            print("Sentence1 word: " + str(sentence1word) + " is aligned? " + str(wordAligned))
+            print("Sentence1 word: " + str(faqWord) + " is aligned? " + str(wordAligned))
 
     return alignedWords
 
-def similarWords(word1, word2, printToWindow):
+
+def createInputWordTuple(inputSentence):
+    inputMessageWords = []  # input Words
+    # <Word, lowerWord, correctedWord, wordSynset>
+    for inputWord in inputSentence.words:
+        tbInputWord = TextBlob(inputWord)
+        lowerInputWord = tbInputWord.lower()
+        correctedInputWord = lowerInputWord.correct()
+        correctedInputWordSynsets = correctedInputWord.words[0].synsets
+        inputMessageWords.append((inputWord, lowerInputWord, correctedInputWord, correctedInputWordSynsets))
+    return inputMessageWords
+
+
+def similarWords(faqWord, inputWords, printToWindow):
     # This method identifies whether two words are similar
     # Return True or False
 
-    tbword1 = TextBlob(word1)
-    tbword2 = TextBlob(word2)
-    lowerWord1 = tbword1.lower()
-    lowerWord2 = tbword2.lower()
-    correctedWord1 = lowerWord1.correct()
-    correctedWord2 = lowerWord2.correct()
-    correctedWord1Synset = correctedWord1.words[0].synsets
+    tbFaqWord = TextBlob(faqWord)
+    tbInputWord = inputWords[0]
+    lowerFAQWord = tbFaqWord.lower()
+    lowerInputWord = inputWords[1]
+    correctedInputWord = inputWords[2]
+    FAQWordSynset = lowerFAQWord.words[0].synsets
 
-    # print("Words and Synset Lengths: " + str(lowerWord1) + "(" + str(len(lowerWord1.words[0].synsets)) + ") & " + str(
-    #     lowerWord2) + "(" + str(len(lowerWord2.words[0].synsets)) + ") ")
+    # print("Words and Synset Lengths: " + str(lowerFAQWord) + "(" + str(len(lowerFAQWord.words[0].synsets)) + ") & " + str(
+    #     lowerInputWord) + "(" + str(len(lowerInputWord.words[0].synsets)) + ") ")
 
     wordsAreSimilar = False
-    if lowerWord1 == lowerWord2:
+    if lowerFAQWord == lowerInputWord:
         wordsAreSimilar = True
-    # elif lowerWord1.words.singularize() == lowerWord2.words.singularize():
-    #     wordsAreSimilar = True
-    # elif lowerWord1.words.lemmatize() == lowerWord2.words.lemmatize():
-    #     wordsAreSimilar = True
-    elif correctedWord1 == correctedWord2:
+    elif lowerFAQWord == correctedInputWord:
         wordsAreSimilar = True
-    elif correctedWord1.words.singularize() == correctedWord2.words.singularize():
+    elif lowerFAQWord.words.singularize() == correctedInputWord.words.singularize():
         wordsAreSimilar = True
-    elif correctedWord1.words.lemmatize() == correctedWord2.words.lemmatize:
-        wordsAreSimilar = True
-    # elif len(lowerWord1.words[0].synsets) > 0:
-    #     lowerWord2Synsets = lowerWord2.words[0].synsets
-    #     if len(lowerWord2Synsets) > 0:
-    #         # print("Compare Synsets: " + str(lowerWord1.words[0].synsets[0].path_similarity(lowerWord2.words[0].synsets[0])))
-    #         lowerWordPathSimilarity = lowerWord1.words[0].synsets[0].path_similarity(lowerWord2Synsets[0])
-    #         if lowerWordPathSimilarity is not None:
-    #             if lowerWordPathSimilarity >= 0.25:
-    #                 wordsAreSimilar = True
-    elif len(correctedWord1Synset) > 0:
-        correctWord2Synsets = correctedWord2.words[0].synsets
-        if len(correctWord2Synsets) > 0:
-            # print("Compare Synsets: " + str(correctedWord1.words[0].synsets[0].path_similarity(correctedWord2.words[0].synsets[0])))
-            correctedWordPathSimilarity = correctedWord1Synset[0].path_similarity(correctWord2Synsets[0])
+    elif len(FAQWordSynset) > 0:
+        #correctInputWordSynsets = correctedInputWord.words[0].synsets
+        correctInputWordSynsets = inputWords[3]
+        if len(correctInputWordSynsets) > 0:
+            # print("Compare Synsets: " + str(correctedFAQWord.words[0].synsets[0].path_similarity(correctedInputWord.words[0].synsets[0])))
+            correctedWordPathSimilarity = FAQWordSynset[0].path_similarity(correctInputWordSynsets[0])
             if correctedWordPathSimilarity is not None:
                 if correctedWordPathSimilarity >= 0.25:
                     wordsAreSimilar = True
 
     # printToWindow = True
     if printToWindow & wordsAreSimilar:
-        print("Words: " + str(lowerWord1) + " & " + str(lowerWord2))
-        print("Corrected words: " + str(correctedWord1) + " & " + str(correctedWord2))
-        print("Word synsets: " + str(lowerWord1.words[0].synsets) + " & " + str(lowerWord2.words[0].synsets))
-        # print("Synset lengths: " + str(len(lowerWord1.words[0].synsets)) + " & " + str(len(lowerWord2.words[0].synsets)))
-        # if (len(lowerWord1.words[0].synsets) > 0) & (len(lowerWord2.words[0].synsets) > 0):
-        #     if lowerWord1.words[0].synsets[0].path_similarity(lowerWord2.words[0].synsets[0]) is not None:
-        #         print("Path similarity: " + str(lowerWord1.words[0].synsets[0].path_similarity(lowerWord2.words[0].synsets[0])))
-        # print("Corrected word synsets: " + str(correctedWord1.words[0].synsets) + " & " + str(
-        #     correctedWord2.words[0].synsets))
-        # if (len(correctedWord1.words[0].synsets) > 0) & (len(correctedWord2.words[0].synsets) > 0):
-        #     if correctedWord1.words[0].synsets[0].path_similarity(correctedWord2.words[0].synsets[0]) is not None:
+        print("Words: " + str(lowerFAQWord) + " & " + str(lowerInputWord))
+        print("Corrected word: " + str(correctedInputWord))
+        print("Word synsets: " + str(lowerFAQWord.words[0].synsets) + " & " + str(lowerInputWord.words[0].synsets))
+        # print("Synset lengths: " + str(len(lowerFAQWord.words[0].synsets)) + " & " + str(len(lowerInputWord.words[0].synsets)))
+        # if (len(lowerFAQWord.words[0].synsets) > 0) & (len(lowerInputWord.words[0].synsets) > 0):
+        #     if lowerFAQWord.words[0].synsets[0].path_similarity(lowerInputWord.words[0].synsets[0]) is not None:
+        #         print("Path similarity: " + str(lowerFAQWord.words[0].synsets[0].path_similarity(lowerInputWord.words[0].synsets[0])))
+        # print("Corrected word synsets: " + str(correctedFAQWord.words[0].synsets) + " & " + str(
+        #     correctedInputWord.words[0].synsets))
+        # if (len(correctedFAQWord.words[0].synsets) > 0) & (len(correctedInputWord.words[0].synsets) > 0):
+        #     if correctedFAQWord.words[0].synsets[0].path_similarity(correctedInputWord.words[0].synsets[0]) is not None:
         #         print("Path similarity: " + str(
-        #             correctedWord1.words[0].synsets[0].path_similarity(correctedWord2.words[0].synsets[0])))
+        #             correctedFAQWord.words[0].synsets[0].path_similarity(correctedInputWord.words[0].synsets[0])))
 
     return wordsAreSimilar
 

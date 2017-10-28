@@ -730,3 +730,73 @@ Response: Professor Goel
 
 Is the response correct (yes/no)?
 Type: True
+
+Input: who is professor goel
+Response: The professor for this class
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: what is the faq version
+Response: Version 20171021
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: who is the professor for this class
+Response: Professor Goel
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: goel
+Response: I do not know.
+Type: False
+
+Input: professor
+Response: I do not know.
+Type: False
+
+Input: professor goel
+Response: The professor for this class
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: teacher goel
+Response: The professor for this class
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: who is the teacher
+Response: The professor for this class
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: teacher for class
+Response: Professor Goel
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: teacher for
+Response: Professor Goel
+
+Is the response correct (yes/no)?
+Type: True
+
+Input: teacher
+Response: I do not know.
+Type: False
+
+Input: teacher course
+Response: I do not know.
+Type: False
+
+Input: teacher clas
+Response: Professor Goel
+
+Is the response correct (yes/no)?
+Type: True
