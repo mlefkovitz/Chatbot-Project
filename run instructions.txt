@@ -1,7 +1,0 @@
-Open cmd and copy the following line to open this folder:
-cd C:\Users\Myles\Documents\OMSCS\KBAI\Chatbot Project
-
-Run the tester or autograder using the following:
-py chatbotTester.py -f faq.txt -l testerlogfile.txt
-py chatbotAutograder.py -s script.txt -f faq.txt -l autograderlogfile.txt
-py chatbotAutograder2.py -s script.txt -f faq.txt -l autograder2logfile.txt

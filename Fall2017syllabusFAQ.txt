@@ -1,10 +1,9 @@
-What is the FAQ version?Version 20171021
+What is the FAQ version?Version 20171026
 What are the course components?The course has five components. Video Lessons, Exercises and Readings; Design, Programming and Reflection projects; Assignments and Examinations; Peer Feedback; and Announcements, Question Answering and Discussions.
 How long are the videos?This course has 26 videos with about 18 hours of instruction.
 How many hours of instruction for this class?This course has 26 videos with about 18 hours of instruction.
 How many exercises are in the videos?The videos have ~150 exercises and ~100 “tutors” embedded in them.
 Are there accompanying readings?Most lessons have an accompanying set of readings. While video lessons introduce the basic concepts and methods, the readings provide the detailed algorithms. The projects are accompanied with a reading list.
-Are there additional readings?Yes
 Who will give peer feedback?We will expect each student to give feedback on the work of 3 randomly selected peers for each of the 8 assignments. We will also select and share the best assignments, which will form another kind of peer feedback.
 Where do I go for announcements?We will use the Piazza forum for announcements, question answering, discussions, and collaboration.
 Do I need to log into Piazza regularly?It is important that you log into Piazza regularly and frequently (at least two or three times a week, daily if possible).

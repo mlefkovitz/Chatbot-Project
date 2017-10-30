@@ -2,7 +2,7 @@
 from textblob import TextBlob
 from operator import itemgetter
 
-def CBRChatBot(msg, answerList, wordTupList, uniqueWordSums ):
+def CBRChatBot(msg, answerList, wordTupList, uniqueWordSums, thresholdLearner ):
     printToWindow = False
     response = ''
 
@@ -10,19 +10,23 @@ def CBRChatBot(msg, answerList, wordTupList, uniqueWordSums ):
     newMsg = ExtractUnnecessaryWords(newMsg) # remove unnecessary words from the message
 
     answerTups = RelevantAnswerTuples(newMsg, uniqueWordSums, wordTupList, printToWindow) # find all questions with
-                            #... words that match a word in the message. Return tuples <AnswerID, score, sum(scores)>
+                            #... words that match a word in the message. Return tuples <AnswerID, weight, sum(weights)>
 
     uniqueAnswerList = ListUniqueAnswers(answerTups, printToWindow) # List unique answers relevant to the message
     uniqueAnswerScores = ScoreEachAnswer(answerTups, uniqueAnswerList, printToWindow) # Find the score for each answer
 
-    scoreThreshold = .5
+    if thresholdLearner == 'basic':
+        scoreThreshold = .5
+    else:
+        scoreThreshold = .6
+
     response = ReturnBestResponse(answerList, response, scoreThreshold, uniqueAnswerScores, printToWindow) #return best response
 
     return response;
 
 
-def SentenceSimilarityChatBot(msg, answerList, questionList, wordTupList, uniqueWordSums ):
-    printToWindow = False
+def SentenceSimilarityChatBot(msg, answerList, questionList, wordTupList, uniqueWordSums, thresholdLearner ):
+    printToWindow = True
     response = ''
 
     newMsg = TextBlob(msg) #convert the input string to TextBlob
@@ -30,7 +34,11 @@ def SentenceSimilarityChatBot(msg, answerList, questionList, wordTupList, unique
 
     similarSentences = SimilarQuestions(newMsg, questionList, printToWindow) # identify similarity between input message and each sentence
 
-    scoreThreshold = .45
+    if thresholdLearner == 'basic':
+        scoreThreshold = .45
+    else:
+        scoreThreshold = .5
+
     response = ReturnBestResponse(answerList, response, scoreThreshold, similarSentences, printToWindow) #return best response
 
     return response;
@@ -62,7 +70,7 @@ def sentenceSimilarity(faqSentence, inputSentence, printToWindow):
     # n(S) = number of content words in sentence S
     # Return similarity score
 
-    numberOfAlignedWords1 = numberOfAlignedWords(faqSentence, inputSentence, False)
+    numberOfAlignedWords1 = numberOfAlignedWordsWithMatchMethod(faqSentence, inputSentence, printToWindow)
 
     numberOfAlignedWords2 = numberOfAlignedWords1
     numberOfContentWords1 = len(faqSentence.words)
@@ -88,7 +96,8 @@ def numberOfAlignedWords(faqSentence, inputSentence, printToWindow):
         wordAligned = False
         for inputWords in inputMessageWords:
             if wordAligned == False:
-                if similarWords(faqWord, inputWords, printToWindow):
+                match, matchMethod = similarWords(faqWord, inputWords, printToWindow)
+                if match:
                     wordAligned = True
         if wordAligned:
             alignedWords = alignedWords + 1
@@ -97,29 +106,73 @@ def numberOfAlignedWords(faqSentence, inputSentence, printToWindow):
 
     return alignedWords
 
+def numberOfAlignedWordsWithMatchMethod(faqSentence, inputSentence, printToWindow):
+    # This method calculates the number of aligned words between two sentences.
+    # Return the number of aligned words between sentence 1 and 2
 
-def createInputWordTuple(inputSentence):
+    alignedWords = 0
+
+    inputMessageWords = createInputWordTuple(inputSentence) # <Word, lowerWord, correctedWord, wordSynset>
+
+    for faqWord in faqSentence.words:
+        wordAligned = False
+        matchMethod = ''
+        matchMethods = []
+        wordIdenticalMatch = False
+        for inputWords in inputMessageWords:
+            if wordIdenticalMatch == False:
+                match, matchMethod = similarWords(faqWord, inputWords, printToWindow)
+                if match:
+                    wordAligned = True
+                    if matchMethod == 'identical':
+                        matchMethodScore = 1
+                    elif matchMethod == 'corrected':
+                        matchMethodScore = 1
+                    elif matchMethod == 'singularized':
+                        matchMethodScore = 1
+                    elif matchMethod == 'similarity':
+                        matchMethodScore = .4
+
+                    matchMethods.append(matchMethodScore)
+
+                    if matchMethod == 'identical':
+                        wordIdenticalMatch
+        if wordAligned:
+            alignedWords = alignedWords + max(matchMethods)
+        if printToWindow:
+            print("Sentence1 word: " + str(faqWord) + " is aligned? " + str(wordAligned))
+
+    return alignedWords
+
+def createInputWordTuple(inputSentence, useSynsets = True):
+    #This method creates a tuple for each word in the inputSentence
+    correctedInputWordSynsets = ''
+
     inputMessageWords = []  # input Words
     # <Word, lowerWord, correctedWord, wordSynset>
     for inputWord in inputSentence.words:
         tbInputWord = TextBlob(inputWord)
         lowerInputWord = tbInputWord.lower()
         correctedInputWord = lowerInputWord.correct()
-        correctedInputWordSynsets = correctedInputWord.words[0].synsets
+        if useSynsets:
+            correctedInputWordSynsets = correctedInputWord.words[0].synsets
         inputMessageWords.append((inputWord, lowerInputWord, correctedInputWord, correctedInputWordSynsets))
+
     return inputMessageWords
 
 
-def similarWords(faqWord, inputWords, printToWindow):
+def similarWords(faqWord, inputWords, printToWindow, useSynsets = True):
     # This method identifies whether two words are similar
     # Return True or False
 
+    similarPath = False
+    matchMethod = ''
     tbFaqWord = TextBlob(faqWord)
-    tbInputWord = inputWords[0]
     lowerFAQWord = tbFaqWord.lower()
     lowerInputWord = inputWords[1]
     correctedInputWord = inputWords[2]
-    FAQWordSynset = lowerFAQWord.words[0].synsets
+    if useSynsets:
+        FAQWordSynset = lowerFAQWord.words[0].synsets
 
     # print("Words and Synset Lengths: " + str(lowerFAQWord) + "(" + str(len(lowerFAQWord.words[0].synsets)) + ") & " + str(
     #     lowerInputWord) + "(" + str(len(lowerInputWord.words[0].synsets)) + ") ")
@@ -127,37 +180,33 @@ def similarWords(faqWord, inputWords, printToWindow):
     wordsAreSimilar = False
     if lowerFAQWord == lowerInputWord:
         wordsAreSimilar = True
+        matchMethod = 'identical'
     elif lowerFAQWord == correctedInputWord:
         wordsAreSimilar = True
+        matchMethod = 'corrected'
     elif lowerFAQWord.words.singularize() == correctedInputWord.words.singularize():
         wordsAreSimilar = True
-    elif len(FAQWordSynset) > 0:
-        #correctInputWordSynsets = correctedInputWord.words[0].synsets
-        correctInputWordSynsets = inputWords[3]
-        if len(correctInputWordSynsets) > 0:
-            # print("Compare Synsets: " + str(correctedFAQWord.words[0].synsets[0].path_similarity(correctedInputWord.words[0].synsets[0])))
-            correctedWordPathSimilarity = FAQWordSynset[0].path_similarity(correctInputWordSynsets[0])
-            if correctedWordPathSimilarity is not None:
-                if correctedWordPathSimilarity >= 0.25:
-                    wordsAreSimilar = True
+        matchMethod = 'singularized'
+    elif useSynsets:
+        if len(FAQWordSynset) > 0:
+            #correctInputWordSynsets = correctedInputWord.words[0].synsets
+            correctInputWordSynsets = inputWords[3]
+            if len(correctInputWordSynsets) > 0:
+                # print("Compare Synsets: " + str(correctedFAQWord.words[0].synsets[0].path_similarity(correctedInputWord.words[0].synsets[0])))
+                correctedWordSimilarity = FAQWordSynset[0].wup_similarity(correctInputWordSynsets[0])
+                if correctedWordSimilarity is not None:
+                    if correctedWordSimilarity >= 0.65:
+                        wordsAreSimilar = True
+                        similarPath = True
+                        matchMethod = 'similarity'
 
     # printToWindow = True
     if printToWindow & wordsAreSimilar:
-        print("Words: " + str(lowerFAQWord) + " & " + str(lowerInputWord))
-        print("Corrected word: " + str(correctedInputWord))
-        print("Word synsets: " + str(lowerFAQWord.words[0].synsets) + " & " + str(lowerInputWord.words[0].synsets))
-        # print("Synset lengths: " + str(len(lowerFAQWord.words[0].synsets)) + " & " + str(len(lowerInputWord.words[0].synsets)))
-        # if (len(lowerFAQWord.words[0].synsets) > 0) & (len(lowerInputWord.words[0].synsets) > 0):
-        #     if lowerFAQWord.words[0].synsets[0].path_similarity(lowerInputWord.words[0].synsets[0]) is not None:
-        #         print("Path similarity: " + str(lowerFAQWord.words[0].synsets[0].path_similarity(lowerInputWord.words[0].synsets[0])))
-        # print("Corrected word synsets: " + str(correctedFAQWord.words[0].synsets) + " & " + str(
-        #     correctedInputWord.words[0].synsets))
-        # if (len(correctedFAQWord.words[0].synsets) > 0) & (len(correctedInputWord.words[0].synsets) > 0):
-        #     if correctedFAQWord.words[0].synsets[0].path_similarity(correctedInputWord.words[0].synsets[0]) is not None:
-        #         print("Path similarity: " + str(
-        #             correctedFAQWord.words[0].synsets[0].path_similarity(correctedInputWord.words[0].synsets[0])))
+        print("Words: " + str(lowerFAQWord) + " & " + str(lowerInputWord) + " (" + str(matchMethod) + ")")
+        if similarPath:
+           print("Synset path similarity: " + str(correctedWordSimilarity))
 
-    return wordsAreSimilar
+    return wordsAreSimilar, matchMethod
 
 
 def ReturnBestResponse(answerList, response, scoreThreshold, uniqueAnswerScores, printToWindow):
@@ -224,18 +273,21 @@ def RelevantAnswerTuples(newMsg, uniqueWordSums, wordTupList, printToWindow):
     # This method finds all questions with words that match a word in the message.
     # Return tuples <AnswerID, score, sum(scores)>
     answerTups = []
-    for words in newMsg.words:
+
+    inputMessageWords = createInputWordTuple(newMsg)  # <Word, lowerWord, correctedWord, wordSynset>
+
+    for words in inputMessageWords:
         if printToWindow:
-            print("Input word: " + words)
-        for tuples in wordTupList:
+            print("Input word: " + str(words))
+        for tuples in wordTupList: #<word, answerID, probability>
             # if tuples[0].lower() == words.lower():
-            if similarWords(tuples[0],words,printToWindow):
-                for uniqueWordTuples in uniqueWordSums:
-                    if uniqueWordTuples[0].lower() == words.lower():
+            if similarWords(tuples[0],words,printToWindow, False):
+                for uniqueWordTuples in uniqueWordSums: # <word, SUM(score)>
+                    if uniqueWordTuples[0].lower() == tuples[0].lower():
                         wordLikelihood = uniqueWordTuples[1]
+                        answerTups.append((tuples[1], str(tuples[2]), wordLikelihood))
                 if printToWindow:
-                    print("word, answer, and scores: " + str(tuples))
-                answerTups.append((tuples[1], str(tuples[2]), wordLikelihood))
+                    print("word, answerID, and probability: " + str(tuples))
     if printToWindow:
         print("Answers, scores, and likelihood modifiers, for all words: " + str(answerTups))
     return answerTups
