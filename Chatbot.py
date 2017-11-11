@@ -1,72 +1,73 @@
 """
-Chatbot class
-This is the entry point and exit point for your chatbot. 
+Chatbot class - Updated 11/05/2017
+This is the entry point and exit point for your chatbot.
 Do not change this API. If it it changes your chatbot will
 not be compatible with the autograder.
 
-I highly recommend just calling your code from this file 
+https://www.python.org/dev/peps/pep-0008/
+function_names and variable:
+lowercase with words separated by underscores as necessary to improve readability.
+Class names should normally use the CapWords convention (yea!).
+"Private" viariables start with _
+Spaces are the preferred indentation method.
+80 characters per line - Is this the 1980's?
+I have not used a line printer since college
+
+I highly recommend just calling your code from this file
 (put your chatbot code in another file) in case we need to
 change this file during the project.
 """
-from ChatboxAI import *
+
 
 class Chatbot:
 
-    def __init__(self,FAQPathFilename):
-        printToWindow = False
-
-        answerList, questionList = ReadFAQFile(FAQPathFilename)  # read the FAQ
-        wordTupList = RelevantWordTuples(questionList, printToWindow)  # extract to tuples <word, answerID, weight>
-        uniqueWordsList = FindUniqueWords(wordTupList, printToWindow)  # find unique words
-        uniqueWordSums = ScoreUniqueWords(wordTupList, uniqueWordsList, printToWindow)  # <word, SUM(weight)>
-
-        self.answerList = answerList
-        self.questionList = questionList
-        self.wordTupList = wordTupList
-        self.uniqueWordsList = uniqueWordsList
-        self.uniqueWordSums = uniqueWordSums
-
-        self.count = 0
-        self.yes = 0
-        self.learningScoreThreshold = 'basic'
+    def __init__(self, faq_path_filename):
+        # faq_path_filename is string containing
+        # path and filename to text corpus in FAQ format.
+        # Note: You MUST use encoding="utf-8" to properly decode the FAQ
+        self.faq_path_filename = faq_path_filename
+        with open(faq_path_filename, "r", encoding="utf-8") as f:  # Example code
+            self.faq_as_list = f.readlines()                       # Example code
+        # TODO: Open FAQ using encoding="utf-8" and parse question,answers
+        #       into knowledge base.
         return
 
-    def UserFeedback(self,yesorno):
-        self.count = self.count + 1
-        if yesorno == "yes":
-            self.yes = self.yes + 1
+    # user_feedback(yesorno : boolean, correct_response : string):
+    #      yesorno = True - Your previous response was correct
+    #                False - Your previous response was incorrect
+    #     updated_response = Response to ADD to FAQ
+    def user_feedback(self, yesorno, updated_response):
+        # TODO:
+        # if yesorno == True, you answered the prvious question correctly
+        # if yesorno == False, you answered the previous question incorrectly
+        # if updated_response != "", you need to update the previous response in the FAQ
+        # You WILL get feedback after EVERY question
+        if updated_response:
+            print("Updating FAQ: "+updated_response)  # Example code
         return
 
-    def InputOutput(self,msg):
-        # msg is text to chatbot: question or "yes" or "no"
-        # return expect response from user, agent response
-        # return True,  response text as string
-        # return False, "I do not know"
-
-        if msg == "Who are you?" or msg == "Who are you":
-            return False, "Myles Lefkovitz, gth836x, 901929700, " + self.FAQPathFilename
-
-        # Learning portion of the agent
-        if self.count >= 10:
-            proportionCorrect = self.yes / self.count
-            if proportionCorrect >= 0.50:
-                self.learningScoreThreshold = 'basic'
-            else:
-                self.learningScoreThreshold = 'increased'
-
-        # response = CBRChatBot(msg, self.answerList, self.wordTupList, self.uniqueWordSums, self.learningScoreThreshold)
-        response = SentenceSimilarityChatBot(msg, self.answerList, self.questionList, self.wordTupList, self.uniqueWordSums, self.learningScoreThreshold)
+    # input_output(msg : string) :        response : string
+    #      msg          =  string from user (will not have ? at end)(no case guarantee)
+    #      response = Text response from FAQ
+    def input_output(self, msg):
+        # TODO: Insert calls to your chatbot here
+        #       Your chatbot should return '' if
+        #       it does not have an answer.
+        response = ''
+        for qa in self.faq_as_list:              # Example code
+            if len(qa.split('?')) < 2: continue  # Example code
+            question = qa.split('?')[0]          # Example code
+            answer = qa.split('?')[1]            # Example code
+            if question == msg:                  # Example code
+                response = answer                # Example code
+                break                            # Example code
 
         # You should not need to change any of the code below
         # this line.
 
         # If your agent does not know the answer
         if not response:
-            return False,"I do not know."
+            return "I do not know."
 
         # If your agent knows the answer
-        # True indicates your agent is expecting a "yes" or "no" from the user
-        # in the next call to Chatbot()
-        # Do not change this return statement
-        return True, response + "\nIs the response correct (yes/no)?"
-
+        return response

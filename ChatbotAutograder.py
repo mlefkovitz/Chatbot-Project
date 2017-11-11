@@ -1,75 +1,80 @@
 """
-Chatbot Autograder.
+Chatbot Autograder - Updated 11/05/2017
 Please use this file to test your Chatbot class.
+
+https://www.python.org/dev/peps/pep-0008/
+function_names and variable:
+lowercase with words separated by underscores as necessary to improve readability.
+Class names should normally use the CapWords convention (yea!).
+"Private" viariables start with _
+Spaces are the preferred indentation method.
+80 characters per line - Is this the 1980's?
+I have not used a line printer since college
 
 Usage: chatbotTester.py -f faq -l <log filename>
 """
-import sys, getopt, os
+
+
+import sys, getopt, json
 import Chatbot
 
 
-def ChatbotAutograder(ScriptFilename,FAQFilename,LogFilename):
+def ChatbotAutograder(script_filename, faq_filename, log_filename):
     print(__doc__.split('.')[0])
 
     try:
-        with open(ScriptFilename,"r", encoding="utf-8") as f:
-            scriptFileasList = f.readlines()
-    except FileNotFoundError:
-        print("Could not find script.")
-        return 1
+        with open(script_filename, encoding='utf-8') as json_data:
+            autograder_test_script_as_list_of_dicts = json.load(json_data)
+    except:
+            print("Failure opening AutograderScript json file")
+            return 1
 
     try:
-        chatbot = Chatbot.Chatbot(FAQFilename)
+        chatbot = Chatbot.Chatbot(faq_filename)
     except FileNotFoundError:
         print("Could not find FAQ.")
         return 1
 
-    if LogFilename:
-        print("Loggin to file: "+LogFilename)
-        logFile = open(LogFilename,"a")
+    if log_filename:
+        print("Loggin to file: "+log_filename)
+        log_file = open(log_filename, "w")
 
     score = 0.0
-    for qa in scriptFileasList:
-        question = qa.split('?')[0]
-        answer =qa.split('?')[1]
-        # We open and close the file to avoid loosing data if we crash
-        if LogFilename:
-            logFile = open(LogFilename,"a")
-
-        Type,response = chatbot.InputOutput(question)
+    for qa_dict in autograder_test_script_as_list_of_dicts:
+        response = chatbot.input_output(qa_dict["questions"][0]).split('\n')[0]
         action = "0.0"
-        if Type == True:
-            if response.split('\n')[0] == answer.split('\n')[0]:
-                score += 1.0
-                action = "1.0"
-                chatbot.UserFeedback("yes")
-            else:
-                score -= 0.1
-                action = "-0.1"
-                chatbot.UserFeedback("no")
+        if "replace" in qa_dict:
+            replace = qa_dict["replace"]
+        else:
+            replace = ""
+        if response == qa_dict["response"]:
+            score += 1.0
+            action = "1.0"
+            chatbot.user_feedback(True, replace)
+        else:
+            score -= 0.5
+            action = "-0.5"
+            chatbot.user_feedback(False, replace)
 
-        if LogFilename:
-            logFile.write("\nInput: "+question)
-            logFile.write("\nResponse: "+response)
-            logFile.write("\nCorrect: "+answer)
-            logFile.write("\nType: "+str(Type))
-            logFile.write("\nAction: "+action)
-            logFile.write("\n")
-            logFile.close()
+        if log_filename:
+            log_file.write("\nTest Question: "+qa_dict["questions"][0])
+            log_file.write("\nAgent Response: "+response)
+            log_file.write("\nTest Answer: "+qa_dict["response"])
+            log_file.write("\nTest Replace: "+replace)
+            log_file.write("\nAction: "+action)
+            log_file.write("\n")
 
-        print()
-        print("Response: "+response)
-        if not Type: print()
-        print()
+    log_file.close()
     print("Score:", score)
+
 
 def main(argv):
     # https://www.tutorialspoint.com/python/python_command_line_arguments.htm
-    FAQFilename = ''
-    LogFilename = ''
-    ScriptFilename = ''
+    faq_filename = ''
+    log_filename = ''
+    script_filename = ''
     try:
-        opts, args = getopt.getopt(argv,"hs:f:l:",["script=","faq=","log="])
+        opts, args = getopt.getopt(argv, "hs:f:l:", ["script=", "faq=", "log="])
     except getopt.GetoptError:
         print("Usage: chatbotAutograder.py -s script -f faq -l <log filename>")
         sys.exit(1)
@@ -78,21 +83,22 @@ def main(argv):
             print("Usage: chatbotAutograder.py -s script -f faq -l <log filename>")
             sys.exit()
         elif opt in ("-f", "--faq"):
-            FAQFilename = arg
+            faq_filename = arg
         elif opt in ("-l", "--log"):
-            LogFilename = arg
+            log_filename = arg
         elif opt in ("-s", "--script"):
-            ScriptFilename = arg
+            script_filename = arg
 
-    if not FAQFilename:
+    if not faq_filename:
         print("Usage: chatbotAutograder.py -s script -f faq -l <log filename>")
         sys.exit(2)
 
-    if not ScriptFilename:
+    if not script_filename:
         print("Usage: chatbotAutograder.py -s script -f faq -l <log filename>")
         sys.exit(3)
 
-    return ChatbotAutograder(ScriptFilename,FAQFilename,LogFilename)
+    return ChatbotAutograder(script_filename, faq_filename, log_filename)
+
 
 if __name__ == '__main__':
     sys.exit(main(sys.argv[1:]))
