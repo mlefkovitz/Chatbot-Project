@@ -19,25 +19,16 @@ change this file during the project.
 """
 
 from ChatboxAI import *
+from ChatbotCorpus import *
+from CBRChatBot import *
 
 class Chatbot:
 
     def __init__(self, faq_path_filename):
-        # # faq_path_filename is string containing
-        # # path and filename to text corpus in FAQ format.
-        # # Note: You MUST use encoding="utf-8" to properly decode the FAQ
-        # self.faq_path_filename = faq_path_filename
-        # with open(faq_path_filename, "r", encoding="utf-8") as f:  # Example code
-        #     self.faq_as_list = f.readlines()                       # Example code
-        # # TODO: Open FAQ using encoding="utf-8" and parse question,answers
-        # #       into knowledge base.
-
         print_to_window = False
 
         answer_list, question_list = ReadFAQFile(faq_path_filename)  # read the FAQ
-        word_tup_list = RelevantWordTuples(question_list, print_to_window)  # extract to tuples <word, answerID, weight>
-        unique_words_list = FindUniqueWords(word_tup_list, print_to_window)  # find unique words
-        unique_word_sums = ScoreUniqueWords(word_tup_list, unique_words_list, print_to_window)  # <word, SUM(weight)>
+        word_tup_list, unique_words_list, unique_word_sums = InitializeWordLists(question_list, print_to_window)
 
         self.answer_list = answer_list
         self.question_list = question_list
@@ -61,16 +52,28 @@ class Chatbot:
         # if yesorno == False, you answered the previous question incorrectly
         # if updated_response != "", you need to update the previous response in the FAQ
         # You WILL get feedback after EVERY question
+
+        self.count = self.count + 1
+        if yesorno == "yes":
+            self.yes = self.yes + 1
+
         if updated_response:
-            print("Updating FAQ: "+updated_response)  # Example code
+            print("Question: " + self.current_question)  # Example code
+            print("Updating FAQ: " + updated_response)  # Example code
+            answer_list, question_list = AddToCorpus(self.current_question, updated_response, self.answer_list, self.question_list)
+            word_tup_list, unique_words_list, unique_word_sums = InitializeWordLists(question_list, False)
+            self.answer_list = answer_list
+            self.question_list = question_list
+            self.word_tup_list = word_tup_list
+            self.unique_words_list = unique_words_list
+            self.unique_word_sums = unique_word_sums
         return
 
     # input_output(msg : string) :        response : string
     #      msg          =  string from user (will not have ? at end)(no case guarantee)
     #      response = Text response from FAQ
     def input_output(self, msg):
-        if msg == "Who are you?" or msg == "Who are you":
-            return False, "Myles Lefkovitz, gth836x, 901929700, " + self.faq_path_filename
+        self.current_question = msg
 
         # Learning portion of the agent
         if self.count >= 10:
@@ -80,8 +83,8 @@ class Chatbot:
             else:
                 self.learning_score_threshold = 'increased'
 
-        # response = CBRChatBot(msg, self.answer_list, self.word_tup_list, self.unique_word_sums, self.learning_score_threshold)
-        response = SentenceSimilarityChatBot(msg, self.answer_list, self.question_list, self.word_tup_list, self.unique_word_sums, self.learning_score_threshold)
+        response = CBRChatBot(msg, self.answer_list, self.word_tup_list, self.unique_word_sums, self.learning_score_threshold)
+        # response = SentenceSimilarityChatBot(msg, self.answer_list, self.question_list, self.word_tup_list, self.unique_word_sums, self.learning_score_threshold)
 
         # You should not need to change any of the code below
         # this line.
