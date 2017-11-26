@@ -38,6 +38,13 @@ def ChatbotAutograder(script_filename, faq_filename, log_filename):
     if log_filename:
         print("Logging to file: "+log_filename)
         log_file = open(log_filename, "w")
+        log_file.write("\"#" + "\",")
+        log_file.write("\"Test Question" + "\",")
+        log_file.write("\"Agent Response" + "\",")
+        log_file.write("\"Test Answer" + "\",")
+        log_file.write("\"Test Replace" + "\",")
+        log_file.write("\"Action" + "\",")
+        log_file.write("\n")
 
     score = 0.0
     total_questions = 0
@@ -46,7 +53,6 @@ def ChatbotAutograder(script_filename, faq_filename, log_filename):
     wrong_answers = []
     for qa_dict in autograder_test_script_as_list_of_dicts:
         response = chatbot.input_output(qa_dict["questions"][0]).split('\n')[0]
-        action = "0.0"
         total_questions += 1
         if "replace" in qa_dict:
             replace = qa_dict["replace"]
@@ -66,22 +72,21 @@ def ChatbotAutograder(script_filename, faq_filename, log_filename):
                                   '3_actual_answer': response.split('\n')[0]})
 
         if log_filename:
-            log_file.write("\nTest Question: "+qa_dict["questions"][0])
-            log_file.write("\nAgent Response: "+response)
-            log_file.write("\nTest Answer: "+qa_dict["response"])
-            log_file.write("\nTest Replace: "+replace)
-            log_file.write("\nAction: "+action)
+            log_file.write("\"" + str(total_questions) + "\",")
+            log_file.write("\"" + qa_dict["questions"][0] + "\",")
+            log_file.write("\"" + response + "\",")
+            log_file.write("\"" + qa_dict["response"] + "\",")
+            log_file.write("\"" + replace + "\",")
+            log_file.write("\"" + action + "\",")
             log_file.write("\n")
 
     if log_filename:
-        # log_file = open(log_filename,"a")
-        log_file.write("\nScore: " + str(score))
-        log_file.write("\nTotal Questions: " + str(total_questions))
-        log_file.write("\nTotal Correct: " + str(total_correct))
-        log_file.write("\nTotal Wrong: " + str(total_wrong))
-        if total_wrong > 0:
-            log_file.write("\nWrong Answer Breakdown:\n")
-            pprint.pprint(wrong_answers, log_file)
+        log_file.write("\"Totals\",")
+        log_file.write("\"" + "Total Questions: " + str(total_questions) + "\",")
+        log_file.write("\"" + "Total Wrong: " + str(total_wrong) + "\",")
+        log_file.write("\"" + "Total Correct: " + str(total_correct) + "\",")
+        log_file.write("\"" + "\",")
+        log_file.write("\"" + "Score: " + str(score) + "\",")
         log_file.write("\n")
         log_file.close()
     print("Score:", str(score))
