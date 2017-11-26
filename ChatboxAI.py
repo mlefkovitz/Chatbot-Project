@@ -85,7 +85,7 @@ def createInputWordTuple(input_sentence, use_synsets = True):
     return input_message_words
 
 
-def ReturnBestResponse(answer_list, response, score_threshold, unique_answer_scores, print_to_window):
+def ReturnBestResponse(answer_list, response, score_threshold, unique_answer_scores, print_to_window, extra_output = False):
     # This method identifies the highest scoring response and returns it
     # Return the best scoring response
     if len(unique_answer_scores) == 0:
@@ -112,7 +112,11 @@ def ReturnBestResponse(answer_list, response, score_threshold, unique_answer_sco
     # To be returned, a response must exceed the "scoreThreshold" and must differ from the 2nd highest scoring response
     if best_answer_score >= score_threshold and top_two_score_difference > top_two_score_threshold:
         response = answer_list[best_answer_id]
-    return response
+
+    if extra_output:
+        return response, best_answer_id, best_answer_score
+    else:
+        return response
 
 
 def ExtractUnnecessaryWords(set_of_words, print_to_window = False):

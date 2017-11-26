@@ -1,7 +1,7 @@
 
 from ChatboxAI import *
 
-def CBRChatBot(msg, answer_list, word_tup_list, unique_word_sums, threshold_learner):
+def CBRChatBot(msg, answer_list, word_tup_list, unique_word_sums, threshold_learner, extra_output = False):
     print_to_window = False
     response = ''
 
@@ -27,9 +27,15 @@ def CBRChatBot(msg, answer_list, word_tup_list, unique_word_sums, threshold_lear
     else:
         score_threshold = .6
 
-    response = ReturnBestResponse(answer_list, response, score_threshold, unique_answer_scores, print_to_window) #return best response
-
-    return response;
+    if extra_output:
+        response, selected_answer_id, selected_answer_score = ReturnBestResponse(answer_list, response, score_threshold,
+                                                                                 unique_answer_scores, print_to_window,
+                                                                                 extra_output)  # return best response
+        selected_answer_confidence = selected_answer_score/(1 + selected_answer_score)
+        return response, selected_answer_id, selected_answer_confidence
+    else:
+        response = ReturnBestResponse(answer_list, response, score_threshold, unique_answer_scores, print_to_window, extra_output)  # return best response
+        return response
 
 def ScoreEachAnswer(answer_tups, unique_answer_list, print_to_window):
     # This method finds the normalized score associated with each answer

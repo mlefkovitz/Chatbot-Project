@@ -1,7 +1,7 @@
 
 from ChatboxAI import *
 
-def SentenceSimilarityChatBot(msg, answer_list, question_list, wordTupList, uniqueWordSums, threshold_learner):
+def SentenceSimilarityChatBot(msg, answer_list, question_list, wordTupList, uniqueWordSums, threshold_learner, extra_output = False):
     print_to_window = False
     response = ''
 
@@ -15,9 +15,14 @@ def SentenceSimilarityChatBot(msg, answer_list, question_list, wordTupList, uniq
     else:
         score_threshold = .5
 
-    response = ReturnBestResponse(answer_list, response, score_threshold, similar_sentences, print_to_window) #return best response
-
-    return response;
+    if extra_output:
+        response, selected_answer_id, selected_answer_score = ReturnBestResponse(answer_list, response, score_threshold,
+                                                                                 similar_sentences, print_to_window,
+                                                                                 extra_output)  # return best response
+        return response, selected_answer_id, selected_answer_score
+    else:
+        response = ReturnBestResponse(answer_list, response, score_threshold, similar_sentences, print_to_window, extra_output)  # return best response
+        return response
 
 
 def SimilarQuestions(input_msg, question_list, print_to_window):

@@ -16,7 +16,7 @@ Usage: chatbotTester.py -f faq -l <log filename>
 
 
 import sys, getopt, json
-import Chatbot
+import ChatbotExtraOutput
 import pprint
 
 def ChatbotAutograder(script_filename, faq_filename, log_filename):
@@ -30,7 +30,7 @@ def ChatbotAutograder(script_filename, faq_filename, log_filename):
             return 1
 
     try:
-        chatbot = Chatbot.Chatbot(faq_filename)
+        chatbot = ChatbotExtraOutput.Chatbot(faq_filename)
     except FileNotFoundError:
         print("Could not find FAQ.")
         return 1
@@ -44,6 +44,8 @@ def ChatbotAutograder(script_filename, faq_filename, log_filename):
         log_file.write("\"Test Answer" + "\",")
         log_file.write("\"Test Replace" + "\",")
         log_file.write("\"Action" + "\",")
+        log_file.write("\"Agent Answer Choice ID" + "\",")
+        log_file.write("\"Agent Answer Confidence" + "\",")
         log_file.write("\n")
 
     score = 0.0
@@ -52,7 +54,11 @@ def ChatbotAutograder(script_filename, faq_filename, log_filename):
     total_wrong = 0
     wrong_answers = []
     for qa_dict in autograder_test_script_as_list_of_dicts:
-        response = chatbot.input_output(qa_dict["questions"][0]).split('\n')[0]
+        # selected_answer_id = 0
+        # selected_answer_score = 0
+        response, selected_answer_id, selected_answer_score = chatbot.input_output(qa_dict["questions"][0])
+        # response = chatbot.input_output(qa_dict["questions"][0])
+        response = response.split('\n')[0]
         total_questions += 1
         if "replace" in qa_dict:
             replace = qa_dict["replace"]
@@ -78,6 +84,8 @@ def ChatbotAutograder(script_filename, faq_filename, log_filename):
             log_file.write("\"" + qa_dict["response"] + "\",")
             log_file.write("\"" + replace + "\",")
             log_file.write("\"" + action + "\",")
+            log_file.write("\"" + str(selected_answer_id) + "\",")
+            log_file.write("\"" + str(selected_answer_score) + "\",")
             log_file.write("\n")
 
     if log_filename:
