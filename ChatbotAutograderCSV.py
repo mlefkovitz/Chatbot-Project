@@ -44,8 +44,11 @@ def ChatbotAutograder(script_filename, faq_filename, log_filename):
         log_file.write("\"Test Answer" + "\",")
         log_file.write("\"Test Replace" + "\",")
         log_file.write("\"Action" + "\",")
-        log_file.write("\"Agent Answer Choice ID" + "\",")
-        log_file.write("\"Agent Answer Confidence" + "\",")
+        log_file.write("\"Selected Chat Bot" + "\",")
+        log_file.write("\"SS Answer Choice ID" + "\",")
+        log_file.write("\"SS Answer Confidence" + "\",")
+        log_file.write("\"CBR Answer Choice ID" + "\",")
+        log_file.write("\"CBR Answer Confidence" + "\",")
         log_file.write("\n")
 
     score = 0.0
@@ -54,9 +57,11 @@ def ChatbotAutograder(script_filename, faq_filename, log_filename):
     total_wrong = 0
     wrong_answers = []
     for qa_dict in autograder_test_script_as_list_of_dicts:
-        # selected_answer_id = 0
-        # selected_answer_score = 0
-        response, selected_answer_id, selected_answer_score = chatbot.input_output(qa_dict["questions"][0])
+        # SSselected_answer_id = 0
+        # SSselected_answer_score = 0
+        # CBRselected_answer_id = 0
+        # CBRselected_answer_score = 0
+        response, SSselected_answer_id, SSselected_answer_score, CBRselected_answer_id, CBRselected_answer_score, selected_chat_bot= chatbot.input_output(qa_dict["questions"][0])
         # response = chatbot.input_output(qa_dict["questions"][0])
         response = response.split('\n')[0]
         total_questions += 1
@@ -84,8 +89,11 @@ def ChatbotAutograder(script_filename, faq_filename, log_filename):
             log_file.write("\"" + qa_dict["response"] + "\",")
             log_file.write("\"" + replace + "\",")
             log_file.write("\"" + action + "\",")
-            log_file.write("\"" + str(selected_answer_id) + "\",")
-            log_file.write("\"" + str(selected_answer_score) + "\",")
+            log_file.write("\"" + selected_chat_bot + "\",")
+            log_file.write("\"" + str(SSselected_answer_id) + "\",")
+            log_file.write("\"" + str(SSselected_answer_score) + "\",")
+            log_file.write("\"" + str(CBRselected_answer_id) + "\",")
+            log_file.write("\"" + str(CBRselected_answer_score) + "\",")
             log_file.write("\n")
 
     if log_filename:

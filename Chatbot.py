@@ -18,9 +18,8 @@ I highly recommend just calling your code from this file
 change this file during the project.
 """
 
-from ChatboxAI import *
 from ChatbotCorpus import *
-from CBRChatBot import *
+from EnsembleChatBot import *
 
 class Chatbot:
 
@@ -83,8 +82,8 @@ class Chatbot:
             else:
                 self.learning_score_threshold = 'increased'
 
-        response = CBRChatBot(msg, self.answer_list, self.word_tup_list, self.unique_word_sums, self.learning_score_threshold)
-        # response = SentenceSimilarityChatBot(msg, self.answer_list, self.question_list, self.word_tup_list, self.unique_word_sums, self.learning_score_threshold)
+        response = EnsembleChatBot(msg, self.answer_list, self.question_list, self.word_tup_list, self.unique_word_sums,
+                              self.learning_score_threshold)
 
         # You should not need to change any of the code below
         # this line.

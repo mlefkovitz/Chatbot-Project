@@ -31,7 +31,7 @@ def CBRChatBot(msg, answer_list, word_tup_list, unique_word_sums, threshold_lear
         response, selected_answer_id, selected_answer_score = ReturnBestResponse(answer_list, response, score_threshold,
                                                                                  unique_answer_scores, print_to_window,
                                                                                  extra_output)  # return best response
-        selected_answer_confidence = selected_answer_score/(1 + selected_answer_score)
+        selected_answer_confidence = selected_answer_score/(1 + selected_answer_score) #Use a sigmoid function to return confidence in the range of 0 to 1
         return response, selected_answer_id, selected_answer_confidence
     else:
         response = ReturnBestResponse(answer_list, response, score_threshold, unique_answer_scores, print_to_window, extra_output)  # return best response

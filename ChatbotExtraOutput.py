@@ -19,8 +19,7 @@ change this file during the project.
 """
 
 from ChatbotCorpus import *
-from CBRChatBot import *
-from SentenceSimilarityChatBot import *
+from EnsembleChatBot import *
 
 
 class Chatbot:
@@ -86,19 +85,16 @@ class Chatbot:
 
         extra_output = True
         if extra_output:
-            # response, selected_answer_id, selected_answer_score = CBRChatBot(msg, self.answer_list, self.word_tup_list, self.unique_word_sums, self.learning_score_threshold, extra_output)
-            response, selected_answer_id, selected_answer_score  = SentenceSimilarityChatBot(msg, self.answer_list, self.question_list, self.word_tup_list,
-                                                                                             self.unique_word_sums, self.learning_score_threshold, extra_output)
-        else:
-            # response = CBRChatBot(msg, self.answer_list, self.word_tup_list, self.unique_word_sums, self.learning_score_threshold, extra_output)
-            response = SentenceSimilarityChatBot(msg, self.answer_list, self.question_list, self.word_tup_list, self.unique_word_sums, self.learning_score_threshold)
+            response, SSselected_answer_id, SSselected_answer_score, CBRselected_answer_id,  CBRselected_answer_score, selected_chat_bot = \
+                EnsembleChatBot(msg, self.answer_list, self.question_list, self.word_tup_list, self.unique_word_sums,
+                                self.learning_score_threshold, extra_output)
 
-        if extra_output:
             if not response:
-                return "I do not know.", selected_answer_id, selected_answer_score
-
-            return response, selected_answer_id, selected_answer_score
+                return "I do not know.", SSselected_answer_id, SSselected_answer_score, CBRselected_answer_id,  CBRselected_answer_score, selected_chat_bot
+            return response, SSselected_answer_id, SSselected_answer_score, CBRselected_answer_id,  CBRselected_answer_score,selected_chat_bot
         else:
+            response = EnsembleChatBot(msg, self.answer_list, self.question_list, self.word_tup_list, self.unique_word_sums,
+                                self.learning_score_threshold, extra_output)
             # You should not need to change any of the code below
             # this line.
 
