@@ -5,7 +5,7 @@ Myles Lefkovitz
 
 gth836x
 
-![Live Chatbot](Chatbot Live Recording.gif)
+![Live Chatbot](Chatbot%20Live%20Recording.gif)
 
 ## About
 
