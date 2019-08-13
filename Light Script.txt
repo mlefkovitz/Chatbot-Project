@@ -1,0 +1,7 @@
+Q1: Who is the professor for this class?
+
+Q2: How many exams are there?
+
+Q3: Are the readings mandatory?
+
+Q4: What version is this FAQ?

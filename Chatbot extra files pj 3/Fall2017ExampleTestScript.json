@@ -1,0 +1,102 @@
+[
+    {
+        "questions":["What is the assignment 1 due date"],
+        "response":"Week of August 28th"
+    },
+    {
+        "questions":["Which week is assignment 2 due"],
+        "response":"Week of September 25th"
+    },
+    {
+        "questions":["What is the date that assignment 3 is due"],
+        "response":"Week of October 30th"
+    },
+    {
+        "questions":["Who is the professor for KBAI"],
+        "response":"Professor Goel"
+    },
+    {
+        "questions":["Who is doctor Goel"],
+        "response":"The professor for this class"
+    },
+    {
+        "questions":["What are the components of this course"],
+        "response":"The course has five components. Video Lessons, Exercises and Readings; Design, Programming and Reflection projects; Assignments and Examinations; Peer Feedback; and Announcements, Question Answering and Discussions."
+    },
+    {
+        "questions":["How many videos do I need to watch"],
+        "response":"This course has 26 videos with about 18 hours of instruction."
+    },
+   {
+        "questions":["How many hours of instruction"],
+        "response":"This course has 26 videos with about 18 hours of instruction."
+    },
+   {
+        "questions":["Are there exercises"],
+        "response":"The videos have ~150 exercises and ~100 “tutors” embedded in them."
+    },
+   {
+        "questions":["Is any release of Python 3.6 ok"],
+        "response":"I do not know.",
+        "replace":"yes"
+    },
+   {
+        "questions":["Is wordnet allowed?"],
+        "response":"I do not know.",
+        "replace":"yes"
+    },
+   {
+        "questions":["Is numpy allowed"],
+        "response":"I do not know.",
+        "replace":"yes"
+    },
+    {
+        "questions":["Could a T.A confirm if the usage of classifiers is allowed"],
+        "response":"I do not know.",
+        "replace":"yes, but you need to implement the code yourself."
+    },
+   {
+        "questions":["Can we use the nltk.corpus.stopwords corpus"],
+        "response":"I do not know.",
+        "replace":"Yes, you can use anything in download all."
+    },
+   {
+        "questions":["Is it allowed to use similarity algorithms found open source if sited appropriately"],
+        "response":"I do not know.",
+        "replace":"As long as you implement the algorithm yourself."
+    },
+   {
+        "questions":["Are the projects still based on RPM's"],
+        "response":"I do not know.",
+        "replace":"no, the projects are now based on chatbots."
+    },
+   {
+        "questions":["Is any release of Python 3.6 ok"],
+        "response":"yes"
+    },
+   {
+        "questions":["Is wordnet allowed?"],
+        "response":"yes"
+    },
+   {
+        "questions":["Is numpy allowed"],
+        "response":"yes"
+    },
+       {
+        "questions":["Could a T.A confirm if the usage of classifiers is allowed"],
+        "response":"yes, but you need to implement the code yourself."
+    },
+   {
+        "questions":["Can we use the nltk.corpus.stopwords corpus"],
+        "response":"Yes, you can use anything in download all."
+    },
+   {
+        "questions":["Is it allowed to use similarity algorithms found open source if sited appropriately"],
+        "response":"As long as you implement the algorithm yourself."
+    },
+   {
+        "questions":["Are the projects still based on RPM's"],
+        "response":"no, the projects are now based on chatbots."
+    }
+]
+

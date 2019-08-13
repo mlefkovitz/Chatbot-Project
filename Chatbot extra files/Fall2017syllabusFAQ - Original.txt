@@ -1,0 +1,109 @@
+﻿What is the FAQ version?Version 20171009
+What are the course components?The course has five components. Video Lessons, Exercises and Readings; Design, Programming and Reflection projects; Assignments and Examinations; Peer Feedback; and Announcements, Question Answering and Discussions.
+How long are the videos?This course has 26 videos with about 18 hours of instruction.
+How many hours of instruction for this class?This course has 26 videos with about 18 hours of instruction.
+How many exercises are in the videos?The videos have ~150 exercises and ~100 “tutors” embedded in them.
+Are there accompanying readings?Most lessons have an accompanying set of readings. While video lessons introduce the basic concepts and methods, the readings provide the detailed algorithms. The projects are accompanied with a reading list.
+Are there additional readings?Yes
+Who will give peer feedback?We will expect each student to give feedback on the work of 3 randomly selected peers for each of the 8 assignments. We will also select and share the best assignments, which will form another kind of peer feedback.
+Where do I go for announcements?We will use the Piazza forum for announcements, question answering, discussions, and collaboration.
+Do I need to log into Piazza regularly?It is important that you log into Piazza regularly and frequently (at least two or three times a week, daily if possible).
+How many writing components are there?The course includes 8 writing components: 3 assignments, 2 take home examinations, and 3 projects.
+How are examinations given?The examinations will involve significant amount of essay writing and will test knowledge on the video lessons and accompanying readings.
+How many exams are there?The course includes 2 take home examinations. A Mid-Term Exam and a Final Exam.
+Do I need to know computer vision?The projects do not require any specialized knowledge of computer vision or image processing.
+Are projects individual or group?Projects will be done individually.
+What are the primary learning goals for KBAI?The primary learning goals are: First, this class teaches the concepts, methods, and prominent issues in knowledge-based artificial intelligence. Second, it teaches the specific skills and abilities needed to apply those concepts to the design of knowledge-based AI agents. Third, it teaches the relationship between knowledge-based artificial intelligence and the study of human cognition.
+What is the structure of this course?The structure of this course is driven by several pedagogical motivations: learning by example, learning by doing, project-based learning, personalization, collaborative learning, peer-to-peer learning, self-reflection and authenticity.
+What will I learn in this class?At the conclusion of this class: first you will have learned to be able to design and implement a knowledge-based artificial intelligence agent that can address a complex task using the methods discussed in the course. Second, you will be able to use this agent to reflect on the process of human cognition. Third, you will be able to use both these practices to address practical problems in multiple domains.
+What is the Technical Report?The Technical Report is a document that provides more detailed accounts of learning goals, strategies, and outcomes of this course.
+How is this class taught?Each topic is taught through examples of the way in which humans and artificial intelligence agents approach certain problems, often building from human thought toward AI agents and subsequently referring back to human cognition.
+How does this course encourage Learning by Doing?Students will participate in the reasoning within each particular lesson, and subsequently tie the topic back to a broader problem.
+How does this course utilize Project Based Learning strategies?This class has three projects, each of which build on the previous one, and the overall goals and motivations of KBAI are presented through these projects.
+Is Collaborative Learning allowed?We encourage collaboration and the development of communities of practice surrounding the course material and projects. We are excited to see students borrow one another’s ideas and build on them, as well as spin off on their own study groups.
+How does Peer-to-Peer Learning work?During this class, students will give their peers feedback on their work for completed assignments. This lets students see additional approaches to the problems, provides extra feedback, and puts students in the position of a teacher, which has been shown to be a pedagogically useful role reversal.
+How does this course encourage Self-Reflection?At the conclusion of each lesson, each student is asked to reflect on what they learned in the class. Each design project requires the writing of a project reflection that explains and critiques, and reflects on the student’s work on the project.
+How does this course ensure Authenticity?The project that is explored in this class is an open research question in the AI and Cognitive Systems research communities. Two students from our lab have completed dissertations working on these questions in the past two years, and we have had papers published on these topics within the past several months.
+How many projects does this course have?This class has three projects.
+Where can I find more information on learning goals, strategies, and outcomes?More information can be found in the Technical Report.
+Can I watch lectures in advance?Students are welcome and encouraged to proceed at their own pace throughout the lessons, including viewing them outside of the designed order to better align with their interests.
+Can I discuss completed assignments with other students?Absolutely! Students will give and receive peer feedback for completed assignments. We encourage a collaborative learning environment.
+Is Python or Java required for this course?Yes
+Can I use a language other than Python or Java?No
+How many essays will I have to write?8. Three Assignments, three reflection reports and two examinations.
+How can I engage with my classmates?You can engage with your classmates through Piazza Forum, Peer Feedback and sharing of exemplary assignments.
+Will I have to work independently?Yes. You will have to work independently on design, programming and reflections.
+Will I have to do additional reading for this class?Yes
+Are the deadlines for assignments fixed?Yes
+How much time does the class demand?The class demands significant amount of time and energy on a regular basis.
+Will I have to adhere to Georgia Tech code of conduct to take this class?Yes
+Where can I find the reading list?Readings will either be publicly available on-line or will be provided to you in the T-Square Resources section for this class.
+How will I know which readings relate to which lectures?It will be provided in the description of video lecture, project / you can always ask the TA's.
+Are the readings mandatory?It is not mandatory, but is strongly recommended as it will help improve the understanding of the subject.
+Can we ask for clarification on reading list materials?Yes.
+How many sets of reading list are there?Two - one for project  another for video lectures.
+What is the scope of these reading sets?The readings accompanying the videos add depth to the lessons: for example, they cover algorithms for  the conceptual methods discussed in the videos. Similarly, the readings accompanying the projects describe the conceptual and algorithmic basis for the projects.
+Is there an order to be followed for the reading list?Reading after completion of the specific chapter will help in better understanding, but if you wish you can read ahead of time or after sometime.
+Can we request for more reading papers?Yes.
+What components will determine final grades?Your final grade will be determined by 3 written assignments worth 12%, 3 programming assignments worth 45%, 2 unproctored exams worth 35% and 24 peer feedback activities worth 8%.
+When can we expect to receive grades after a submission?2 weeks after the original submission
+Do the grades assigned to me by peers affect my grade?No. The primary purpose of supplying the graders with the results of the peer feedback process is to help the graders ensure every student gets useful feedback, as well as to ensure that the peer feedback received is accurate.
+How will grades be released?Grades will generally be released via both T-Square and Peer Feedback. Written feedback from the graders, however, will only be released via Peer Feedback. For Projects, sub-scores for your agent's performance on the problems and for your project reflection will be returned via the assignment submission page, and the overall project score will be posted to the grade book. Check marks for Peer Feedback participation will be provided throughout the semester via the assignment submission pages for those tasks, and a final Peer Feedback score (based both on completion and quality of participation) will be assigned at the end of the semester.
+Are there fixed thresholds for grades?No.
+Will there be curving of grade?Yes
+What have the grade statistics for this class been in the past?For the Fall 2015 KBAI class, the average was in the low 80's, and only about 10% of the class ended with a raw score over 90; well over half the class still received an A, though
+What are the individual weights of the 2 unproctored exams?15% for mid-term exam and 20% for final exam
+What should I do to get good grades on this class?We encourage you to focus first on doing the best you can on all assignments; if you do, your grade should take care of itself.
+How many assignments are in the class?There will be 3 assignments in the course.
+What is the word limit for each assignment?Each assignment should be approximately 1,000 words (neither a minimum nor a maximum, just a heuristic)
+What topics do the assignments cover?Each assignment relates to a certain topic or set of topics in the course material to some problem. For Assignments 1 the problem should be the class project. For Assignments 2, we will provide a list of problems that you can choose from. For Assignments 3, you may choose from that same list, or you may select a problem of your own.
+What advantages does peer-to-peer feedback provide me?Peer-to-peer feedback provides a number of opportunities: it gives you the opportunity to see your classmates' work, it gets you more feedback on your work than you would otherwise receive, and it puts you in the position of critiquing and analyzing course material.
+How do I participate in peer-to-peer feedback?We will use a tool called Peer Feedback -- peerfeedback.gatech.edu -- to give peer-to-peer feedback in this class.
+How often will I be required to provide peer-to-peer feedback?You will give peer-to-peer feedback to your classmates on all six assignments (including the three you do not personally complete) and on all three project reflections.
+How does peer-to-peer feedback impact our grade on the assignment?Peers will evaluate one another on the same rubric that graders will use; however, the scores you assign to your peers will not factor into their actual grades on the assignment.
+Do the TAs look at the feedback?TAs will see the feedback you give to your peers in order to ensure that all students receive adequate feedback.
+How much of my grade depends on completing peer feedback?Completing peer feedback exercises is 8% of your average.
+Does the quality of feedback I provide matter?Your peer feedback average will be determined not only based on whether or not you completed all assigned peer feedback exercises, but also based on the quality of the feedback you provided as evaluated by the TAs and by the recipients of the feedback.
+How will the exams be distributed?Both exams will be an unproctored, untimed, "take-home" tests.
+What format will the exams be given in?Both exams will consist of a number of different questions asking you to synthesize multiple parts of the course material.
+What are the ways in which new class information will be sent?A T-Square announcement with an email notification and a pinned Piazza announcement in the ‘announcements’ folder with an email notification.
+How often should you check your Georgia Tech email?Once every 24 hours
+Where should you preferably post your questions?Piazza
+What questions are better suited for office hours?Conversational discussions on course material and discussions about individuals' grades.
+Why is Piazza preferred for asking questions related to the class?Posting on piazza opens up the question to input from everyone in the class and creates a self-documenting history of the answer to the question.
+How often will office hours be held?Weekly
+Will office hours be recorded and posted?No, but if there is anything relevant to the whole class it will be recorded and posted on Piazza
+How should you reach out to instructors about private issues like grades?Post a private Piazza message visible only to the instructors
+How will I be able to participate in office hours?Via the Webex link available on Piazza
+What is the purpose of office hours?Synchronous office hours are intended for conversations about individual projects, discussions about course material, etc. rather than straightforward question and answer.
+Where will exemplary assignments be posted?Exemplary assignments, once available, will be posted on piazza for everyone to see.
+What is the point of posting exemplary assignments?From previous semesters, we have found that posting exemplary assignments allow for greater peer-to-peer learning and fosters a community of learners.
+Is late work accepted?Due to the size of the class and limited resources, late work will not be accepted.
+What should I do if I am having issues submitting my work?If you are having issue submitting on T-square, immediately post a private note on Piazza with your submission.
+What if I have an emergency and cannot submit my work on time?If you have an emergency and cannot submit your work by the deadline, we ask that you go through the Dean of Student's office
+What kind of issues can I bring up to the Dean of Student's office?Justifiable excuses would involve any major unforeseen disruption to your classwork such as illness, injuries, death, and birth, all for either you or your family
+What kind of conflict am I liable for?Conflicts such as weddings, business trips, and conference, you should complete your work in advance. That is why all of the assignments and project resources are provided to you at the start of the semester.
+Is this course the same as the previous semesters?No. every semester is a learning experience. Each subsequent semesters benefit from the lessons learned the previous semesters.
+Can I provide the teaching staff feedback on how I think that the course is going?Absolutely! In fact, we encourage students to provide feedback on things that work, and things that could be done better.
+How can I provide feedback?You may take advantage of the feedback box on Piazza, as well as the surveys we will send out over the course of the semester.
+How many surveys will there be?There will be 4 surveys. 3 will be administered throughout the course, and the 4th will be administered by Georgia Tech via CIOS.
+How can I contact the Dean of Student's office?You may find information on contacting the Dean of Students with regard to personal emergencies here: https://studentlife.gatech.edu/content/class-attendance
+What if my conflict falls during the final?If your conflict falls during final exams, please let us know immediately and in advance so that we may work with you.
+When are assignments due?All assignments are due at the end of the week, on Sunday at midnight UTC-12 (Anywhere On Earth time). This translates to an early-morning Monday deadline in the Americas, a midday Monday deadline in Europe, etc. If for example, Assignment 1 were due on January 22nd at midnight UTC-12, which translates to Monday, January 23rd at 7AM Eastern time, 4AM Pacific time. Precise due dates and times can be found in T-Square on each assignment page. Make sure to set T-Square to your local time zone to see due dates in your time
+Where can I find the course calendar?https://docs.google.com/document/d/1YUnl-NbNycN3GfzK8BXO0qxW6wdKT1sKhO-p028Fl18/edit
+Where can I find assignment 1?https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc
+Where can I find assignment 2?https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc
+Where can I find assignment 3?https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc
+Where can I find project 1?https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc
+Where can I find project 2?https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc
+Where can I find project 3?https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc
+When is assignment 1 due?Week of August 28th
+When is assignment 2 due?Week of September 25th
+When is assignment 3 due?Week of October 30th
+When is project 1 due?Week of September 4th
+When is project 2 due?Week of October 9th
+When is project 3 due?Week of November 6th
+When is the midterm?Week of October 2nd
+When is the final?Week of November 27th
+Who is the professor for this class?Professor Goel
+Who is professor Goel?The professor for this class

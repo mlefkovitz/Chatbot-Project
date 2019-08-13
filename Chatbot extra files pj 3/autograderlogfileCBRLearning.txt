@@ -1,0 +1,41 @@
+
+Test Question: Is wordnet allowed?
+Agent Response: We encourage collaboration and the development of communities of practice surrounding the course material and projects. We are excited to see students borrow one another’s ideas and build on them, as well as spin off on their own study groups.
+Test Answer: I do not know.
+Test Replace: yes
+Action: -0.5
+
+Test Question: Is numpy allowed
+Agent Response: yes
+Test Answer: I do not know.
+Test Replace: yes
+Action: -0.5
+
+Test Question: Is wordnet allowed?
+Agent Response: yes
+Test Answer: yes
+Test Replace: 
+Action: 1.0
+
+Test Question: Is numpy allowed
+Agent Response: yes
+Test Answer: yes
+Test Replace: 
+Action: 1.0
+
+Score: 1.0
+Total Questions: 4
+Total Correct: 2
+Total Wrong: 2
+Wrong Answer Breakdown:
+[{'1_question': 'Is wordnet allowed?',
+  '2_expected_answer': 'I do not know.',
+  '3_actual_answer': 'We encourage collaboration and the development of '
+                     'communities of practice surrounding the course material '
+                     'and projects. We are excited to see students borrow one '
+                     'another’s ideas and build on them, as well as spin off '
+                     'on their own study groups.'},
+ {'1_question': 'Is numpy allowed',
+  '2_expected_answer': 'I do not know.',
+  '3_actual_answer': 'yes'}]
+

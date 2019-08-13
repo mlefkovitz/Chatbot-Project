@@ -1,0 +1,19 @@
+Word-level features:
+-+ Case insensitivity
+-+ Duplicate word resilience
+-+ Word order resilience
+-+ Spelling error resilience
+-+ Pluralization resilience
+-+ Contraction resilience (What's = what is)
+-+ Synonym resilience for general synonyms
+- Abbreviation resilience (prof = professor)
+- Initialism resilience (frequently asked questions = FAQ)
+
+
+Understanding related features:
+- Synonym resilience for topical synonyms (syllabus = calendar)
+- Synonym resilience for proper nouns (Ashok = Goel)
+- Implement understanding to rate how closely two sentences are related based on each sentence's verb and contextually matching words.
+- Use 'common sense' to limit responses to ambiguous question (even if they're unambiguous in the corpus) (Calendar = I do not know)
+- Use 'common sense' to incorporate contextual words not listed in the corpus (Assignment = I do not know. Assignment link = Where can I find assignment 1)
+

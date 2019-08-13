@@ -1,0 +1,40 @@
+10-15-2017 2:20pm
+Implemented an AI agent that uses Case Based Reasoning as described in: https://pdfs.semanticscholar.org/4f6e/b7a11467c4e90936703142e5c4fdf9031d9d.pdf
+
+When testing against the 109FAQ questions:
+Score 78.2
+81 correct = 74.3%
+28 incorrect
+0 Skipped/"I don't knows"
+
+
+Of the 28 incorrect:
+23 of the responses are "This course has 26 videos with about 18 hours of instruction." This is the answer to two questions that contain the word "How"
+4 of the responses are "https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc" This is the answer to 6 questions that contain the words "Where", "Can", "I", and "find"
+1 response is "The professor for this class". The two professor questions have three overlap words "Who", "is", and "professor". The differentiating words are "this", "class", and "Goel".
+
+------------------------------------
+10-15-2017 4:30pm
+Edited the way answers were caluclated - resolved duplicate answer issue
+
+When testing against the 109 FAQ questions:
+Score 100.7
+101 correct = 92.6%
+3 incorrect
+5 skipped/"I don't know"
+
+Of the 8 skipped/incorrect:
+7 of them contain the word "How"
+5 of those contain the word "many"
+
+-----------------------------------
+10-15-2017 4:55pm
+Fixed an issue with the unique word list doublecounting words that appeared twice with different cases. Used .lower() to keep everything the same case.
+
+When testing against the 109 FAQ questions:
+Score 109
+109 correct = 100%
+0 incorrect
+0 skipped/"I don't know"
+
+Correctly implemented Case Based Reasoing!

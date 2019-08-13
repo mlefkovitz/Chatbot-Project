@@ -1,0 +1,6 @@
+"#","Test Question","Agent Response","Test Answer","Test Replace","Action","Agent Answer Choice ID","Agent Answer Score",
+"1","Is wordnet allowed?","We encourage collaboration and the development of communities of practice surrounding the course material and projects. We are excited to see students borrow one another’s ideas and build on them, as well as spin off on their own study groups.","I do not know.","yes","-0.5","21","1.0499292820912993",
+"2","Is numpy allowed","yes","I do not know.","yes","-0.5","108","0.6338456915529485",
+"3","Is wordnet allowed?","yes","yes","","1.0","108","1.4223864712372933",
+"4","Is numpy allowed","yes","yes","","1.0","109","1.4223864712372933",
+"Totals","Total Questions: 4","Total Wrong: 2","Total Correct: 2","","Score: 1.0",

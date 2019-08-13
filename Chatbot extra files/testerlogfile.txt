@@ -1,0 +1,14 @@
+
+Input: What is the FAQ version
+Response: I do not know.
+Type: False
+
+Input: 
+Response: I do not know.
+Type: False
+
+Input: What is the FAQ version
+Response: Version 20171026
+
+Is the response correct (yes/no)?
+Type: True

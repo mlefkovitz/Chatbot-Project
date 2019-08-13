@@ -1,0 +1,2202 @@
+[
+  {
+    "questions": ["Who is Professor Goel' sister"],
+    "response": "The professor for this class."
+  },
+  {
+    "questions": ["Who is Professor Goel's sister"],
+    "response": "The professor for this class."
+  },
+  {
+    "questions": ["Who is Professor Goel's sister"],
+    "response": "Professor Goel."
+  },
+  {
+    "questions": ["What is the deadline for project 3"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Where can I find exemplary assignments"],
+    "response": "https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc."
+  },
+  {
+    "questions": ["Where can I find exemplary assignments"],
+    "response": "Exemplary assignments, once available, will be posted on piazza for everyone to see."
+  },
+  {
+    "questions": ["Where can I find exemplary assignments"],
+    "response": "Exemplary assignments, once available, will be posted on piazza for everyone to see."
+  },
+  {
+    "questions": ["Is it allowed to submit work late"],
+    "response": "Due to the size of the class and limited resources, late work will not be accepted."
+  },
+  {
+    "questions": ["How many instructions are in the course"],
+    "response": "This course has 26 videos with about 18 hours of instruction."
+  },
+  {
+    "questions": ["By who will peer review be performed"],
+    "response": "We will expect each student to give feedback on the work of 3 randomly selected peers for each of the 8 assignments. We will also select and share the best assignments, which will form another kind of peer feedback."
+  },
+  {
+    "questions": ["Who will give peer to peer feedback"],
+    "response": "We will expect each student to give feedback on the work of 3 randomly selected peers for each of the 8 assignments. We will also select and share the best assignments, which will form another kind of peer feedback."
+  },
+  {
+    "questions": ["What are the key parts of the course"],
+    "response": "https://docs.google.com/document/d/1YUnl-NbNycN3GfzK8BXO0qxW6wdKT1sKhO-p028Fl18/edit."
+  },
+  {
+    "questions": ["What are the key parts of the course"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What is the duration of the videos"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What is the length of the videos"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["How long are the videos"],
+    "response": "This course has 26 videos with about 18 hours of instruction."
+  },
+  {
+    "questions": ["What is the length of the video"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["How many exercises do the videos include"],
+    "response": "The videos have ~150 exercises and ~100 tutors embedded in them."
+  },
+  {
+    "questions": ["Are there tutors in the videos"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What are the number of tutors in the videos"],
+    "response": "The videos have ~150 exercises and ~100 tutors embedded in them."
+  },
+  {
+    "questions": ["Apart from watching the videos do I have to do anything else"],
+    "response": "Students are welcome and encouraged to proceed at their own pace throughout the lessons, including viewing them outside of the designed order to better align with their interests."
+  },
+  {
+    "questions": ["Apart from watching the videos do I have to do anything else"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Is watching the videos enough"],
+    "response": "Students are welcome and encouraged to proceed at their own pace throughout the lessons, including viewing them outside of the designed order to better align with their interests."
+  },
+  {
+    "questions": ["Is watching the videos enough"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Where can I find announcements"],
+    "response": "We will use the Piazza forum for announcements, question answering, discussions, and collaboration."
+  },
+  {
+    "questions": ["How often do I need to log into Piazza"],
+    "response": "It is important that you log into Piazza regularly and frequently (at least two or three times a week, daily if possible)."
+  },
+  {
+    "questions": ["How frequently do I need to visit Piazza"],
+    "response": "It is important that you log into Piazza regularly and frequently (at least two or three times a week, daily if possible)."
+  },
+  {
+    "questions": ["What are the writing components"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What is the format for exams"],
+    "response": "Both exams will consist of a number of different questions asking you to synthesize multiple parts of the course material."
+  },
+  {
+    "questions": ["What is the format of exams"],
+    "response": "Both exams will consist of a number of different questions asking you to synthesize multiple parts of the course material."
+  },
+  {
+    "questions": ["What is the format of exams"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["How are exams given"],
+    "response": "The examinations will involve significant amount of essay writing and will test knowledge on the video lessons and accompanying readings."
+  },
+  {
+    "questions": ["How are exams given"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["How are examinations given"],
+    "response": "The examinations will involve significant amount of essay writing and will test knowledge on the video lessons and accompanying readings."
+  },
+  {
+    "questions": ["Is knowledge of computer vision required"],
+    "response": "The projects do not require any specialized knowledge of computer vision or image processing."
+  },
+  {
+    "questions": ["Is knowledge of image processing required"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Can the projects be done in a group"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Are group projects allowed"],
+    "response": "Projects will be done individually."
+  },
+  {
+    "questions": ["What are the goals of kbai"],
+    "response": "The primary learning goals are: First, this class teaches the concepts, methods, and prominent issues in knowledge-based artificial intelligence. Second, it teaches the specific skills and abilities needed to apply those concepts to the design of knowledge-based AI agents. Third, it teaches the relationship between knowledge-based artificial intelligence and the study of human cognition."
+  },
+  {
+    "questions": ["How is the course structured"],
+    "response": "https://docs.google.com/document/d/1YUnl-NbNycN3GfzK8BXO0qxW6wdKT1sKhO-p028Fl18/edit."
+  },
+  {
+    "questions": ["How is the course structured"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What will be learnt"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What will I learn"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What will I learn in this class"],
+    "response": "At the conclusion of this class: first you will have learned to be able to design and implement a knowledge-based artificial intelligence agent that can address a complex task using the methods discussed in the course. Second, you will be able to use this agent to reflect on the process of human cognition. Third, you will be able to use both these practices to address practical problems in multiple domains."
+  },
+  {
+    "questions": ["What will be learnt in this class"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Tell me about the technical report"],
+    "response": "The Technical Report is a document that provides more detailed accounts of learning goals, strategies, and outcomes of this course."
+  },
+  {
+    "questions": ["What is done to encourage Learning by Doing"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What are the project based learning strategies used"],
+    "response": "At the conclusion of this class: first you will have learned to be able to design and implement a knowledge-based artificial intelligence agent that can address a complex task using the methods discussed in the course. Second, you will be able to use this agent to reflect on the process of human cognition. Third, you will be able to use both these practices to address practical problems in multiple domains."
+  },
+  {
+    "questions": ["What about Collaborative learning"],
+    "response": "We encourage collaboration and the development of communities of practice surrounding the course material and projects. We are excited to see students borrow one another\u2019s ideas and build on them, as well as spin off on their own study groups."
+  },
+  {
+    "questions": ["How does peer learning work"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["How does peer-to-peer learning happen"],
+    "response": "During this class, students will give their peers feedback on their work for completed assignments. This lets students see additional approaches to the problems, provides extra feedback, and puts students in the position of a teacher, which has been shown to be a pedagogically useful role reversal."
+  },
+  {
+    "questions": ["How is sekf-reflection promoted"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["How is self-reflection promoted"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["How is authenticity assured"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["How many projects"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What are the number of projects"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["How many projects does this course have"],
+    "response": "This class has three projects."
+  },
+  {
+    "questions": ["Where can I learn more about goals, strategies and outcomes"],
+    "response": "More information can be found in the Technical Report."
+  },
+  {
+    "questions": ["What are the number of surveys"],
+    "response": "There will be 4 surveys. 3 will be administered throughout the course, and the 4th will be administered by Georgia Tech via CIOS."
+  },
+  {
+    "questions": ["How many tutors are in the videos"],
+    "response": "The videos have ~150 exercises and ~100 tutors embedded in them."
+  },
+  {
+    "questions": ["How many nano-tutors are there"],
+    "response": "The videos have ~150 exercises and ~100 tutors embedded in them."
+  },
+  {
+    "questions": ["Which Faq are you using"],
+    "response": "Version 20171021."
+  },
+  {
+    "questions": ["What is the FAQ version"],
+    "response": "Version 20171021."
+  },
+  {
+    "questions": ["Which FAQ version we\u2019re using"],
+    "response": "Version 20171021."
+  },
+  {
+    "questions": ["How long are the instruction for this course"],
+    "response": "This course has 26 videos with about 18 hours of instruction."
+  },
+  {
+    "questions": ["Who will perform peer reviews"],
+    "response": "We will expect each student to give feedback on the work of 3 randomly selected peers for each of the 8 assignments. We will also select and share the best assignments, which will form another kind of peer feedback."
+  },
+  {
+    "questions": ["What are the components of the course"],
+    "response": "The course has five components. Video Lessons, Exercises and Readings; Design, Programming and Reflection projects; Assignments and Examinations; Peer Feedback; and Announcements, Question Answering and Discussions."
+  },
+  {
+    "questions": ["What FAQ version is used"],
+    "response": "Version 20171021."
+  },
+  {
+    "questions": ["What FAQ version is used"],
+    "response": "Version 20171021."
+  },
+  {
+    "questions": ["What is the version of FAQ"],
+    "response": "Version 20171021."
+  },
+  {
+    "questions": ["Which version of FAQ is used"],
+    "response": "Version 20171021."
+  },
+  {
+    "questions": ["What are the course components"],
+    "response": "The course has five components. Video Lessons, Exercises and Readings; Design, Programming and Reflection projects; Assignments and Examinations; Peer Feedback; and Announcements, Question Answering and Discussions."
+  },
+  {
+    "questions": ["What are the components of the course"],
+    "response": "The course has five components. Video Lessons, Exercises and Readings; Design, Programming and Reflection projects; Assignments and Examinations; Peer Feedback; and Announcements, Question Answering and Discussions."
+  },
+  {
+    "questions": ["Which components does the course have"],
+    "response": "The course has five components. Video Lessons, Exercises and Readings; Design, Programming and Reflection projects; Assignments and Examinations; Peer Feedback; and Announcements, Question Answering and Discussions."
+  },
+  {
+    "questions": ["Which components are in the course"],
+    "response": "The course has five components. Video Lessons, Exercises and Readings; Design, Programming and Reflection projects; Assignments and Examinations; Peer Feedback; and Announcements, Question Answering and Discussions."
+  },
+  {
+    "questions": ["What components are included in the course"],
+    "response": "The course has five components. Video Lessons, Exercises and Readings; Design, Programming and Reflection projects; Assignments and Examinations; Peer Feedback; and Announcements, Question Answering and Discussions."
+  },
+  {
+    "questions": ["How is this course structured"],
+    "response": "The course has five components. Video Lessons, Exercises and Readings; Design, Programming and Reflection projects; Assignments and Examinations; Peer Feedback; and Announcements, Question Answering and Discussions."
+  },
+  {
+    "questions": ["What components are included in the course"],
+    "response": "The course has five components. Video Lessons, Exercises and Readings; Design, Programming and Reflection projects; Assignments and Examinations; Peer Feedback; and Announcements, Question Answering and Discussions."
+  },
+  {
+    "questions": ["How long are the videos"],
+    "response": "This course has 26 videos with about 18 hours of instruction."
+  },
+  {
+    "questions": ["How many videos are there"],
+    "response": "This course has 26 videos with about 18 hours of instruction."
+  },
+  {
+    "questions": ["How many hours of video are there"],
+    "response": "This course has 26 videos with about 18 hours of instruction."
+  },
+  {
+    "questions": ["How long do the videos take"],
+    "response": "This course has 26 videos with about 18 hours of instruction."
+  },
+  {
+    "questions": ["How much video are in the course"],
+    "response": "This course has 26 videos with about 18 hours of instruction."
+  },
+  {
+    "questions": ["How many hours of instruction for this class"],
+    "response": "This course has 26 videos with about 18 hours of instruction."
+  },
+  {
+    "questions": ["How long are the instruction for this course"],
+    "response": "This course has 26 videos with about 18 hours of instruction."
+  },
+  {
+    "questions": ["How many instructions are in this course"],
+    "response": "This course has 26 videos with about 18 hours of instruction."
+  },
+  {
+    "questions": ["How much time do instructions take in this class"],
+    "response": "This course has 26 videos with about 18 hours of instruction."
+  },
+  {
+    "questions": ["How many hours of instruction are in this course"],
+    "response": "This course has 26 videos with about 18 hours of instruction."
+  },
+  {
+    "questions": ["How many exercises are in the videos"],
+    "response": "The videos have ~150 exercises and ~100 tutors embedded in them."
+  },
+  {
+    "questions": ["How many questions are in the videos"],
+    "response": "The videos have ~150 exercises and ~100 tutors embedded in them."
+  },
+  {
+    "questions": ["How many tutors are in the videos"],
+    "response": "The videos have ~150 exercises and ~100 tutors embedded in them."
+  },
+  {
+    "questions": ["How many nano-tutors are there"],
+    "response": "The videos have ~150 exercises and ~100 tutors embedded in them."
+  },
+  {
+    "questions": ["Are there exercises to go with the videos"],
+    "response": "The videos have ~150 exercises and ~100 tutors embedded in them."
+  },
+  {
+    "questions": ["Are there tutors to go with the videos"],
+    "response": "The videos have ~150 exercises and ~100 tutors embedded in them."
+  },
+  {
+    "questions": ["Are there accompanying readings"],
+    "response": "Most lessons have an accompanying set of readings. While video lessons introduce the basic concepts and methods, the readings provide the detailed algorithms. The projects are accompanied with a reading list."
+  },
+  {
+    "questions": ["Do you need to do more than just watch the videos"],
+    "response": "Most lessons have an accompanying set of readings. While video lessons introduce the basic concepts and methods, the readings provide the detailed algorithms. The projects are accompanied with a reading list."
+  },
+  {
+    "questions": ["Are there resources to help with the projects"],
+    "response": "Most lessons have an accompanying set of readings. While video lessons introduce the basic concepts and methods, the readings provide the detailed algorithms. The projects are accompanied with a reading list."
+  },
+  {
+    "questions": ["Are the videos enough to do well in the class"],
+    "response": "Most lessons have an accompanying set of readings. While video lessons introduce the basic concepts and methods, the readings provide the detailed algorithms. The projects are accompanied with a reading list."
+  },
+  {
+    "questions": ["Is there more content than just the videos"],
+    "response": "Most lessons have an accompanying set of readings. While video lessons introduce the basic concepts and methods, the readings provide the detailed algorithms. The projects are accompanied with a reading list."
+  },
+  {
+    "questions": ["Are there additional readings"],
+    "response": "Yes."
+  },
+  {
+    "questions": ["Do you need to read additional material"],
+    "response": "Yes."
+  },
+  {
+    "questions": ["Are there more reading"],
+    "response": "Yes."
+  },
+  {
+    "questions": ["Will we be required to do additional reading"],
+    "response": "Yes."
+  },
+  {
+    "questions": ["Will there be more readings"],
+    "response": "Yes."
+  },
+  {
+    "questions": ["Besides lectures, do we need to study anything else"],
+    "response": "Yes."
+  },
+  {
+    "questions": ["Who will give peer feedback"],
+    "response": "We will expect each student to give feedback on the work of 3 randomly selected peers for each of the 8 assignments. We will also select and share the best assignments, which will form another kind of peer feedback."
+  },
+  {
+    "questions": ["How much peer feedback is expected"],
+    "response": "We will expect each student to give feedback on the work of 3 randomly selected peers for each of the 8 assignments. We will also select and share the best assignments, which will form another kind of peer feedback."
+  },
+  {
+    "questions": ["Will I need to perform peer reviews"],
+    "response": "We will expect each student to give feedback on the work of 3 randomly selected peers for each of the 8 assignments. We will also select and share the best assignments, which will form another kind of peer feedback."
+  },
+  {
+    "questions": ["How many peer reviews will I need to do"],
+    "response": "We will expect each student to give feedback on the work of 3 randomly selected peers for each of the 8 assignments. We will also select and share the best assignments, which will form another kind of peer feedback."
+  },
+  {
+    "questions": ["Who will perform peer reviews"],
+    "response": "We will expect each student to give feedback on the work of 3 randomly selected peers for each of the 8 assignments. We will also select and share the best assignments, which will form another kind of peer feedback."
+  },
+  {
+    "questions": ["Where do I go for announcements"],
+    "response": "We will use the Piazza forum for announcements, question answering, discussions, and collaboration."
+  },
+  {
+    "questions": ["Do I need to log into Piazza regularly"],
+    "response": "It is important that you log into Piazza regularly and frequently (at least two or three times a week, daily if possible)."
+  },
+  {
+    "questions": ["How many writing components are there"],
+    "response": "The course includes 8 writing components: 3 assignments, 2 take home examinations, and 3 projects."
+  },
+  {
+    "questions": ["How are examinations given"],
+    "response": "The examinations will involve significant amount of essay writing and will test knowledge on the video lessons and accompanying readings."
+  },
+  {
+    "questions": ["How many exams are there"],
+    "response": "The course includes 2 take home examinations. A Mid-Term Exam and a Final Exam."
+  },
+  {
+    "questions": ["Is there any exam"],
+    "response": "The course includes 2 take home examinations. A Mid-Term Exam and a Final Exam."
+  },
+  {
+    "questions": ["Do I need to know computer vision"],
+    "response": "The projects do not require any specialized knowledge of computer vision or image processing."
+  },
+  {
+    "questions": ["Is prior knowledge of computer vision required for the projects"],
+    "response": "The projects do not require any specialized knowledge of computer vision or image processing."
+  },
+  {
+    "questions": ["Is prior knowledge of image processing required for the projects"],
+    "response": "The projects do not require any specialized knowledge of computer vision or image processing."
+  },
+  {
+    "questions": ["Are projects individual or group"],
+    "response": "Projects will be done individually."
+  },
+  {
+    "questions": ["What are the primary learning goals for KBAI"],
+    "response": "The primary learning goals are: First, this class teaches the concepts, methods, and prominent issues in knowledge-based artificial intelligence. Second, it teaches the specific skills and abilities needed to apply those concepts to the design of knowledge-based AI agents. Third, it teaches the relationship between knowledge-based artificial intelligence and the study of human cognition."
+  },
+  {
+    "questions": ["What are the primary goals of this class"],
+    "response": "The primary learning goals are: First, this class teaches the concepts, methods, and prominent issues in knowledge-based artificial intelligence. Second, it teaches the specific skills and abilities needed to apply those concepts to the design of knowledge-based AI agents. Third, it teaches the relationship between knowledge-based artificial intelligence and the study of human cognition."
+  },
+  {
+    "questions": ["What is the structure of this course"],
+    "response": "The structure of this course is driven by several pedagogical motivations: learning by example, learning by doing, project-based learning, personalization, collaborative learning, peer-to-peer learning, self-reflection and authenticity."
+  },
+  {
+    "questions": ["What will I learn in this class"],
+    "response": "At the conclusion of this class: first you will have learned to be able to design and implement a knowledge-based artificial intelligence agent that can address a complex task using the methods discussed in the course. Second, you will be able to use this agent to reflect on the process of human cognition. Third, you will be able to use both these practices to address practical problems in multiple domains."
+  },
+  {
+    "questions": ["What is the Technical Report"],
+    "response": "The Technical Report is a document that provides more detailed accounts of learning goals, strategies, and outcomes of this course."
+  },
+  {
+    "questions": ["How is this class taught"],
+    "response": "Each topic is taught through examples of the way in which humans and artificial intelligence agents approach certain problems, often building from human thought toward AI agents and subsequently referring back to human cognition."
+  },
+  {
+    "questions": ["How does this course encourage Learning by Doing"],
+    "response": "Students will participate in the reasoning within each particular lesson, and subsequently tie the topic back to a broader problem."
+  },
+  {
+    "questions": ["How does this course utilize Project Based Learning strategies"],
+    "response": "This class has three projects, each of which build on the previous one, and the overall goals and motivations of KBAI are presented through these projects."
+  },
+  {
+    "questions": ["Is Collaborative Learning allowed"],
+    "response": "We encourage collaboration and the development of communities of practice surrounding the course material and projects. We are excited to see students borrow one another\u2019s ideas and build on them, as well as spin off on their own study groups."
+  },
+  {
+    "questions": ["How does Peer-to-Peer Learning work"],
+    "response": "During this class, students will give their peers feedback on their work for completed assignments. This lets students see additional approaches to the problems, provides extra feedback, and puts students in the position of a teacher, which has been shown to be a pedagogically useful role reversal."
+  },
+  {
+    "questions": ["How does this course encourage Self-Reflection"],
+    "response": "At the conclusion of each lesson, each student is asked to reflect on what they learned in the class. Each design project requires the writing of a project reflection that explains and critiques, and reflects on the student\u2019s work on the project."
+  },
+  {
+    "questions": ["How does this course ensure Authenticity"],
+    "response": "The project that is explored in this class is an open research question in the AI and Cognitive Systems research communities. Two students from our lab have completed dissertations working on these questions in the past two years, and we have had papers published on these topics within the past several months."
+  },
+  {
+    "questions": ["How many projects does this course have"],
+    "response": "This class has three projects."
+  },
+  {
+    "questions": ["Where can I find more information on learning goals, strategies, and outcomes"],
+    "response": "More information can be found in the Technical Report."
+  },
+  {
+    "questions": ["Can I watch lectures in advance"],
+    "response": "Students are welcome and encouraged to proceed at their own pace throughout the lessons, including viewing them outside of the designed order to better align with their interests."
+  },
+  {
+    "questions": ["Can I discuss completed assignments with other students"],
+    "response": "Absolutely! Students will give and receive peer feedback for completed assignments. We encourage a collaborative learning environment."
+  },
+  {
+    "questions": ["Is Python or Java required for this course"],
+    "response": "Yes."
+  },
+  {
+    "questions": ["Can I use a language other than Python or Java"],
+    "response": "No."
+  },
+  {
+    "questions": ["How many essays will I have to write"],
+    "response": "8. Three Assignments, three reflection reports and two examinations."
+  },
+  {
+    "questions": ["How can I engage with my classmates"],
+    "response": "You can engage with your classmates through Piazza Forum, Peer Feedback and sharing of exemplary assignments."
+  },
+  {
+    "questions": ["Will I have to work independently"],
+    "response": "Yes. You will have to work independently on design, programming and reflections."
+  },
+  {
+    "questions": ["Will I have to do additional reading for this class"],
+    "response": "Yes."
+  },
+  {
+    "questions": ["Are the deadlines for assignments fixed"],
+    "response": "Yes."
+  },
+  {
+    "questions": ["How much time does the class demand"],
+    "response": "The class demands significant amount of time and energy on a regular basis."
+  },
+  {
+    "questions": ["Will I have to adhere to Georgia Tech code of conduct to take this class"],
+    "response": "Yes."
+  },
+  {
+    "questions": ["Where can I find the reading list"],
+    "response": "Readings will either be publicly available on-line or will be provided to you in the T-Square Resources section for this class."
+  },
+  {
+    "questions": ["How will I know which readings relate to which lectures"],
+    "response": "It will be provided in the description of video lecture, project / you can always ask the TA's."
+  },
+  {
+    "questions": ["Are the readings mandatory"],
+    "response": "It is not mandatory, but is strongly recommended as it will help improve the understanding of the subject."
+  },
+  {
+    "questions": ["Can we ask for clarification on reading list materials"],
+    "response": "Yes."
+  },
+  {
+    "questions": ["How many sets of reading list are there"],
+    "response": "Two - one for project  another for video lectures."
+  },
+  {
+    "questions": ["What is the scope of these reading sets"],
+    "response": "The readings accompanying the videos add depth to the lessons: for example, they cover algorithms for  the conceptual methods discussed in the videos. Similarly, the readings accompanying the projects describe the conceptual and algorithmic basis for the projects."
+  },
+  {
+    "questions": ["Is there an order to be followed for the reading list"],
+    "response": "Reading after completion of the specific chapter will help in better understanding, but if you wish you can read ahead of time or after sometime."
+  },
+  {
+    "questions": ["Can we request for more reading papers"],
+    "response": "Yes."
+  },
+  {
+    "questions": ["What components will determine final grades"],
+    "response": "Your final grade will be determined by 3 written assignments worth 12%, 3 programming assignments worth 45%, 2 unproctored exams worth 35% and 24 peer feedback activities worth 8%."
+  },
+  {
+    "questions": ["When can we expect to receive grades after a submission"],
+    "response": "2 weeks after the original submission."
+  },
+  {
+    "questions": ["Do the grades assigned to me by peers affect my grade"],
+    "response": "No. The primary purpose of supplying the graders with the results of the peer feedback process is to help the graders ensure every student gets useful feedback, as well as to ensure that the peer feedback received is accurate."
+  },
+  {
+    "questions": ["How will grades be released"],
+    "response": "Grades will generally be released via both T-Square and Peer Feedback. Written feedback from the graders, however, will only be released via Peer Feedback. For Projects, sub-scores for your agent's performance on the problems and for your project reflection will be returned via the assignment submission page, and the overall project score will be posted to the grade book. Check marks for Peer Feedback participation will be provided throughout the semester via the assignment submission pages for those tasks, and a final Peer Feedback score (based both on completion and quality of participation) will be assigned at the end of the semester."
+  },
+  {
+    "questions": ["Are there fixed thresholds for grades"],
+    "response": "No."
+  },
+  {
+    "questions": ["Will there be curving of grade"],
+    "response": "Yes."
+  },
+  {
+    "questions": ["What have the grade statistics for this class been in the past"],
+    "response": "For the Fall 2015 KBAI class, the average was in the low 80's, and only about 10% of the class ended with a raw score over 90; well over half the class still received an A, though."
+  },
+  {
+    "questions": ["What are the individual weights of the 2 unproctored exams"],
+    "response": "15% for mid-term exam and 20% for final exam."
+  },
+  {
+    "questions": ["What should I do to get good grades on this class"],
+    "response": "We encourage you to focus first on doing the best you can on all assignments; if you do, your grade should take care of itself."
+  },
+  {
+    "questions": ["How many assignments are in the class"],
+    "response": "There will be 3 assignments in the course."
+  },
+  {
+    "questions": ["What is the word limit for each assignment"],
+    "response": "Each assignment should be approximately 1,000 words (neither a minimum nor a maximum, just a heuristic)."
+  },
+  {
+    "questions": ["What topics do the assignments cover"],
+    "response": "Each assignment relates to a certain topic or set of topics in the course material to some problem. For Assignments 1 the problem should be the class project. For Assignments 2, we will provide a list of problems that you can choose from. For Assignments 3, you may choose from that same list, or you may select a problem of your own."
+  },
+  {
+    "questions": ["What advantages does peer-to-peer feedback provide me"],
+    "response": "Peer-to-peer feedback provides a number of opportunities: it gives you the opportunity to see your classmates' work, it gets you more feedback on your work than you would otherwise receive, and it puts you in the position of critiquing and analyzing course material."
+  },
+  {
+    "questions": ["How do I participate in peer-to-peer feedback"],
+    "response": "We will use a tool called Peer Feedback -- peerfeedback.gatech.edu -- to give peer-to-peer feedback in this class."
+  },
+  {
+    "questions": ["How often will I be required to provide peer-to-peer feedback"],
+    "response": "You will give peer-to-peer feedback to your classmates on all six assignments (including the three you do not personally complete) and on all three project reflections."
+  },
+  {
+    "questions": ["How does peer-to-peer feedback impact our grade on the assignment"],
+    "response": "Peers will evaluate one another on the same rubric that graders will use; however, the scores you assign to your peers will not factor into their actual grades on the assignment."
+  },
+  {
+    "questions": ["Do the TAs look at the feedback"],
+    "response": "TAs will see the feedback you give to your peers in order to ensure that all students receive adequate feedback."
+  },
+  {
+    "questions": ["How much of my grade depends on completing peer feedback"],
+    "response": "Completing peer feedback exercises is 8% of your average."
+  },
+  {
+    "questions": ["Does the quality of feedback I provide matter"],
+    "response": "Your peer feedback average will be determined not only based on whether or not you completed all assigned peer feedback exercises, but also based on the quality of the feedback you provided as evaluated by the TAs and by the recipients of the feedback."
+  },
+  {
+    "questions": ["How will the exams be distributed"],
+    "response": "Both exams will be an unproctored, untimed, 'take-home' tests."
+  },
+  {
+    "questions": ["What format will the exams be given in"],
+    "response": "Both exams will consist of a number of different questions asking you to synthesize multiple parts of the course material."
+  },
+  {
+    "questions": ["What are the ways in which new class information will be sent"],
+    "response": "A T-Square announcement with an email notification and a pinned Piazza announcement in the \u2018announcements\u2019 folder with an email notification."
+  },
+  {
+    "questions": ["How often should you check your Georgia Tech email"],
+    "response": "Once every 24 hours."
+  },
+  {
+    "questions": ["Where should you preferably post your questions"],
+    "response": "Piazza."
+  },
+  {
+    "questions": ["What questions are better suited for office hours"],
+    "response": "Conversational discussions on course material and discussions about individuals' grades."
+  },
+  {
+    "questions": ["Why is Piazza preferred for asking questions related to the class"],
+    "response": "Posting on piazza opens up the question to input from everyone in the class and creates a self-documenting history of the answer to the question."
+  },
+  {
+    "questions": ["Why do we use Piazza"],
+    "response": "Posting on piazza opens up the question to input from everyone in the class and creates a self-documenting history of the answer to the question."
+  },
+  {
+    "questions": ["How often will office hours be held"],
+    "response": "Weekly."
+  },
+  {
+    "questions": ["How frequent are office hours held"],
+    "response": "Weekly."
+  },
+  {
+    "questions": ["Will office hours be recorded and posted"],
+    "response": "No, but if there is anything relevant to the whole class it will be recorded and posted on Piazza."
+  },
+  {
+    "questions": ["How should you reach out to instructors about private issues like grades"],
+    "response": "Post a private Piazza message visible only to the instructors."
+  },
+  {
+    "questions": ["How will I be able to participate in office hours"],
+    "response": "Via the Webex link available on Piazza."
+  },
+  {
+    "questions": ["How can I join office hours"],
+    "response": "Via the Webex link available on Piazza."
+  },
+  {
+    "questions": ["How do I join office hours"],
+    "response": "Via the Webex link available on Piazza."
+  },
+  {
+    "questions": ["How can I participate in office hours"],
+    "response": "Via the Webex link available on Piazza."
+  },
+  {
+    "questions": ["How can I attend office hours"],
+    "response": "Via the Webex link available on Piazza."
+  },
+  {
+    "questions": ["What is the purpose of office hours"],
+    "response": "Synchronous office hours are intended for conversations about individual projects, discussions about course material, etc. rather than straightforward question and answer."
+  },
+  {
+    "questions": ["Where will exemplary assignments be posted"],
+    "response": "Exemplary assignments, once available, will be posted on piazza for everyone to see."
+  },
+  {
+    "questions": ["What is the point of posting exemplary assignments"],
+    "response": "From previous semesters, we have found that posting exemplary assignments allow for greater peer-to-peer learning and fosters a community of learners."
+  },
+  {
+    "questions": ["Is late work accepted"],
+    "response": "Due to the size of the class and limited resources, late work will not be accepted."
+  },
+  {
+    "questions": ["What should I do if I am having issues submitting my work"],
+    "response": "If you are having issue submitting on T-square, immediately post a private note on Piazza with your submission."
+  },
+  {
+    "questions": ["What if I have an emergency and cannot submit my work on time"],
+    "response": "If you have an emergency and cannot submit your work by the deadline, we ask that you go through the Dean of Student's office."
+  },
+  {
+    "questions": ["What kind of issues can I bring up to the Dean of Student's office"],
+    "response": "Justifiable excuses would involve any major unforeseen disruption to your classwork such as illness, injuries, death, and birth, all for either you or your family."
+  },
+  {
+    "questions": ["What kind of conflict am I liable for"],
+    "response": "Conflicts such as weddings, business trips, and conference, you should complete your work in advance. That is why all of the assignments and project resources are provided to you at the start of the semester."
+  },
+  {
+    "questions": ["Is this course the same as the previous semesters"],
+    "response": "No. every semester is a learning experience. Each subsequent semesters benefit from the lessons learned the previous semesters."
+  },
+  {
+    "questions": ["Can I provide the teaching staff feedback on how I think that the course is going"],
+    "response": "Absolutely! In fact, we encourage students to provide feedback on things that work, and things that could be done better."
+  },
+  {
+    "questions": ["How can I provide feedback"],
+    "response": "You may take advantage of the feedback box on Piazza, as well as the surveys we will send out over the course of the semester."
+  },
+  {
+    "questions": ["How many surveys will there be"],
+    "response": "There will be 4 surveys. 3 will be administered throughout the course, and the 4th will be administered by Georgia Tech via CIOS."
+  },
+  {
+    "questions": ["How can I contact the Dean of Student's office"],
+    "response": "You may find information on contacting the Dean of Students with regard to personal emergencies here: https://studentlife.gatech.edu/content/class-attendance."
+  },
+  {
+    "questions": ["What if my conflict falls during the final"],
+    "response": "If your conflict falls during final exams, please let us know immediately and in advance so that we may work with you."
+  },
+  {
+    "questions": ["When are assignments due"],
+    "response": "All assignments are due at the end of the week, on Sunday at midnight UTC-12 (Anywhere On Earth time). This translates to an early-morning Monday deadline in the Americas, a midday Monday deadline in Europe, etc. If for example, Assignment 1 were due on January 22nd at midnight UTC-12, which translates to Monday, January 23rd at 7AM Eastern time, 4AM Pacific time. Precise due dates and times can be found in T-Square on each assignment page. Make sure to set T-Square to your local time zone to see due dates in your time."
+  },
+  {
+    "questions": ["Where can I find the course calendar"],
+    "response": "https://docs.google.com/document/d/1YUnl-NbNycN3GfzK8BXO0qxW6wdKT1sKhO-p028Fl18/edit."
+  },
+  {
+    "questions": ["Where is the course syllabus"],
+    "response": "https://docs.google.com/document/d/1YUnl-NbNycN3GfzK8BXO0qxW6wdKT1sKhO-p028Fl18/edit."
+  },
+  {
+    "questions": ["Where can I find assignment 1"],
+    "response": "https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc."
+  },
+  {
+    "questions": ["Where is assignment 1's rubric"],
+    "response": "https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc."
+  },
+  {
+    "questions": ["Where can I find assignment 2"],
+    "response": "https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc."
+  },
+  {
+    "questions": ["Where is assignment 2 defined"],
+    "response": "https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc."
+  },
+  {
+    "questions": ["Where can I find assignment 3"],
+    "response": "https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc."
+  },
+  {
+    "questions": ["Where is assignment 3"],
+    "response": "https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc."
+  },
+  {
+    "questions": ["Where can I find project 1"],
+    "response": "https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc."
+  },
+  {
+    "questions": ["Where is project 1's files"],
+    "response": "https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc."
+  },
+  {
+    "questions": ["Where can I find project 2"],
+    "response": "https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc."
+  },
+  {
+    "questions": ["What is the location of project 2"],
+    "response": "https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc."
+  },
+  {
+    "questions": ["Where can I find project 3"],
+    "response": "https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc."
+  },
+  {
+    "questions": ["Where are the files for project 3"],
+    "response": "https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc."
+  },
+  {
+    "questions": ["When is assignment 1 due"],
+    "response": "Week of August 28th."
+  },
+  {
+    "questions": ["When is due date for assignment 1"],
+    "response": "Week of August 28th."
+  },
+  {
+    "questions": ["When is assignment 2 due"],
+    "response": "Week of September 25th."
+  },
+  {
+    "questions": ["Assignment 2 is due when"],
+    "response": "Week of September 25th."
+  },
+  {
+    "questions": ["When is assignment 3 due"],
+    "response": "Week of October 30th."
+  },
+  {
+    "questions": ["What is the date for assignment 3"],
+    "response": "Week of October 30th."
+  },
+  {
+    "questions": ["When is project 1 due"],
+    "response": "Week of September 4th."
+  },
+  {
+    "questions": ["When does project 1 need to be completed"],
+    "response": "Week of September 4th."
+  },
+  {
+    "questions": ["When is project 2 due"],
+    "response": "Week of October 9th."
+  },
+  {
+    "questions": ["What is due date for project 2"],
+    "response": "Week of October 9th."
+  },
+  {
+    "questions": ["When is project 3 due"],
+    "response": "Week of November 6th."
+  },
+  {
+    "questions": ["What is due date for project 3"],
+    "response": "Week of November 6th."
+  },
+  {
+    "questions": ["When is the midterm"],
+    "response": "Week of October 2nd."
+  },
+  {
+    "questions": ["What date is the midterm"],
+    "response": "Week of October 2nd."
+  },
+  {
+    "questions": ["When is the final"],
+    "response": "Week of November 27th."
+  },
+  {
+    "questions": ["What date is the final"],
+    "response": "Week of November 27th."
+  },
+  {
+    "questions": ["Who is the professor for this class"],
+    "response": "Professor Goel."
+  },
+  {
+    "questions": ["Who is the instructor of this class"],
+    "response": "Professor Goel."
+  },
+  {
+    "questions": ["Who teaches this class"],
+    "response": "Professor Goel."
+  },
+  {
+    "questions": ["Who is the instructor"],
+    "response": "Professor Goel."
+  },
+  {
+    "questions": ["Who is professor Goel"],
+    "response": "The professor for this class."
+  },
+  {
+    "questions": ["Does Professor Goel enjoy frogs"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["How is this course structured"],
+    "response": "The course has five components. Video Lessons, Exercises and Readings; Design, Programming and Reflection projects; Assignments and Examinations; Peer Feedback; and Announcements, Question Answering and Discussions."
+  },
+  {
+    "questions": ["Where can I learn more about goals and strategies"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What are the number of surveys"],
+    "response": "There will be 4 surveys. 3 will be administered throughout the course, and the 4th will be administered by Georgia Tech via CIOS."
+  },
+  {
+    "questions": ["How many tutors are in the videos"],
+    "response": "The videos have ~150 exercises and ~100 tutors embedded in them."
+  },
+  {
+    "questions": ["How many nano-tutors are there"],
+    "response": "The videos have ~150 exercises and ~100 tutors embedded in them."
+  },
+  {
+    "questions": ["Which Faq are you using"],
+    "response": "Version 20171021."
+  },
+  {
+    "questions": ["What is the FAQ version"],
+    "response": "Version 20171021."
+  },
+  {
+    "questions": ["Which FAQ version we\u2019re using"],
+    "response": "Version 20171021."
+  },
+  {
+    "questions": ["How long are the instruction for this course"],
+    "response": "This course has 26 videos with about 18 hours of instruction."
+  },
+  {
+    "questions": ["Who will perform peer reviews"],
+    "response": "We will expect each student to give feedback on the work of 3 randomly selected peers for each of the 8 assignments. We will also select and share the best assignments, which will form another kind of peer feedback."
+  },
+  {
+    "questions": ["What are the components of the course"],
+    "response": "The course has five components. Video Lessons, Exercises and Readings; Design, Programming and Reflection projects; Assignments and Examinations; Peer Feedback; and Announcements, Question Answering and Discussions."
+  },
+  {
+    "questions": ["What FAQ version is used"],
+    "response": "Version 20171021."
+  },
+  {
+    "questions": ["What FAQ version is used"],
+    "response": "Version 20171021."
+  },
+  {
+    "questions": ["What is the version of FAQ"],
+    "response": "Version 20171021."
+  },
+  {
+    "questions": ["Which version of FAQ is used"],
+    "response": "Version 20171021."
+  },
+  {
+    "questions": ["What are the course components"],
+    "response": "The course has five components. Video Lessons, Exercises and Readings; Design, Programming and Reflection projects; Assignments and Examinations; Peer Feedback; and Announcements, Question Answering and Discussions."
+  },
+  {
+    "questions": ["What are the components of the course"],
+    "response": "The course has five components. Video Lessons, Exercises and Readings; Design, Programming and Reflection projects; Assignments and Examinations; Peer Feedback; and Announcements, Question Answering and Discussions."
+  },
+  {
+    "questions": ["Which components does the course have"],
+    "response": "The course has five components. Video Lessons, Exercises and Readings; Design, Programming and Reflection projects; Assignments and Examinations; Peer Feedback; and Announcements, Question Answering and Discussions."
+  },
+  {
+    "questions": ["Which components are in the course"],
+    "response": "The course has five components. Video Lessons, Exercises and Readings; Design, Programming and Reflection projects; Assignments and Examinations; Peer Feedback; and Announcements, Question Answering and Discussions."
+  },
+  {
+    "questions": ["What components are included in the course"],
+    "response": "The course has five components. Video Lessons, Exercises and Readings; Design, Programming and Reflection projects; Assignments and Examinations; Peer Feedback; and Announcements, Question Answering and Discussions."
+  },
+  {
+    "questions": ["How is this course structured"],
+    "response": "The course has five components. Video Lessons, Exercises and Readings; Design, Programming and Reflection projects; Assignments and Examinations; Peer Feedback; and Announcements, Question Answering and Discussions."
+  },
+  {
+    "questions": ["What components are included in the course"],
+    "response": "The course has five components. Video Lessons, Exercises and Readings; Design, Programming and Reflection projects; Assignments and Examinations; Peer Feedback; and Announcements, Question Answering and Discussions."
+  },
+  {
+    "questions": ["How long are the videos"],
+    "response": "This course has 26 videos with about 18 hours of instruction."
+  },
+  {
+    "questions": ["How many videos are there"],
+    "response": "This course has 26 videos with about 18 hours of instruction."
+  },
+  {
+    "questions": ["How many hours of video are there"],
+    "response": "This course has 26 videos with about 18 hours of instruction."
+  },
+  {
+    "questions": ["How long do the videos take"],
+    "response": "This course has 26 videos with about 18 hours of instruction."
+  },
+  {
+    "questions": ["How much video are in the course"],
+    "response": "This course has 26 videos with about 18 hours of instruction."
+  },
+  {
+    "questions": ["How many hours of instruction for this class"],
+    "response": "This course has 26 videos with about 18 hours of instruction."
+  },
+  {
+    "questions": ["How long are the instruction for this course"],
+    "response": "This course has 26 videos with about 18 hours of instruction."
+  },
+  {
+    "questions": ["How many instructions are in this course"],
+    "response": "This course has 26 videos with about 18 hours of instruction."
+  },
+  {
+    "questions": ["How much time do instructions take in this class"],
+    "response": "This course has 26 videos with about 18 hours of instruction."
+  },
+  {
+    "questions": ["How many hours of instruction are in this course"],
+    "response": "This course has 26 videos with about 18 hours of instruction."
+  },
+  {
+    "questions": ["How many exercises are in the videos"],
+    "response": "The videos have ~150 exercises and ~100 tutors embedded in them."
+  },
+  {
+    "questions": ["How many questions are in the videos"],
+    "response": "The videos have ~150 exercises and ~100 tutors embedded in them."
+  },
+  {
+    "questions": ["How many tutors are in the videos"],
+    "response": "The videos have ~150 exercises and ~100 tutors embedded in them."
+  },
+  {
+    "questions": ["How many nano-tutors are there"],
+    "response": "The videos have ~150 exercises and ~100 tutors embedded in them."
+  },
+  {
+    "questions": ["Are there exercises to go with the videos"],
+    "response": "The videos have ~150 exercises and ~100 tutors embedded in them."
+  },
+  {
+    "questions": ["Are there tutors to go with the videos"],
+    "response": "The videos have ~150 exercises and ~100 tutors embedded in them."
+  },
+  {
+    "questions": ["Are there accompanying readings"],
+    "response": "Most lessons have an accompanying set of readings. While video lessons introduce the basic concepts and methods, the readings provide the detailed algorithms. The projects are accompanied with a reading list."
+  },
+  {
+    "questions": ["Do you need to do more than just watch the videos"],
+    "response": "Most lessons have an accompanying set of readings. While video lessons introduce the basic concepts and methods, the readings provide the detailed algorithms. The projects are accompanied with a reading list."
+  },
+  {
+    "questions": ["Are there resources to help with the projects"],
+    "response": "Most lessons have an accompanying set of readings. While video lessons introduce the basic concepts and methods, the readings provide the detailed algorithms. The projects are accompanied with a reading list."
+  },
+  {
+    "questions": ["Are the videos enough to do well in the class"],
+    "response": "Most lessons have an accompanying set of readings. While video lessons introduce the basic concepts and methods, the readings provide the detailed algorithms. The projects are accompanied with a reading list."
+  },
+  {
+    "questions": ["Is there more content than just the videos"],
+    "response": "Most lessons have an accompanying set of readings. While video lessons introduce the basic concepts and methods, the readings provide the detailed algorithms. The projects are accompanied with a reading list."
+  },
+  {
+    "questions": ["Are there additional readings"],
+    "response": "Yes."
+  },
+  {
+    "questions": ["Do you need to read additional material"],
+    "response": "Yes."
+  },
+  {
+    "questions": ["Should I watch videos in advance"],
+    "response": "Students are welcome and encouraged to proceed at their own pace throughout the lessons, including viewing them outside of the designed order to better align with their interests."
+  },
+  {
+    "questions": ["Are there more reading"],
+    "response": "Yes."
+  },
+  {
+    "questions": ["Will we be required to do additional reading"],
+    "response": "Yes."
+  },
+  {
+    "questions": ["Will there be more readings"],
+    "response": "Yes."
+  },
+  {
+    "questions": ["Besides lectures, do we need to study anything else"],
+    "response": "Yes."
+  },
+  {
+    "questions": ["Who will give peer feedback"],
+    "response": "We will expect each student to give feedback on the work of 3 randomly selected peers for each of the 8 assignments. We will also select and share the best assignments, which will form another kind of peer feedback."
+  },
+  {
+    "questions": ["How much peer feedback is expected"],
+    "response": "We will expect each student to give feedback on the work of 3 randomly selected peers for each of the 8 assignments. We will also select and share the best assignments, which will form another kind of peer feedback."
+  },
+  {
+    "questions": ["Will I need to perform peer reviews"],
+    "response": "We will expect each student to give feedback on the work of 3 randomly selected peers for each of the 8 assignments. We will also select and share the best assignments, which will form another kind of peer feedback."
+  },
+  {
+    "questions": ["How many peer reviews will I need to do"],
+    "response": "We will expect each student to give feedback on the work of 3 randomly selected peers for each of the 8 assignments. We will also select and share the best assignments, which will form another kind of peer feedback."
+  },
+  {
+    "questions": ["Who will perform peer reviews"],
+    "response": "We will expect each student to give feedback on the work of 3 randomly selected peers for each of the 8 assignments. We will also select and share the best assignments, which will form another kind of peer feedback."
+  },
+  {
+    "questions": ["Where do I go for announcements"],
+    "response": "We will use the Piazza forum for announcements, question answering, discussions, and collaboration."
+  },
+  {
+    "questions": ["Do I need to log into Piazza regularly"],
+    "response": "It is important that you log into Piazza regularly and frequently (at least two or three times a week, daily if possible)."
+  },
+  {
+    "questions": ["How many writing components are there"],
+    "response": "The course includes 8 writing components: 3 assignments, 2 take home examinations, and 3 projects."
+  },
+  {
+    "questions": ["How are examinations given"],
+    "response": "The examinations will involve significant amount of essay writing and will test knowledge on the video lessons and accompanying readings."
+  },
+  {
+    "questions": ["How many exams are there"],
+    "response": "The course includes 2 take home examinations. A Mid-Term Exam and a Final Exam."
+  },
+  {
+    "questions": ["Is there any exam"],
+    "response": "The course includes 2 take home examinations. A Mid-Term Exam and a Final Exam."
+  },
+  {
+    "questions": ["Do I need to know computer vision"],
+    "response": "The projects do not require any specialized knowledge of computer vision or image processing."
+  },
+  {
+    "questions": ["Is prior knowledge of computer vision required for the projects"],
+    "response": "The projects do not require any specialized knowledge of computer vision or image processing."
+  },
+  {
+    "questions": ["Is prior knowledge of image processing required for the projects"],
+    "response": "The projects do not require any specialized knowledge of computer vision or image processing."
+  },
+  {
+    "questions": ["Are projects individual or group"],
+    "response": "Projects will be done individually."
+  },
+  {
+    "questions": ["What are the primary learning goals for KBAI"],
+    "response": "The primary learning goals are: First, this class teaches the concepts, methods, and prominent issues in knowledge-based artificial intelligence. Second, it teaches the specific skills and abilities needed to apply those concepts to the design of knowledge-based AI agents. Third, it teaches the relationship between knowledge-based artificial intelligence and the study of human cognition."
+  },
+  {
+    "questions": ["What are the primary goals of this class"],
+    "response": "The primary learning goals are: First, this class teaches the concepts, methods, and prominent issues in knowledge-based artificial intelligence. Second, it teaches the specific skills and abilities needed to apply those concepts to the design of knowledge-based AI agents. Third, it teaches the relationship between knowledge-based artificial intelligence and the study of human cognition."
+  },
+  {
+    "questions": ["What is the structure of this course"],
+    "response": "The structure of this course is driven by several pedagogical motivations: learning by example, learning by doing, project-based learning, personalization, collaborative learning, peer-to-peer learning, self-reflection and authenticity."
+  },
+  {
+    "questions": ["What will I learn in this class"],
+    "response": "At the conclusion of this class: first you will have learned to be able to design and implement a knowledge-based artificial intelligence agent that can address a complex task using the methods discussed in the course. Second, you will be able to use this agent to reflect on the process of human cognition. Third, you will be able to use both these practices to address practical problems in multiple domains."
+  },
+  {
+    "questions": ["What is the Technical Report"],
+    "response": "The Technical Report is a document that provides more detailed accounts of learning goals, strategies, and outcomes of this course."
+  },
+  {
+    "questions": ["How is this class taught"],
+    "response": "Each topic is taught through examples of the way in which humans and artificial intelligence agents approach certain problems, often building from human thought toward AI agents and subsequently referring back to human cognition."
+  },
+  {
+    "questions": ["How does this course encourage Learning by Doing"],
+    "response": "Students will participate in the reasoning within each particular lesson, and subsequently tie the topic back to a broader problem."
+  },
+  {
+    "questions": ["How does this course utilize Project Based Learning strategies"],
+    "response": "This class has three projects, each of which build on the previous one, and the overall goals and motivations of KBAI are presented through these projects."
+  },
+  {
+    "questions": ["Is Collaborative Learning allowed"],
+    "response": "We encourage collaboration and the development of communities of practice surrounding the course material and projects. We are excited to see students borrow one another\u2019s ideas and build on them, as well as spin off on their own study groups."
+  },
+  {
+    "questions": ["How does Peer-to-Peer Learning work"],
+    "response": "During this class, students will give their peers feedback on their work for completed assignments. This lets students see additional approaches to the problems, provides extra feedback, and puts students in the position of a teacher, which has been shown to be a pedagogically useful role reversal."
+  },
+  {
+    "questions": ["How does this course encourage Self-Reflection"],
+    "response": "At the conclusion of each lesson, each student is asked to reflect on what they learned in the class. Each design project requires the writing of a project reflection that explains and critiques, and reflects on the student\u2019s work on the project."
+  },
+  {
+    "questions": ["How does this course ensure Authenticity"],
+    "response": "The project that is explored in this class is an open research question in the AI and Cognitive Systems research communities. Two students from our lab have completed dissertations working on these questions in the past two years, and we have had papers published on these topics within the past several months."
+  },
+  {
+    "questions": ["How many projects does this course have"],
+    "response": "This class has three projects."
+  },
+  {
+    "questions": ["Where can I find more information on learning goals, strategies, and outcomes"],
+    "response": "More information can be found in the Technical Report."
+  },
+  {
+    "questions": ["Can I watch lectures in advance"],
+    "response": "Students are welcome and encouraged to proceed at their own pace throughout the lessons, including viewing them outside of the designed order to better align with their interests."
+  },
+  {
+    "questions": ["Can I discuss completed assignments with other students"],
+    "response": "Absolutely! Students will give and receive peer feedback for completed assignments. We encourage a collaborative learning environment."
+  },
+  {
+    "questions": ["Is Python or Java required for this course"],
+    "response": "Yes."
+  },
+  {
+    "questions": ["Can I use a language other than Python or Java"],
+    "response": "No."
+  },
+  {
+    "questions": ["How many essays will I have to write"],
+    "response": "8. Three Assignments, three reflection reports and two examinations."
+  },
+  {
+    "questions": ["How can I engage with my classmates"],
+    "response": "You can engage with your classmates through Piazza Forum, Peer Feedback and sharing of exemplary assignments."
+  },
+  {
+    "questions": ["Will I have to work independently"],
+    "response": "Yes. You will have to work independently on design, programming and reflections."
+  },
+  {
+    "questions": ["Will I have to do additional reading for this class"],
+    "response": "Yes."
+  },
+  {
+    "questions": ["Are the deadlines for assignments fixed"],
+    "response": "Yes."
+  },
+  {
+    "questions": ["How much time does the class demand"],
+    "response": "The class demands significant amount of time and energy on a regular basis."
+  },
+  {
+    "questions": ["Will I have to adhere to Georgia Tech code of conduct to take this class"],
+    "response": "Yes."
+  },
+  {
+    "questions": ["Where can I find the reading list"],
+    "response": "Readings will either be publicly available on-line or will be provided to you in the T-Square Resources section for this class."
+  },
+  {
+    "questions": ["How will I know which readings relate to which lectures"],
+    "response": "It will be provided in the description of video lecture, project / you can always ask the TA's."
+  },
+  {
+    "questions": ["Are the readings mandatory"],
+    "response": "It is not mandatory, but is strongly recommended as it will help improve the understanding of the subject."
+  },
+  {
+    "questions": ["Can we ask for clarification on reading list materials"],
+    "response": "Yes."
+  },
+  {
+    "questions": ["How many sets of reading list are there"],
+    "response": "Two - one for project  another for video lectures."
+  },
+  {
+    "questions": ["What is the scope of these reading sets"],
+    "response": "The readings accompanying the videos add depth to the lessons: for example, they cover algorithms for  the conceptual methods discussed in the videos. Similarly, the readings accompanying the projects describe the conceptual and algorithmic basis for the projects."
+  },
+  {
+    "questions": ["Is there an order to be followed for the reading list"],
+    "response": "Reading after completion of the specific chapter will help in better understanding, but if you wish you can read ahead of time or after sometime."
+  },
+  {
+    "questions": ["Can we request for more reading papers"],
+    "response": "Yes."
+  },
+  {
+    "questions": ["What components will determine final grades"],
+    "response": "Your final grade will be determined by 3 written assignments worth 12%, 3 programming assignments worth 45%, 2 unproctored exams worth 35% and 24 peer feedback activities worth 8%."
+  },
+  {
+    "questions": ["When can we expect to receive grades after a submission"],
+    "response": "2 weeks after the original submission."
+  },
+  {
+    "questions": ["Do the grades assigned to me by peers affect my grade"],
+    "response": "No. The primary purpose of supplying the graders with the results of the peer feedback process is to help the graders ensure every student gets useful feedback, as well as to ensure that the peer feedback received is accurate."
+  },
+  {
+    "questions": ["How will grades be released"],
+    "response": "Grades will generally be released via both T-Square and Peer Feedback. Written feedback from the graders, however, will only be released via Peer Feedback. For Projects, sub-scores for your agent's performance on the problems and for your project reflection will be returned via the assignment submission page, and the overall project score will be posted to the grade book. Check marks for Peer Feedback participation will be provided throughout the semester via the assignment submission pages for those tasks, and a final Peer Feedback score (based both on completion and quality of participation) will be assigned at the end of the semester."
+  },
+  {
+    "questions": ["Are there fixed thresholds for grades"],
+    "response": "No."
+  },
+  {
+    "questions": ["Will there be curving of grade"],
+    "response": "Yes."
+  },
+  {
+    "questions": ["What have the grade statistics for this class been in the past"],
+    "response": "For the Fall 2015 KBAI class, the average was in the low 80's, and only about 10% of the class ended with a raw score over 90; well over half the class still received an A, though."
+  },
+  {
+    "questions": ["What are the individual weights of the 2 unproctored exams"],
+    "response": "15% for mid-term exam and 20% for final exam."
+  },
+  {
+    "questions": ["What should I do to get good grades on this class"],
+    "response": "We encourage you to focus first on doing the best you can on all assignments; if you do, your grade should take care of itself."
+  },
+  {
+    "questions": ["How many assignments are in the class"],
+    "response": "There will be 3 assignments in the course."
+  },
+  {
+    "questions": ["What is the word limit for each assignment"],
+    "response": "Each assignment should be approximately 1,000 words (neither a minimum nor a maximum, just a heuristic)."
+  },
+  {
+    "questions": ["What topics do the assignments cover"],
+    "response": "Each assignment relates to a certain topic or set of topics in the course material to some problem. For Assignments 1 the problem should be the class project. For Assignments 2, we will provide a list of problems that you can choose from. For Assignments 3, you may choose from that same list, or you may select a problem of your own."
+  },
+  {
+    "questions": ["What advantages does peer-to-peer feedback provide me"],
+    "response": "Peer-to-peer feedback provides a number of opportunities: it gives you the opportunity to see your classmates' work, it gets you more feedback on your work than you would otherwise receive, and it puts you in the position of critiquing and analyzing course material."
+  },
+  {
+    "questions": ["How do I participate in peer-to-peer feedback"],
+    "response": "We will use a tool called Peer Feedback -- peerfeedback.gatech.edu -- to give peer-to-peer feedback in this class."
+  },
+  {
+    "questions": ["How often will I be required to provide peer-to-peer feedback"],
+    "response": "You will give peer-to-peer feedback to your classmates on all six assignments (including the three you do not personally complete) and on all three project reflections."
+  },
+  {
+    "questions": ["How does peer-to-peer feedback impact our grade on the assignment"],
+    "response": "Peers will evaluate one another on the same rubric that graders will use; however, the scores you assign to your peers will not factor into their actual grades on the assignment."
+  },
+  {
+    "questions": ["Do the TAs look at the feedback"],
+    "response": "TAs will see the feedback you give to your peers in order to ensure that all students receive adequate feedback."
+  },
+  {
+    "questions": ["How much of my grade depends on completing peer feedback"],
+    "response": "Completing peer feedback exercises is 8% of your average."
+  },
+  {
+    "questions": ["Does the quality of feedback I provide matter"],
+    "response": "Your peer feedback average will be determined not only based on whether or not you completed all assigned peer feedback exercises, but also based on the quality of the feedback you provided as evaluated by the TAs and by the recipients of the feedback."
+  },
+  {
+    "questions": ["How will the exams be distributed"],
+    "response": "Both exams will be an unproctored, untimed, 'take-home' tests."
+  },
+  {
+    "questions": ["What format will the exams be given in"],
+    "response": "Both exams will consist of a number of different questions asking you to synthesize multiple parts of the course material."
+  },
+  {
+    "questions": ["What are the ways in which new class information will be sent"],
+    "response": "A T-Square announcement with an email notification and a pinned Piazza announcement in the \u2018announcements\u2019 folder with an email notification."
+  },
+  {
+    "questions": ["How often should you check your Georgia Tech email"],
+    "response": "Once every 24 hours."
+  },
+  {
+    "questions": ["Where should you preferably post your questions"],
+    "response": "Piazza."
+  },
+  {
+    "questions": ["What questions are better suited for office hours"],
+    "response": "Conversational discussions on course material and discussions about individuals' grades."
+  },
+  {
+    "questions": ["Why is Piazza preferred for asking questions related to the class"],
+    "response": "Posting on piazza opens up the question to input from everyone in the class and creates a self-documenting history of the answer to the question."
+  },
+  {
+    "questions": ["Why do we use Piazza"],
+    "response": "Posting on piazza opens up the question to input from everyone in the class and creates a self-documenting history of the answer to the question."
+  },
+  {
+    "questions": ["How often will office hours be held"],
+    "response": "Weekly."
+  },
+  {
+    "questions": ["How frequent are office hours held"],
+    "response": "Weekly."
+  },
+  {
+    "questions": ["Will office hours be recorded and posted"],
+    "response": "No, but if there is anything relevant to the whole class it will be recorded and posted on Piazza."
+  },
+  {
+    "questions": ["How should you reach out to instructors about private issues like grades"],
+    "response": "Post a private Piazza message visible only to the instructors."
+  },
+  {
+    "questions": ["How will I be able to participate in office hours"],
+    "response": "Via the Webex link available on Piazza."
+  },
+  {
+    "questions": ["How can I join office hours"],
+    "response": "Via the Webex link available on Piazza."
+  },
+  {
+    "questions": ["How do I join office hours"],
+    "response": "Via the Webex link available on Piazza."
+  },
+  {
+    "questions": ["How can I participate in office hours"],
+    "response": "Via the Webex link available on Piazza."
+  },
+  {
+    "questions": ["How can I attend office hours"],
+    "response": "Via the Webex link available on Piazza."
+  },
+  {
+    "questions": ["What is the purpose of office hours"],
+    "response": "Synchronous office hours are intended for conversations about individual projects, discussions about course material, etc. rather than straightforward question and answer."
+  },
+  {
+    "questions": ["Where will exemplary assignments be posted"],
+    "response": "Exemplary assignments, once available, will be posted on piazza for everyone to see."
+  },
+  {
+    "questions": ["What is the point of posting exemplary assignments"],
+    "response": "From previous semesters, we have found that posting exemplary assignments allow for greater peer-to-peer learning and fosters a community of learners."
+  },
+  {
+    "questions": ["Is late work accepted"],
+    "response": "Due to the size of the class and limited resources, late work will not be accepted."
+  },
+  {
+    "questions": ["What should I do if I am having issues submitting my work"],
+    "response": "If you are having issue submitting on T-square, immediately post a private note on Piazza with your submission."
+  },
+  {
+    "questions": ["What if I have an emergency and cannot submit my work on time"],
+    "response": "If you have an emergency and cannot submit your work by the deadline, we ask that you go through the Dean of Student's office."
+  },
+  {
+    "questions": ["What kind of issues can I bring up to the Dean of Student's office"],
+    "response": "Justifiable excuses would involve any major unforeseen disruption to your classwork such as illness, injuries, death, and birth, all for either you or your family."
+  },
+  {
+    "questions": ["What kind of conflict am I liable for"],
+    "response": "Conflicts such as weddings, business trips, and conference, you should complete your work in advance. That is why all of the assignments and project resources are provided to you at the start of the semester."
+  },
+  {
+    "questions": ["Is this course the same as the previous semesters"],
+    "response": "No. every semester is a learning experience. Each subsequent semesters benefit from the lessons learned the previous semesters."
+  },
+  {
+    "questions": ["Can I provide the teaching staff feedback on how I think that the course is going"],
+    "response": "Absolutely! In fact, we encourage students to provide feedback on things that work, and things that could be done better."
+  },
+  {
+    "questions": ["How can I provide feedback"],
+    "response": "You may take advantage of the feedback box on Piazza, as well as the surveys we will send out over the course of the semester."
+  },
+  {
+    "questions": ["How many surveys will there be"],
+    "response": "There will be 4 surveys. 3 will be administered throughout the course, and the 4th will be administered by Georgia Tech via CIOS."
+  },
+  {
+    "questions": ["How can I contact the Dean of Student's office"],
+    "response": "You may find information on contacting the Dean of Students with regard to personal emergencies here: https://studentlife.gatech.edu/content/class-attendance."
+  },
+  {
+    "questions": ["What if my conflict falls during the final"],
+    "response": "If your conflict falls during final exams, please let us know immediately and in advance so that we may work with you."
+  },
+  {
+    "questions": ["When are assignments due"],
+    "response": "All assignments are due at the end of the week, on Sunday at midnight UTC-12 (Anywhere On Earth time). This translates to an early-morning Monday deadline in the Americas, a midday Monday deadline in Europe, etc. If for example, Assignment 1 were due on January 22nd at midnight UTC-12, which translates to Monday, January 23rd at 7AM Eastern time, 4AM Pacific time. Precise due dates and times can be found in T-Square on each assignment page. Make sure to set T-Square to your local time zone to see due dates in your time."
+  },
+  {
+    "questions": ["Where can I find the course calendar"],
+    "response": "https://docs.google.com/document/d/1YUnl-NbNycN3GfzK8BXO0qxW6wdKT1sKhO-p028Fl18/edit."
+  },
+  {
+    "questions": ["Where is the course syllabus"],
+    "response": "https://docs.google.com/document/d/1YUnl-NbNycN3GfzK8BXO0qxW6wdKT1sKhO-p028Fl18/edit."
+  },
+  {
+    "questions": ["Where can I find assignment 1"],
+    "response": "https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc."
+  },
+  {
+    "questions": ["Where is assignment 1's rubric"],
+    "response": "https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc."
+  },
+  {
+    "questions": ["Where can I find assignment 2"],
+    "response": "https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc."
+  },
+  {
+    "questions": ["Where is assignment 2 defined"],
+    "response": "https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc."
+  },
+  {
+    "questions": ["Where can I find assignment 3"],
+    "response": "https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc."
+  },
+  {
+    "questions": ["Where is assignment 3"],
+    "response": "https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc."
+  },
+  {
+    "questions": ["Where can I find project 1"],
+    "response": "https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc."
+  },
+  {
+    "questions": ["Where is project 1's files"],
+    "response": "https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc."
+  },
+  {
+    "questions": ["Where can I find project 2"],
+    "response": "https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc."
+  },
+  {
+    "questions": ["What is the location of project 2"],
+    "response": "https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc."
+  },
+  {
+    "questions": ["Where can I find project 3"],
+    "response": "https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc."
+  },
+  {
+    "questions": ["Where are the files for project 3"],
+    "response": "https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc."
+  },
+  {
+    "questions": ["When is assignment 1 due"],
+    "response": "Week of August 28th."
+  },
+  {
+    "questions": ["When is due date for assignment 1"],
+    "response": "Week of August 28th."
+  },
+  {
+    "questions": ["When is assignment 2 due"],
+    "response": "Week of September 25th."
+  },
+  {
+    "questions": ["Assignment 2 is due when"],
+    "response": "Week of September 25th."
+  },
+  {
+    "questions": ["When is assignment 3 due"],
+    "response": "Week of October 30th."
+  },
+  {
+    "questions": ["What is the date for assignment 3"],
+    "response": "Week of October 30th."
+  },
+  {
+    "questions": ["When is project 1 due"],
+    "response": "Week of September 4th."
+  },
+  {
+    "questions": ["When does project 1 need to be completed"],
+    "response": "Week of September 4th."
+  },
+  {
+    "questions": ["When is project 2 due"],
+    "response": "Week of October 9th."
+  },
+  {
+    "questions": ["What is due date for project 2"],
+    "response": "Week of October 9th."
+  },
+  {
+    "questions": ["When is project 3 due"],
+    "response": "Week of November 6th."
+  },
+  {
+    "questions": ["What is due date for project 3"],
+    "response": "Week of November 6th."
+  },
+  {
+    "questions": ["When is the midterm"],
+    "response": "Week of October 2nd."
+  },
+  {
+    "questions": ["What date is the midterm"],
+    "response": "Week of October 2nd."
+  },
+  {
+    "questions": ["When is the final"],
+    "response": "Week of November 27th."
+  },
+  {
+    "questions": ["What date is the final"],
+    "response": "Week of November 27th."
+  },
+  {
+    "questions": ["Who is the professor for this class"],
+    "response": "Professor Goel."
+  },
+  {
+    "questions": ["Who is the instructor of this class"],
+    "response": "Professor Goel."
+  },
+  {
+    "questions": ["Who teaches this class"],
+    "response": "Professor Goel."
+  },
+  {
+    "questions": ["Who is the instructor"],
+    "response": "Professor Goel."
+  },
+  {
+    "questions": ["Who is professor Goel"],
+    "response": "The professor for this class."
+  },
+  {
+    "questions": ["Does Professor Goel enjoy frogs"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["How is this course structured"],
+    "response": "The course has five components. Video Lessons, Exercises and Readings; Design, Programming and Reflection projects; Assignments and Examinations; Peer Feedback; and Announcements, Question Answering and Discussions."
+  },
+  {
+    "questions": ["Can I watch videos ahead of time"],
+    "response": "Students are welcome and encouraged to proceed at their own pace throughout the lessons, including viewing them outside of the designed order to better align with their interests."
+  },
+  {
+    "questions": ["Can I discuss completed assignments with others"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Can I discuss returned assignments with others"],
+    "response": "Absolutely! Students will give and receive peer feedback for completed assignments. We encourage a collaborative learning environment."
+  },
+  {
+    "questions": ["Are we allowed to discuss finished assignments"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Are we allowed to discuss completed assignments"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Can I use a language apart from Python or Java"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Do I need to know Python"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Do I need to know Python or Java"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["How many essays"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["How many essays will I need to write"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["How many essays will I have to write"],
+    "response": "8. Three Assignments, three reflection reports and two examinations."
+  },
+  {
+    "questions": ["How can I engage with classmates"],
+    "response": "You can engage with your classmates through Piazza Forum, Peer Feedback and sharing of exemplary assignments."
+  },
+  {
+    "questions": ["How can I communicate with classmates"],
+    "response": "You can engage with your classmates through Piazza Forum, Peer Feedback and sharing of exemplary assignments."
+  },
+  {
+    "questions": ["How to contact with classmates"],
+    "response": "You can engage with your classmates through Piazza Forum, Peer Feedback and sharing of exemplary assignments."
+  },
+  {
+    "questions": ["Do I have to work independently"],
+    "response": "Yes. You will have to work independently on design, programming and reflections."
+  },
+  {
+    "questions": ["Do I have to read additional materials"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Are the deadlines fixed"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Are the deadlines for assignments fixed"],
+    "response": "Yes."
+  },
+  {
+    "questions": ["What are the demands of the class"],
+    "response": "The class demands significant amount of time and energy on a regular basis."
+  },
+  {
+    "questions": ["How demanding is the class"],
+    "response": "The class demands significant amount of time and energy on a regular basis."
+  },
+  {
+    "questions": ["Do I have to follow the Georgia Tech code of conduct"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Where is reading list"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Are readings compulsory"],
+    "response": "It is not mandatory, but is strongly recommended as it will help improve the understanding of the subject."
+  },
+  {
+    "questions": ["How many sets of reading lists"],
+    "response": "Two - one for project  another for video lectures."
+  },
+  {
+    "questions": ["What are the sets of reading lists"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What are the number of reading lists"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What are the number of reading list"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What are the number of sets of reading list"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What is the scope of the readings"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What is the scope of the reading sets"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Do I need to follow some order for the readings"],
+    "response": "Reading after completion of the specific chapter will help in better understanding, but if you wish you can read ahead of time or after sometime."
+  },
+  {
+    "questions": ["Can I ask for more papers to read"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What decides the final grade"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What will determine final grade"],
+    "response": "Your final grade will be determined by 3 written assignments worth 12%, 3 programming assignments worth 45%, 2 unproctored exams worth 35% and 24 peer feedback activities worth 8%."
+  },
+  {
+    "questions": ["Do grades by peers affect my grade"],
+    "response": "No. The primary purpose of supplying the graders with the results of the peer feedback process is to help the graders ensure every student gets useful feedback, as well as to ensure that the peer feedback received is accurate."
+  },
+  {
+    "questions": ["Are my grades affected by the grades assigned by my peers"],
+    "response": "No. The primary purpose of supplying the graders with the results of the peer feedback process is to help the graders ensure every student gets useful feedback, as well as to ensure that the peer feedback received is accurate."
+  },
+  {
+    "questions": ["Are the thresholds for grades fixed"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Are there fixed thresholds for grades"],
+    "response": "No."
+  },
+  {
+    "questions": ["What are the previous stats for this class"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What are the previous statistics for this class"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What are the individual weights of the 2 exams"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What is the weightage of each exam"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What are the weightages of each exam"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What are the wieghtages of the exams"],
+    "response": "The examinations will involve significant amount of essay writing and will test knowledge on the video lessons and accompanying readings."
+  },
+  {
+    "questions": ["What are the weightages of the exams"],
+    "response": "The examinations will involve significant amount of essay writing and will test knowledge on the video lessons and accompanying readings."
+  },
+  {
+    "questions": ["How can I get good grades"],
+    "response": "We encourage you to focus first on doing the best you can on all assignments; if you do, your grade should take care of itself."
+  },
+  {
+    "questions": ["How many assignments do we need to complete>"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["How many assignments do we need to complete"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["How many assignments"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What is the word limit on assignments"],
+    "response": "Each assignment should be approximately 1,000 words (neither a minimum nor a maximum, just a heuristic)."
+  },
+  {
+    "questions": ["Is there a word limit on assignments"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What do the assignments cover"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What is the use of peer feedback"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What is the use of peer-to-peer feedback"],
+    "response": "Peer-to-peer feedback provides a number of opportunities: it gives you the opportunity to see your classmates' work, it gets you more feedback on your work than you would otherwise receive, and it puts you in the position of critiquing and analyzing course material."
+  },
+  {
+    "questions": ["How can I take part in peer-to-peer feedback"],
+    "response": "We will use a tool called Peer Feedback -- peerfeedback.gatech.edu -- to give peer-to-peer feedback in this class."
+  },
+  {
+    "questions": ["Do TAs check peer feedback"],
+    "response": "TAs will see the feedback you give to your peers in order to ensure that all students receive adequate feedback."
+  },
+  {
+    "questions": ["Is the quality of peer feedback important"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What is the format of exams"],
+    "response": "Both exams will consist of a number of different questions asking you to synthesize multiple parts of the course material."
+  },
+  {
+    "questions": ["How will new information be propagated"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["How will new information be sent"],
+    "response": "A T-Square announcement with an email notification and a pinned Piazza announcement in the \u2018announcements\u2019 folder with an email notification."
+  },
+  {
+    "questions": ["How will we be notified"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Where should I post questions"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What questions should I ask during office hours"],
+    "response": "Conversational discussions on course material and discussions about individuals' grades."
+  },
+  {
+    "questions": ["What questions are suitable during office hours"],
+    "response": "Conversational discussions on course material and discussions about individuals' grades."
+  },
+  {
+    "questions": ["Why Piazza"],
+    "response": "It is important that you log into Piazza regularly and frequently (at least two or three times a week, daily if possible)."
+  },
+  {
+    "questions": ["Why Piazza"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Why is Piazza preferred"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Why is Piazza preferred for asking questions"],
+    "response": "Posting on piazza opens up the question to input from everyone in the class and creates a self-documenting history of the answer to the question."
+  },
+  {
+    "questions": ["Why is Piazza used to ask questions"],
+    "response": "Posting on piazza opens up the question to input from everyone in the class and creates a self-documenting history of the answer to the question."
+  },
+  {
+    "questions": ["Are office hours recorded"],
+    "response": "No, but if there is anything relevant to the whole class it will be recorded and posted on Piazza."
+  },
+  {
+    "questions": ["Is a record of office hours maintained"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Will office hours be posted"],
+    "response": "No, but if there is anything relevant to the whole class it will be recorded and posted on Piazza."
+  },
+  {
+    "questions": ["How can I speak about private issues with the instructors"],
+    "response": "Post a private Piazza message visible only to the instructors."
+  },
+  {
+    "questions": ["How can I join office hours"],
+    "response": "Via the Webex link available on Piazza."
+  },
+  {
+    "questions": ["How can I attend office hours"],
+    "response": "Via the Webex link available on Piazza."
+  },
+  {
+    "questions": ["How are office hours useful"],
+    "response": "Via the Webex link available on Piazza."
+  },
+  {
+    "questions": ["How are office hours useful"],
+    "response": "Synchronous office hours are intended for conversations about individual projects, discussions about course material, etc. rather than straightforward question and answer."
+  },
+  {
+    "questions": ["Where can I finc exemplary assignments"],
+    "response": "https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc."
+  },
+  {
+    "questions": ["Where can I find exemplary assignments"],
+    "response": "https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc."
+  },
+  {
+    "questions": ["Where can I find exemplary assignments"],
+    "response": "Exemplary assignments, once available, will be posted on piazza for everyone to see."
+  },
+  {
+    "questions": ["What is the use of posting exemplary assignments"],
+    "response": "From previous semesters, we have found that posting exemplary assignments allow for greater peer-to-peer learning and fosters a community of learners."
+  },
+  {
+    "questions": ["Why are exemplary assignments posted"],
+    "response": "From previous semesters, we have found that posting exemplary assignments allow for greater peer-to-peer learning and fosters a community of learners."
+  },
+  {
+    "questions": ["Why are exemplary assignments made public"],
+    "response": "From previous semesters, we have found that posting exemplary assignments allow for greater peer-to-peer learning and fosters a community of learners."
+  },
+  {
+    "questions": ["Can I submit work late"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Is it ok to submit late work"],
+    "response": "Due to the size of the class and limited resources, late work will not be accepted."
+  },
+  {
+    "questions": ["What do I do if I have a problem submitting"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What do I do if I have a problem submitting my work"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What if I have an emergency"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What issues can I take to the Dean of Students"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What conflicts am I liable for"],
+    "response": "Conflicts such as weddings, business trips, and conference, you should complete your work in advance. That is why all of the assignments and project resources are provided to you at the start of the semester."
+  },
+  {
+    "questions": ["Has the course changed compared to previous semesters"],
+    "response": "No. every semester is a learning experience. Each subsequent semesters benefit from the lessons learned the previous semesters."
+  },
+  {
+    "questions": ["Can I provide teaching staff feedback"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Can the instructors be given feedback"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["How to give feedback"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["How to provide feedback"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["How many surveys"],
+    "response": "There will be 4 surveys. 3 will be administered throughout the course, and the 4th will be administered by Georgia Tech via CIOS."
+  },
+  {
+    "questions": ["What are the number of surveys"],
+    "response": "There will be 4 surveys. 3 will be administered throughout the course, and the 4th will be administered by Georgia Tech via CIOS."
+  },
+  {
+    "questions": ["What if I have a conflict during the final"],
+    "response": "If your conflict falls during final exams, please let us know immediately and in advance so that we may work with you."
+  },
+  {
+    "questions": ["What if during the final I have a conflict"],
+    "response": "If your conflict falls during final exams, please let us know immediately and in advance so that we may work with you."
+  },
+  {
+    "questions": ["Where is the course calendar"],
+    "response": "https://docs.google.com/document/d/1YUnl-NbNycN3GfzK8BXO0qxW6wdKT1sKhO-p028Fl18/edit."
+  },
+  {
+    "questions": ["Where is the syllabus"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Where is the course syllabus"],
+    "response": "https://docs.google.com/document/d/1YUnl-NbNycN3GfzK8BXO0qxW6wdKT1sKhO-p028Fl18/edit."
+  },
+  {
+    "questions": ["Are you ready to get trolled"],
+    "response": "There will be 4 surveys. 3 will be administered throughout the course, and the 4th will be administered by Georgia Tech via CIOS."
+  },
+  {
+    "questions": ["Are you ready to get trolled"],
+    "response": "There will be 4 surveys. 3 will be administered throughout the course, and the 4th will be administered by Georgia Tech via CIOS."
+  },
+  {
+    "questions": ["Who is Thad Starner"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["When is assignment 4 due"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["How should I submit assignments"],
+    "response": "If you are having issue submitting on T-square, immediately post a private note on Piazza with your submission."
+  },
+  {
+    "questions": ["Is the sky blue"],
+    "response": "There will be 4 surveys. 3 will be administered throughout the course, and the 4th will be administered by Georgia Tech via CIOS."
+  },
+  {
+    "questions": ["Is the sky blue"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Does Professor Goel drink a lot"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Is Professor Goel rich"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Are assignments easy"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["How easy are the projects"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Can I learn Python and Java easily"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Is it good to have a conflict during the final"],
+    "response": "If your conflict falls during final exams, please let us know immediately and in advance so that we may work with you."
+  },
+  {
+    "questions": ["Is it good to have a conflict during the final"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Is the Dean of Student's office cool"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["What is Collaborative learning"],
+    "response": "At the conclusion of this class: first you will have learned to be able to design and implement a knowledge-based artificial intelligence agent that can address a complex task using the methods discussed in the course. Second, you will be able to use this agent to reflect on the process of human cognition. Third, you will be able to use both these practices to address practical problems in multiple domains."
+  },
+  {
+    "questions": ["What is Collaborative learning"],
+    "response": "We encourage collaboration and the development of communities of practice surrounding the course material and projects. We are excited to see students borrow one another\u2019s ideas and build on them, as well as spin off on their own study groups."
+  },
+  {
+    "questions": ["Can I collaborate on projects"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Is Piazza a good place to troll"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["Is it good to know computer vision"],
+    "response": "The projects do not require any specialized knowledge of computer vision or image processing."
+  },
+  {
+    "questions": ["How should I solve the assignments"],
+    "response": "I do not know."
+  },
+  {
+    "questions": ["How can I do good in assignments"],
+    "response": "I do not know."
+  }
+]

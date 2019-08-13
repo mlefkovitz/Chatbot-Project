@@ -1,0 +1,980 @@
+
+Input: What is the FAQ version
+Response: Version 20171026
+
+Is the response correct (yes/no)?
+Correct: Version 20171026
+
+Type: True
+Action: 1.0
+
+Input: What are the course components
+Response: The course has five components. Video Lessons, Exercises and Readings; Design, Programming and Reflection projects; Assignments and Examinations; Peer Feedback; and Announcements, Question Answering and Discussions.
+
+Is the response correct (yes/no)?
+Correct: The course has five components. Video Lessons, Exercises and Readings; Design, Programming and Reflection projects; Assignments and Examinations; Peer Feedback; and Announcements, Question Answering and Discussions.
+
+Type: True
+Action: 1.0
+
+Input: How long are the videos
+Response: This course has 26 videos with about 18 hours of instruction.
+
+Is the response correct (yes/no)?
+Correct: This course has 26 videos with about 18 hours of instruction.
+
+Type: True
+Action: 1.0
+
+Input: How many hours of instruction for this class
+Response: This course has 26 videos with about 18 hours of instruction.
+
+Is the response correct (yes/no)?
+Correct: This course has 26 videos with about 18 hours of instruction.
+
+Type: True
+Action: 1.0
+
+Input: How many exercises are in the videos
+Response: The videos have ~150 exercises and ~100 “tutors” embedded in them.
+
+Is the response correct (yes/no)?
+Correct: The videos have ~150 exercises and ~100 “tutors” embedded in them.
+
+Type: True
+Action: 1.0
+
+Input: Are there accompanying readings
+Response: Most lessons have an accompanying set of readings. While video lessons introduce the basic concepts and methods, the readings provide the detailed algorithms. The projects are accompanied with a reading list.
+
+Is the response correct (yes/no)?
+Correct: Most lessons have an accompanying set of readings. While video lessons introduce the basic concepts and methods, the readings provide the detailed algorithms. The projects are accompanied with a reading list.
+
+Type: True
+Action: 1.0
+
+Input: Who will give peer feedback
+Response: We will expect each student to give feedback on the work of 3 randomly selected peers for each of the 8 assignments. We will also select and share the best assignments, which will form another kind of peer feedback.
+
+Is the response correct (yes/no)?
+Correct: We will expect each student to give feedback on the work of 3 randomly selected peers for each of the 8 assignments. We will also select and share the best assignments, which will form another kind of peer feedback.
+
+Type: True
+Action: 1.0
+
+Input: Where do I go for announcements
+Response: We will use the Piazza forum for announcements, question answering, discussions, and collaboration.
+
+Is the response correct (yes/no)?
+Correct: We will use the Piazza forum for announcements, question answering, discussions, and collaboration.
+
+Type: True
+Action: 1.0
+
+Input: Do I need to log into Piazza regularly
+Response: It is important that you log into Piazza regularly and frequently (at least two or three times a week, daily if possible).
+
+Is the response correct (yes/no)?
+Correct: It is important that you log into Piazza regularly and frequently (at least two or three times a week, daily if possible).
+
+Type: True
+Action: 1.0
+
+Input: How many writing components are there
+Response: The course includes 8 writing components: 3 assignments, 2 take home examinations, and 3 projects.
+
+Is the response correct (yes/no)?
+Correct: The course includes 8 writing components: 3 assignments, 2 take home examinations, and 3 projects.
+
+Type: True
+Action: 1.0
+
+Input: How are examinations given
+Response: The examinations will involve significant amount of essay writing and will test knowledge on the video lessons and accompanying readings.
+
+Is the response correct (yes/no)?
+Correct: The examinations will involve significant amount of essay writing and will test knowledge on the video lessons and accompanying readings.
+
+Type: True
+Action: 1.0
+
+Input: How many exams are there
+Response: The course includes 2 take home examinations. A Mid-Term Exam and a Final Exam.
+
+Is the response correct (yes/no)?
+Correct: The course includes 2 take home examinations. A Mid-Term Exam and a Final Exam.
+
+Type: True
+Action: 1.0
+
+Input: Do I need to know computer vision
+Response: The projects do not require any specialized knowledge of computer vision or image processing.
+
+Is the response correct (yes/no)?
+Correct: The projects do not require any specialized knowledge of computer vision or image processing.
+
+Type: True
+Action: 1.0
+
+Input: Are projects individual or group
+Response: Projects will be done individually.
+
+Is the response correct (yes/no)?
+Correct: Projects will be done individually.
+
+Type: True
+Action: 1.0
+
+Input: What are the primary learning goals for KBAI
+Response: The primary learning goals are: First, this class teaches the concepts, methods, and prominent issues in knowledge-based artificial intelligence. Second, it teaches the specific skills and abilities needed to apply those concepts to the design of knowledge-based AI agents. Third, it teaches the relationship between knowledge-based artificial intelligence and the study of human cognition.
+
+Is the response correct (yes/no)?
+Correct: The primary learning goals are: First, this class teaches the concepts, methods, and prominent issues in knowledge-based artificial intelligence. Second, it teaches the specific skills and abilities needed to apply those concepts to the design of knowledge-based AI agents. Third, it teaches the relationship between knowledge-based artificial intelligence and the study of human cognition.
+
+Type: True
+Action: 1.0
+
+Input: What is the structure of this course
+Response: The structure of this course is driven by several pedagogical motivations: learning by example, learning by doing, project-based learning, personalization, collaborative learning, peer-to-peer learning, self-reflection and authenticity.
+
+Is the response correct (yes/no)?
+Correct: The structure of this course is driven by several pedagogical motivations: learning by example, learning by doing, project-based learning, personalization, collaborative learning, peer-to-peer learning, self-reflection and authenticity.
+
+Type: True
+Action: 1.0
+
+Input: What will I learn in this class
+Response: At the conclusion of this class: first you will have learned to be able to design and implement a knowledge-based artificial intelligence agent that can address a complex task using the methods discussed in the course. Second, you will be able to use this agent to reflect on the process of human cognition. Third, you will be able to use both these practices to address practical problems in multiple domains.
+
+Is the response correct (yes/no)?
+Correct: At the conclusion of this class: first you will have learned to be able to design and implement a knowledge-based artificial intelligence agent that can address a complex task using the methods discussed in the course. Second, you will be able to use this agent to reflect on the process of human cognition. Third, you will be able to use both these practices to address practical problems in multiple domains.
+
+Type: True
+Action: 1.0
+
+Input: What is the Technical Report
+Response: The Technical Report is a document that provides more detailed accounts of learning goals, strategies, and outcomes of this course.
+
+Is the response correct (yes/no)?
+Correct: The Technical Report is a document that provides more detailed accounts of learning goals, strategies, and outcomes of this course.
+
+Type: True
+Action: 1.0
+
+Input: How is this class taught
+Response: Each topic is taught through examples of the way in which humans and artificial intelligence agents approach certain problems, often building from human thought toward AI agents and subsequently referring back to human cognition.
+
+Is the response correct (yes/no)?
+Correct: Each topic is taught through examples of the way in which humans and artificial intelligence agents approach certain problems, often building from human thought toward AI agents and subsequently referring back to human cognition.
+
+Type: True
+Action: 1.0
+
+Input: How does this course encourage Learning by Doing
+Response: Students will participate in the reasoning within each particular lesson, and subsequently tie the topic back to a broader problem.
+
+Is the response correct (yes/no)?
+Correct: Students will participate in the reasoning within each particular lesson, and subsequently tie the topic back to a broader problem.
+
+Type: True
+Action: 1.0
+
+Input: How does this course utilize Project Based Learning strategies
+Response: This class has three projects, each of which build on the previous one, and the overall goals and motivations of KBAI are presented through these projects.
+
+Is the response correct (yes/no)?
+Correct: This class has three projects, each of which build on the previous one, and the overall goals and motivations of KBAI are presented through these projects.
+
+Type: True
+Action: 1.0
+
+Input: Is Collaborative Learning allowed
+Response: We encourage collaboration and the development of communities of practice surrounding the course material and projects. We are excited to see students borrow one another’s ideas and build on them, as well as spin off on their own study groups.
+
+Is the response correct (yes/no)?
+Correct: We encourage collaboration and the development of communities of practice surrounding the course material and projects. We are excited to see students borrow one another’s ideas and build on them, as well as spin off on their own study groups.
+
+Type: True
+Action: 1.0
+
+Input: How does Peer-to-Peer Learning work
+Response: During this class, students will give their peers feedback on their work for completed assignments. This lets students see additional approaches to the problems, provides extra feedback, and puts students in the position of a teacher, which has been shown to be a pedagogically useful role reversal.
+
+Is the response correct (yes/no)?
+Correct: During this class, students will give their peers feedback on their work for completed assignments. This lets students see additional approaches to the problems, provides extra feedback, and puts students in the position of a teacher, which has been shown to be a pedagogically useful role reversal.
+
+Type: True
+Action: 1.0
+
+Input: How does this course encourage Self-Reflection
+Response: At the conclusion of each lesson, each student is asked to reflect on what they learned in the class. Each design project requires the writing of a project reflection that explains and critiques, and reflects on the student’s work on the project.
+
+Is the response correct (yes/no)?
+Correct: At the conclusion of each lesson, each student is asked to reflect on what they learned in the class. Each design project requires the writing of a project reflection that explains and critiques, and reflects on the student’s work on the project.
+
+Type: True
+Action: 1.0
+
+Input: How does this course ensure Authenticity
+Response: The project that is explored in this class is an open research question in the AI and Cognitive Systems research communities. Two students from our lab have completed dissertations working on these questions in the past two years, and we have had papers published on these topics within the past several months.
+
+Is the response correct (yes/no)?
+Correct: The project that is explored in this class is an open research question in the AI and Cognitive Systems research communities. Two students from our lab have completed dissertations working on these questions in the past two years, and we have had papers published on these topics within the past several months.
+
+Type: True
+Action: 1.0
+
+Input: How many projects does this course have
+Response: This class has three projects.
+
+Is the response correct (yes/no)?
+Correct: This class has three projects.
+
+Type: True
+Action: 1.0
+
+Input: Where can I find more information on learning goals, strategies, and outcomes
+Response: More information can be found in the Technical Report.
+
+Is the response correct (yes/no)?
+Correct: More information can be found in the Technical Report.
+
+Type: True
+Action: 1.0
+
+Input: Can I watch lectures in advance
+Response: Students are welcome and encouraged to proceed at their own pace throughout the lessons, including viewing them outside of the designed order to better align with their interests.
+
+Is the response correct (yes/no)?
+Correct: Students are welcome and encouraged to proceed at their own pace throughout the lessons, including viewing them outside of the designed order to better align with their interests.
+
+Type: True
+Action: 1.0
+
+Input: Can I discuss completed assignments with other students
+Response: Absolutely! Students will give and receive peer feedback for completed assignments. We encourage a collaborative learning environment.
+
+Is the response correct (yes/no)?
+Correct: Absolutely! Students will give and receive peer feedback for completed assignments. We encourage a collaborative learning environment.
+
+Type: True
+Action: 1.0
+
+Input: Is Python or Java required for this course
+Response: Yes
+
+Is the response correct (yes/no)?
+Correct: Yes
+
+Type: True
+Action: 1.0
+
+Input: Can I use a language other than Python or Java
+Response: No
+
+Is the response correct (yes/no)?
+Correct: No
+
+Type: True
+Action: 1.0
+
+Input: How many essays will I have to write
+Response: 8. Three Assignments, three reflection reports and two examinations.
+
+Is the response correct (yes/no)?
+Correct: 8. Three Assignments, three reflection reports and two examinations.
+
+Type: True
+Action: 1.0
+
+Input: How can I engage with my classmates
+Response: You can engage with your classmates through Piazza Forum, Peer Feedback and sharing of exemplary assignments.
+
+Is the response correct (yes/no)?
+Correct: You can engage with your classmates through Piazza Forum, Peer Feedback and sharing of exemplary assignments.
+
+Type: True
+Action: 1.0
+
+Input: Will I have to work independently
+Response: Yes. You will have to work independently on design, programming and reflections.
+
+Is the response correct (yes/no)?
+Correct: Yes. You will have to work independently on design, programming and reflections.
+
+Type: True
+Action: 1.0
+
+Input: Will I have to do additional reading for this class
+Response: Yes
+
+Is the response correct (yes/no)?
+Correct: Yes
+
+Type: True
+Action: 1.0
+
+Input: Are the deadlines for assignments fixed
+Response: Yes
+
+Is the response correct (yes/no)?
+Correct: Yes
+
+Type: True
+Action: 1.0
+
+Input: How much time does the class demand
+Response: The class demands significant amount of time and energy on a regular basis.
+
+Is the response correct (yes/no)?
+Correct: The class demands significant amount of time and energy on a regular basis.
+
+Type: True
+Action: 1.0
+
+Input: Will I have to adhere to Georgia Tech code of conduct to take this class
+Response: Yes
+
+Is the response correct (yes/no)?
+Correct: Yes
+
+Type: True
+Action: 1.0
+
+Input: Where can I find the reading list
+Response: Readings will either be publicly available on-line or will be provided to you in the T-Square Resources section for this class.
+
+Is the response correct (yes/no)?
+Correct: Readings will either be publicly available on-line or will be provided to you in the T-Square Resources section for this class.
+
+Type: True
+Action: 1.0
+
+Input: How will I know which readings relate to which lectures
+Response: It will be provided in the description of video lecture, project / you can always ask the TA's.
+
+Is the response correct (yes/no)?
+Correct: It will be provided in the description of video lecture, project / you can always ask the TA's.
+
+Type: True
+Action: 1.0
+
+Input: Are the readings mandatory
+Response: It is not mandatory, but is strongly recommended as it will help improve the understanding of the subject.
+
+Is the response correct (yes/no)?
+Correct: It is not mandatory, but is strongly recommended as it will help improve the understanding of the subject.
+
+Type: True
+Action: 1.0
+
+Input: Can we ask for clarification on reading list materials
+Response: Yes.
+
+Is the response correct (yes/no)?
+Correct: Yes.
+
+Type: True
+Action: 1.0
+
+Input: How many sets of reading list are there
+Response: Two - one for project  another for video lectures.
+
+Is the response correct (yes/no)?
+Correct: Two - one for project  another for video lectures.
+
+Type: True
+Action: 1.0
+
+Input: What is the scope of these reading sets
+Response: The readings accompanying the videos add depth to the lessons: for example, they cover algorithms for  the conceptual methods discussed in the videos. Similarly, the readings accompanying the projects describe the conceptual and algorithmic basis for the projects.
+
+Is the response correct (yes/no)?
+Correct: The readings accompanying the videos add depth to the lessons: for example, they cover algorithms for  the conceptual methods discussed in the videos. Similarly, the readings accompanying the projects describe the conceptual and algorithmic basis for the projects.
+
+Type: True
+Action: 1.0
+
+Input: Is there an order to be followed for the reading list
+Response: Reading after completion of the specific chapter will help in better understanding, but if you wish you can read ahead of time or after sometime.
+
+Is the response correct (yes/no)?
+Correct: Reading after completion of the specific chapter will help in better understanding, but if you wish you can read ahead of time or after sometime.
+
+Type: True
+Action: 1.0
+
+Input: Can we request for more reading papers
+Response: Yes.
+
+Is the response correct (yes/no)?
+Correct: Yes.
+
+Type: True
+Action: 1.0
+
+Input: What components will determine final grades
+Response: Your final grade will be determined by 3 written assignments worth 12%, 3 programming assignments worth 45%, 2 unproctored exams worth 35% and 24 peer feedback activities worth 8%.
+
+Is the response correct (yes/no)?
+Correct: Your final grade will be determined by 3 written assignments worth 12%, 3 programming assignments worth 45%, 2 unproctored exams worth 35% and 24 peer feedback activities worth 8%.
+
+Type: True
+Action: 1.0
+
+Input: When can we expect to receive grades after a submission
+Response: 2 weeks after the original submission
+
+Is the response correct (yes/no)?
+Correct: 2 weeks after the original submission
+
+Type: True
+Action: 1.0
+
+Input: Do the grades assigned to me by peers affect my grade
+Response: No. The primary purpose of supplying the graders with the results of the peer feedback process is to help the graders ensure every student gets useful feedback, as well as to ensure that the peer feedback received is accurate.
+
+Is the response correct (yes/no)?
+Correct: No. The primary purpose of supplying the graders with the results of the peer feedback process is to help the graders ensure every student gets useful feedback, as well as to ensure that the peer feedback received is accurate.
+
+Type: True
+Action: 1.0
+
+Input: How will grades be released
+Response: Grades will generally be released via both T-Square and Peer Feedback. Written feedback from the graders, however, will only be released via Peer Feedback. For Projects, sub-scores for your agent's performance on the problems and for your project reflection will be returned via the assignment submission page, and the overall project score will be posted to the grade book. Check marks for Peer Feedback participation will be provided throughout the semester via the assignment submission pages for those tasks, and a final Peer Feedback score (based both on completion and quality of participation) will be assigned at the end of the semester.
+
+Is the response correct (yes/no)?
+Correct: Grades will generally be released via both T-Square and Peer Feedback. Written feedback from the graders, however, will only be released via Peer Feedback. For Projects, sub-scores for your agent's performance on the problems and for your project reflection will be returned via the assignment submission page, and the overall project score will be posted to the grade book. Check marks for Peer Feedback participation will be provided throughout the semester via the assignment submission pages for those tasks, and a final Peer Feedback score (based both on completion and quality of participation) will be assigned at the end of the semester.
+
+Type: True
+Action: 1.0
+
+Input: Are there fixed thresholds for grades
+Response: No.
+
+Is the response correct (yes/no)?
+Correct: No.
+
+Type: True
+Action: 1.0
+
+Input: Will there be curving of grade
+Response: Yes
+
+Is the response correct (yes/no)?
+Correct: Yes
+
+Type: True
+Action: 1.0
+
+Input: What have the grade statistics for this class been in the past
+Response: For the Fall 2015 KBAI class, the average was in the low 80's, and only about 10% of the class ended with a raw score over 90; well over half the class still received an A, though
+
+Is the response correct (yes/no)?
+Correct: For the Fall 2015 KBAI class, the average was in the low 80's, and only about 10% of the class ended with a raw score over 90; well over half the class still received an A, though
+
+Type: True
+Action: 1.0
+
+Input: What are the individual weights of the 2 unproctored exams
+Response: 15% for mid-term exam and 20% for final exam
+
+Is the response correct (yes/no)?
+Correct: 15% for mid-term exam and 20% for final exam
+
+Type: True
+Action: 1.0
+
+Input: What should I do to get good grades on this class
+Response: We encourage you to focus first on doing the best you can on all assignments; if you do, your grade should take care of itself.
+
+Is the response correct (yes/no)?
+Correct: We encourage you to focus first on doing the best you can on all assignments; if you do, your grade should take care of itself.
+
+Type: True
+Action: 1.0
+
+Input: How many assignments are in the class
+Response: There will be 3 assignments in the course.
+
+Is the response correct (yes/no)?
+Correct: There will be 3 assignments in the course.
+
+Type: True
+Action: 1.0
+
+Input: What is the word limit for each assignment
+Response: Each assignment should be approximately 1,000 words (neither a minimum nor a maximum, just a heuristic)
+
+Is the response correct (yes/no)?
+Correct: Each assignment should be approximately 1,000 words (neither a minimum nor a maximum, just a heuristic)
+
+Type: True
+Action: 1.0
+
+Input: What topics do the assignments cover
+Response: Each assignment relates to a certain topic or set of topics in the course material to some problem. For Assignments 1 the problem should be the class project. For Assignments 2, we will provide a list of problems that you can choose from. For Assignments 3, you may choose from that same list, or you may select a problem of your own.
+
+Is the response correct (yes/no)?
+Correct: Each assignment relates to a certain topic or set of topics in the course material to some problem. For Assignments 1 the problem should be the class project. For Assignments 2, we will provide a list of problems that you can choose from. For Assignments 3, you may choose from that same list, or you may select a problem of your own.
+
+Type: True
+Action: 1.0
+
+Input: What advantages does peer-to-peer feedback provide me
+Response: Peer-to-peer feedback provides a number of opportunities: it gives you the opportunity to see your classmates' work, it gets you more feedback on your work than you would otherwise receive, and it puts you in the position of critiquing and analyzing course material.
+
+Is the response correct (yes/no)?
+Correct: Peer-to-peer feedback provides a number of opportunities: it gives you the opportunity to see your classmates' work, it gets you more feedback on your work than you would otherwise receive, and it puts you in the position of critiquing and analyzing course material.
+
+Type: True
+Action: 1.0
+
+Input: How do I participate in peer-to-peer feedback
+Response: We will use a tool called Peer Feedback -- peerfeedback.gatech.edu -- to give peer-to-peer feedback in this class.
+
+Is the response correct (yes/no)?
+Correct: We will use a tool called Peer Feedback -- peerfeedback.gatech.edu -- to give peer-to-peer feedback in this class.
+
+Type: True
+Action: 1.0
+
+Input: How often will I be required to provide peer-to-peer feedback
+Response: You will give peer-to-peer feedback to your classmates on all six assignments (including the three you do not personally complete) and on all three project reflections.
+
+Is the response correct (yes/no)?
+Correct: You will give peer-to-peer feedback to your classmates on all six assignments (including the three you do not personally complete) and on all three project reflections.
+
+Type: True
+Action: 1.0
+
+Input: How does peer-to-peer feedback impact our grade on the assignment
+Response: Peers will evaluate one another on the same rubric that graders will use; however, the scores you assign to your peers will not factor into their actual grades on the assignment.
+
+Is the response correct (yes/no)?
+Correct: Peers will evaluate one another on the same rubric that graders will use; however, the scores you assign to your peers will not factor into their actual grades on the assignment.
+
+Type: True
+Action: 1.0
+
+Input: Do the TAs look at the feedback
+Response: TAs will see the feedback you give to your peers in order to ensure that all students receive adequate feedback.
+
+Is the response correct (yes/no)?
+Correct: TAs will see the feedback you give to your peers in order to ensure that all students receive adequate feedback.
+
+Type: True
+Action: 1.0
+
+Input: How much of my grade depends on completing peer feedback
+Response: Completing peer feedback exercises is 8% of your average.
+
+Is the response correct (yes/no)?
+Correct: Completing peer feedback exercises is 8% of your average.
+
+Type: True
+Action: 1.0
+
+Input: Does the quality of feedback I provide matter
+Response: Your peer feedback average will be determined not only based on whether or not you completed all assigned peer feedback exercises, but also based on the quality of the feedback you provided as evaluated by the TAs and by the recipients of the feedback.
+
+Is the response correct (yes/no)?
+Correct: Your peer feedback average will be determined not only based on whether or not you completed all assigned peer feedback exercises, but also based on the quality of the feedback you provided as evaluated by the TAs and by the recipients of the feedback.
+
+Type: True
+Action: 1.0
+
+Input: How will the exams be distributed
+Response: Both exams will be an unproctored, untimed, "take-home" tests.
+
+Is the response correct (yes/no)?
+Correct: Both exams will be an unproctored, untimed, "take-home" tests.
+
+Type: True
+Action: 1.0
+
+Input: What format will the exams be given in
+Response: Both exams will consist of a number of different questions asking you to synthesize multiple parts of the course material.
+
+Is the response correct (yes/no)?
+Correct: Both exams will consist of a number of different questions asking you to synthesize multiple parts of the course material.
+
+Type: True
+Action: 1.0
+
+Input: What are the ways in which new class information will be sent
+Response: A T-Square announcement with an email notification and a pinned Piazza announcement in the ‘announcements’ folder with an email notification.
+
+Is the response correct (yes/no)?
+Correct: A T-Square announcement with an email notification and a pinned Piazza announcement in the ‘announcements’ folder with an email notification.
+
+Type: True
+Action: 1.0
+
+Input: How often should you check your Georgia Tech email
+Response: Once every 24 hours
+
+Is the response correct (yes/no)?
+Correct: Once every 24 hours
+
+Type: True
+Action: 1.0
+
+Input: Where should you preferably post your questions
+Response: Piazza
+
+Is the response correct (yes/no)?
+Correct: Piazza
+
+Type: True
+Action: 1.0
+
+Input: What questions are better suited for office hours
+Response: Conversational discussions on course material and discussions about individuals' grades.
+
+Is the response correct (yes/no)?
+Correct: Conversational discussions on course material and discussions about individuals' grades.
+
+Type: True
+Action: 1.0
+
+Input: Why is Piazza preferred for asking questions related to the class
+Response: Posting on piazza opens up the question to input from everyone in the class and creates a self-documenting history of the answer to the question.
+
+Is the response correct (yes/no)?
+Correct: Posting on piazza opens up the question to input from everyone in the class and creates a self-documenting history of the answer to the question.
+
+Type: True
+Action: 1.0
+
+Input: How often will office hours be held
+Response: Weekly
+
+Is the response correct (yes/no)?
+Correct: Weekly
+
+Type: True
+Action: 1.0
+
+Input: Will office hours be recorded and posted
+Response: No, but if there is anything relevant to the whole class it will be recorded and posted on Piazza
+
+Is the response correct (yes/no)?
+Correct: No, but if there is anything relevant to the whole class it will be recorded and posted on Piazza
+
+Type: True
+Action: 1.0
+
+Input: How should you reach out to instructors about private issues like grades
+Response: Post a private Piazza message visible only to the instructors
+
+Is the response correct (yes/no)?
+Correct: Post a private Piazza message visible only to the instructors
+
+Type: True
+Action: 1.0
+
+Input: How will I be able to participate in office hours
+Response: Via the Webex link available on Piazza
+
+Is the response correct (yes/no)?
+Correct: Via the Webex link available on Piazza
+
+Type: True
+Action: 1.0
+
+Input: What is the purpose of office hours
+Response: Synchronous office hours are intended for conversations about individual projects, discussions about course material, etc. rather than straightforward question and answer.
+
+Is the response correct (yes/no)?
+Correct: Synchronous office hours are intended for conversations about individual projects, discussions about course material, etc. rather than straightforward question and answer.
+
+Type: True
+Action: 1.0
+
+Input: Where will exemplary assignments be posted
+Response: Exemplary assignments, once available, will be posted on piazza for everyone to see.
+
+Is the response correct (yes/no)?
+Correct: Exemplary assignments, once available, will be posted on piazza for everyone to see.
+
+Type: True
+Action: 1.0
+
+Input: What is the point of posting exemplary assignments
+Response: From previous semesters, we have found that posting exemplary assignments allow for greater peer-to-peer learning and fosters a community of learners.
+
+Is the response correct (yes/no)?
+Correct: From previous semesters, we have found that posting exemplary assignments allow for greater peer-to-peer learning and fosters a community of learners.
+
+Type: True
+Action: 1.0
+
+Input: Is late work accepted
+Response: Due to the size of the class and limited resources, late work will not be accepted.
+
+Is the response correct (yes/no)?
+Correct: Due to the size of the class and limited resources, late work will not be accepted.
+
+Type: True
+Action: 1.0
+
+Input: What should I do if I am having issues submitting my work
+Response: If you are having issue submitting on T-square, immediately post a private note on Piazza with your submission.
+
+Is the response correct (yes/no)?
+Correct: If you are having issue submitting on T-square, immediately post a private note on Piazza with your submission.
+
+Type: True
+Action: 1.0
+
+Input: What if I have an emergency and cannot submit my work on time
+Response: If you have an emergency and cannot submit your work by the deadline, we ask that you go through the Dean of Student's office
+
+Is the response correct (yes/no)?
+Correct: If you have an emergency and cannot submit your work by the deadline, we ask that you go through the Dean of Student's office
+
+Type: True
+Action: 1.0
+
+Input: What kind of issues can I bring up to the Dean of Student's office
+Response: Justifiable excuses would involve any major unforeseen disruption to your classwork such as illness, injuries, death, and birth, all for either you or your family
+
+Is the response correct (yes/no)?
+Correct: Justifiable excuses would involve any major unforeseen disruption to your classwork such as illness, injuries, death, and birth, all for either you or your family
+
+Type: True
+Action: 1.0
+
+Input: What kind of conflict am I liable for
+Response: Conflicts such as weddings, business trips, and conference, you should complete your work in advance. That is why all of the assignments and project resources are provided to you at the start of the semester.
+
+Is the response correct (yes/no)?
+Correct: Conflicts such as weddings, business trips, and conference, you should complete your work in advance. That is why all of the assignments and project resources are provided to you at the start of the semester.
+
+Type: True
+Action: 1.0
+
+Input: Is this course the same as the previous semesters
+Response: No. every semester is a learning experience. Each subsequent semesters benefit from the lessons learned the previous semesters.
+
+Is the response correct (yes/no)?
+Correct: No. every semester is a learning experience. Each subsequent semesters benefit from the lessons learned the previous semesters.
+
+Type: True
+Action: 1.0
+
+Input: Can I provide the teaching staff feedback on how I think that the course is going
+Response: Absolutely! In fact, we encourage students to provide feedback on things that work, and things that could be done better.
+
+Is the response correct (yes/no)?
+Correct: Absolutely! In fact, we encourage students to provide feedback on things that work, and things that could be done better.
+
+Type: True
+Action: 1.0
+
+Input: How can I provide feedback
+Response: You may take advantage of the feedback box on Piazza, as well as the surveys we will send out over the course of the semester.
+
+Is the response correct (yes/no)?
+Correct: You may take advantage of the feedback box on Piazza, as well as the surveys we will send out over the course of the semester.
+
+Type: True
+Action: 1.0
+
+Input: How many surveys will there be
+Response: There will be 4 surveys. 3 will be administered throughout the course, and the 4th will be administered by Georgia Tech via CIOS.
+
+Is the response correct (yes/no)?
+Correct: There will be 4 surveys. 3 will be administered throughout the course, and the 4th will be administered by Georgia Tech via CIOS.
+
+Type: True
+Action: 1.0
+
+Input: How can I contact the Dean of Student's office
+Response: You may find information on contacting the Dean of Students with regard to personal emergencies here: https://studentlife.gatech.edu/content/class-attendance
+
+Is the response correct (yes/no)?
+Correct: You may find information on contacting the Dean of Students with regard to personal emergencies here: https://studentlife.gatech.edu/content/class-attendance
+
+Type: True
+Action: 1.0
+
+Input: What if my conflict falls during the final
+Response: If your conflict falls during final exams, please let us know immediately and in advance so that we may work with you.
+
+Is the response correct (yes/no)?
+Correct: If your conflict falls during final exams, please let us know immediately and in advance so that we may work with you.
+
+Type: True
+Action: 1.0
+
+Input: When are assignments due
+Response: All assignments are due at the end of the week, on Sunday at midnight UTC-12 (Anywhere On Earth time). This translates to an early-morning Monday deadline in the Americas, a midday Monday deadline in Europe, etc. If for example, Assignment 1 were due on January 22nd at midnight UTC-12, which translates to Monday, January 23rd at 7AM Eastern time, 4AM Pacific time. Precise due dates and times can be found in T-Square on each assignment page. Make sure to set T-Square to your local time zone to see due dates in your time
+
+Is the response correct (yes/no)?
+Correct: All assignments are due at the end of the week, on Sunday at midnight UTC-12 (Anywhere On Earth time). This translates to an early-morning Monday deadline in the Americas, a midday Monday deadline in Europe, etc. If for example, Assignment 1 were due on January 22nd at midnight UTC-12, which translates to Monday, January 23rd at 7AM Eastern time, 4AM Pacific time. Precise due dates and times can be found in T-Square on each assignment page. Make sure to set T-Square to your local time zone to see due dates in your time
+
+Type: True
+Action: 1.0
+
+Input: Where can I find the course calendar
+Response: https://docs.google.com/document/d/1YUnl-NbNycN3GfzK8BXO0qxW6wdKT1sKhO-p028Fl18/edit
+
+Is the response correct (yes/no)?
+Correct: https://docs.google.com/document/d/1YUnl-NbNycN3GfzK8BXO0qxW6wdKT1sKhO-p028Fl18/edit
+
+Type: True
+Action: 1.0
+
+Input: Where can I find assignment 1
+Response: https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc
+
+Is the response correct (yes/no)?
+Correct: https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc
+
+Type: True
+Action: 1.0
+
+Input: Where can I find assignment 2
+Response: https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc
+
+Is the response correct (yes/no)?
+Correct: https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc
+
+Type: True
+Action: 1.0
+
+Input: Where can I find assignment 3
+Response: https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc
+
+Is the response correct (yes/no)?
+Correct: https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc
+
+Type: True
+Action: 1.0
+
+Input: Where can I find project 1
+Response: https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc
+
+Is the response correct (yes/no)?
+Correct: https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc
+
+Type: True
+Action: 1.0
+
+Input: Where can I find project 2
+Response: https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc
+
+Is the response correct (yes/no)?
+Correct: https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc
+
+Type: True
+Action: 1.0
+
+Input: Where can I find project 3
+Response: https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc
+
+Is the response correct (yes/no)?
+Correct: https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc
+
+Type: True
+Action: 1.0
+
+Input: When is assignment 1 due
+Response: Week of August 28th
+
+Is the response correct (yes/no)?
+Correct: Week of August 28th
+
+Type: True
+Action: 1.0
+
+Input: When is assignment 2 due
+Response: Week of September 25th
+
+Is the response correct (yes/no)?
+Correct: Week of September 25th
+
+Type: True
+Action: 1.0
+
+Input: When is assignment 3 due
+Response: Week of October 30th
+
+Is the response correct (yes/no)?
+Correct: Week of October 30th
+
+Type: True
+Action: 1.0
+
+Input: When is project 1 due
+Response: Week of September 4th
+
+Is the response correct (yes/no)?
+Correct: Week of September 4th
+
+Type: True
+Action: 1.0
+
+Input: When is project 2 due
+Response: Week of October 9th
+
+Is the response correct (yes/no)?
+Correct: Week of October 9th
+
+Type: True
+Action: 1.0
+
+Input: When is project 3 due
+Response: Week of November 6th
+
+Is the response correct (yes/no)?
+Correct: Week of November 6th
+
+Type: True
+Action: 1.0
+
+Input: When is the midterm
+Response: Week of October 2nd
+
+Is the response correct (yes/no)?
+Correct: Week of October 2nd
+
+Type: True
+Action: 1.0
+
+Input: When is the final
+Response: Week of November 27th
+
+Is the response correct (yes/no)?
+Correct: Week of November 27th
+
+Type: True
+Action: 1.0
+
+Input: Who is the professor for this class
+Response: Professor Goel
+
+Is the response correct (yes/no)?
+Correct: Professor Goel
+
+Type: True
+Action: 1.0
+
+Input: Who is professor Goel
+Response: The professor for this class
+
+Is the response correct (yes/no)?
+Correct: The professor for this class
+
+Type: True
+Action: 1.0
+
+Score: 108.0
+Total Questions: 108
+Total Correct: 108
+Total Skipped: 0
+Total Meant to Skip: 0
+Total Correctly Skipped: 0
+Total Wrong: 0

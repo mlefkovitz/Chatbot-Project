@@ -1,0 +1,97 @@
+ {'1_question': 'How is this course structured',
+  '2_expected_answer': 'The course has five components. Video Lessons, '
+                       'Exercises and Readings; Design, Programming and '
+                       'Reflection projects; Assignments and Examinations; '
+                       'Peer Feedback; and Announcements, Question Answering '
+                       'and Discussions.',
+  '3_actual_answer': 'I do not know.'},
+Notes: Expected answer thinks this question should link to "What are the course components"
+I think this question should link to "What is the structure of this course"
+
+ {'1_question': 'How many hours of video are there',
+  '2_expected_answer': 'This course has 26 videos with about 18 hours of '
+                       'instruction.',
+  '3_actual_answer': 'I do not know.'},
+Notes: Question: "How many hours of instruction for this class"
+
+ {'1_question': 'How many nano-tutors are there',
+  '2_expected_answer': 'The videos have ~150 exercises and ~100 “tutors” '
+                       'embedded in them.',
+  '3_actual_answer': 'I do not know.'},
+Notes: Question: "How many exercises are in the videos"
+
+ {'1_question': 'Is there more reading',
+  '2_expected_answer': 'Yes',
+  '3_actual_answer': 'Yes.'},
+ {'1_question': 'Will there be more readings',
+  '2_expected_answer': 'Yes',
+  '3_actual_answer': 'Yes.'},
+
+Notes: I think these questions are expected to link to "Are there additional readings" which has an answer "Yes". 
+The Chatbot is answering "Yes." which is the answer to "Can we ask for clarification on reading list materials" and 
+"Can we request for more reading papers"
+
+ {'1_question': 'Is prior knowledge of image processing required for the '
+                'projects',
+  '2_expected_answer': 'The projects do not require any specialized knowledge '
+                       'of computer vision or image processing.',
+  '3_actual_answer': 'Yes'},
+Notes: 'image processing' = 'computer vision'
+
+{'1_question': 'How can I join office hours',
+  '2_expected_answer': 'Via the Webex link available on Piazza',
+  '3_actual_answer': 'I do not know.'},
+ {'1_question': 'How can I attend office hours',
+  '2_expected_answer': 'Via the Webex link available on Piazza',
+  '3_actual_answer': 'I do not know.'},
+Notes: Question: "How will I be able to participate in office hours"
+
+ {'1_question': "Where is assignment 1's rubric",
+  '2_expected_answer': 'https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc',
+  '3_actual_answer': 'You may find information on contacting the Dean of '
+                     'Students with regard to personal emergencies here: '
+                     'https://studentlife.gatech.edu/content/class-attendance'},
+ {'1_question': 'Where is assignment 2 defined',
+  '2_expected_answer': 'https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc',
+  '3_actual_answer': 'I do not know.'},
+ {'1_question': 'Where is assignment 3',
+  '2_expected_answer': 'https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc',
+  '3_actual_answer': 'I do not know.'},
+ {'1_question': "Where is project 1's files",
+  '2_expected_answer': 'https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc',
+  '3_actual_answer': 'You may find information on contacting the Dean of '
+                     'Students with regard to personal emergencies here: '
+                     'https://studentlife.gatech.edu/content/class-attendance'},
+ {'1_question': 'What is the location of project 2',
+  '2_expected_answer': 'https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc',
+  '3_actual_answer': 'I do not know.'},
+ {'1_question': 'Where are the files for project 3',
+  '2_expected_answer': 'https://drive.google.com/drive/folders/0ByL9Kt_U_JJuQmZxSEtnWENiUXc',
+  '3_actual_answer': 'I do not know.'},
+Notes: All of these questions have the same answer. Most of the time chatbot is returning IDK. Need some way to give the answer.
+
+ {'1_question': 'What is the date for assignment 3',
+  '2_expected_answer': 'Week of October 30th',
+  '3_actual_answer': 'I do not know.'},
+ {'1_question': 'When does project 1 need to be completed',
+  '2_expected_answer': 'Week of September 4th',
+  '3_actual_answer': 'Absolutely! Students will give and receive peer feedback '
+                     'for completed assignments. We encourage a collaborative '
+                     'learning environment.'},
+Notes: Answer these questions
+
+ {'1_question': 'Who is the instructor of this class',
+  '2_expected_answer': 'Professor Goel',
+  '3_actual_answer': 'I do not know.'},
+ {'1_question': 'Who teaches this class',
+  '2_expected_answer': 'Professor Goel',
+  '3_actual_answer': 'I do not know.'},
+ {'1_question': 'Who is the instructor',
+  '2_expected_answer': 'Professor Goel',
+  '3_actual_answer': 'I do not know.'},
+Notes: Identify synonyms for professor
+
+ {'1_question': 'Does Professor Goel enjoy frogs',
+  '2_expected_answer': 'Yes',
+  '3_actual_answer': 'The professor for this class'}
+Notes: Be able to understand that this question isn't in the FAQ.

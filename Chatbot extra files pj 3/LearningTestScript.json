@@ -1,0 +1,21 @@
+[
+   {
+        "questions":["Is wordnet allowed?"],
+        "response":"I do not know.",
+        "replace":"yes"
+    },
+   {
+        "questions":["Is numpy allowed"],
+        "response":"I do not know.",
+        "replace":"yes"
+    },
+   {
+        "questions":["Is wordnet allowed?"],
+        "response":"yes"
+    },
+   {
+        "questions":["Is numpy allowed"],
+        "response":"yes"
+    }
+]
+

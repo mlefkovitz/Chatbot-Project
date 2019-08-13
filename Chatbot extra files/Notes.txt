@@ -1,0 +1,25 @@
+Lesson 11 - Classification
+Video 14 Explains that for Exemplar concepts (concepts like 'Beauty', 'Inspirational', 'Holiday', or 'Saltiness') that cannot be defined explicityly with necessary and specific conditions (like Axiomatic concepts) or by example (like Prototypical concepts) are best understood using methods like case based reasoning
+
+
+Next steps:
+Add a new sentence similarity method
+
+
+>pip freeze
+certifi==2017.7.27.1
+chardet==3.0.4
+cycler==0.10.0
+idna==2.6
+nltk==3.2.5
+numpy==1.12.0
+olefile==0.44
+pandas==0.19.2
+pyparsing==2.1.10
+python-dateutil==2.6.0
+pytz==2016.10
+requests==2.18.4
+requests-futures==0.9.7
+six==1.11.0
+textblob==0.13.0
+urllib3==1.22
